@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language lang="Russian" author="Новый Диск, 2006" version="6.0">
+
+  <Errors>
+    <Config>Неправильная конфигурация! Введите правильную комбинацию.</Config>
+    <Explorer>Сбой в среде Windows Explorer</Explorer>
+    <Desktop>Рабочий стол не обнаружен</Desktop>
+    <MultiThread>Параллельная операция невозможна. VirtualDJ требует многозадачной операционной системы.</MultiThread>
+    <GDI>Сбой драйвера видеокарты</GDI>
+    <DirectSound>Сбой драйвера звуковой среды DirectX</DirectSound>
+    <DirectSoundUsed>Звуковая карта уже используется другим приложением</DirectSoundUsed>
+    <DirectSoundMemory>Сбой драйвера звуковой карты: недостаточно памяти</DirectSoundMemory>
+    <WDMError>Невозможно запустить звуковой WDM драйвер. Проверьте наличие подходящего драйвера WDM (не VxD), с функции квадрафонического вывода\n(Не поддерживается ядрами Win95 и Win98osr1)</WDMError>
+    <Memory>Недостаточно памяти</Memory>
+    <DataBase>Внутренняя база данных испорчена</DataBase>
+    <Skin>Файл скина не действителен (ошибка в строке %i в ХML)</Skin>
+    <DupCD>Этот CD уже внесен в базу данных. Заменить его содержимое?</DupCD>
+    <ScanHD>Просканировать ваш жесткий диск на предмет наличия MP3 файлов?</ScanHD>
+    <QueryClose>Музыка все ещё играет!\nВы действительное хотите выйти из VirtualDJ?</QueryClose>
+    <Security>На этом проигрывателе играет дорожка.\nОстановить её?</Security>
+    <DemoLimit1>Эта функция доступна только в полной версии.\nПосетите http://www.virtualdj.com/ для заказа полной версии</DemoLimit1>
+    <DemoLimit2>Эта только ограниченная версия VirtualDJ.\nПосетите http://www.virtualdj.com/ для заказа полной версии</DemoLimit2>
+    <SerialError>Сбой в защите %i. Свяжитесь с service@virtualdj.com</SerialError>
+    <InvalidSerial>Неправильный серийный номер</InvalidSerial>
+    <BadCDRip>CD не читается.\nПопробуйте почистить его.</BadCDRip>
+    <Controler>Устройство управления не обнаружено.\nПодсоедините его и перезапустите VirtualDJ.</Controler>
+    <Video>Сбой в запуске камеры!</Video>
+    <AsioError>Сбой в звуковом драйвере ASIO</AsioError>
+    <AsioChanError>Сбой в звуковом драйвере ASIO: недостаточно каналов.</AsioChanError>
+    <TimecodeSignalError>Сигнал таймкода не обнаружен.\nУстановите на вертушку винил с таймкодом и попробуйте еще раз.\nЕсли все равно не работает - проверьте правильность подключения проводов и установки громкости вашей звуковой карты.</TimecodeSignalError>
+    <TXTDirect3DError>Несовместимая версия DirectX.\nТребуется версия не ниже DirectX v9.0c.\nВы можете найти ее на установочном диске с программой.</TXTDirect3DError>
+    <DJCDemoLimit>Поддержка таймкодов доступна только в 'Профессиональной' версии VirtualDJ.\nВерсия 'DJConsole Edition' позволит вам попробовать DJConsole только на 5 минут.\n\nЕсли вы хотите обновиться до Профессииональной версии, посетите наш интернет-сайт:\nhttp://www.virtualdj.com/</DJCDemoLimit>
+    <VideoLimit>Извините, полноэкранное видео доступно только в Профессиональной версии VirtualDJ.\n\nЕсли вы хотите обновиться до Профессииональной версии, посетите наш интернет-сайт:\nhttp://www.virtualdj.com/</VideoLimit>
+    <NapsterLoginError>Неверная Учетная запись/Пароль</NapsterLoginError>
+    <DRMRecord>Один из проигрываемых вами файлов защищен DRM.\nЭто означает, что вам запрещено копировать его или записывать на болванку.</DRMRecord>
+  </Errors>
+
+  <Others>
+    <Search>Поиск: </Search>
+    <Empty>(Пусто)</Empty>
+    <LameHelp>Выберете плагин для кодировки в формат mp3.</LameHelp>
+    <VScratchHelp>Добро пожаловать в Virtual-Scratch.\nВам понадобится веб-камера для использования данной функции.\nПосле подключения камеры подвигайте рукой над красной линией, чтобы воспроизвести эффекта скретча.</VScratchHelp>
+    <VControlHelp>Добро пожаловать в Vinyl-Control.\nВам понадобится веб-камера для использования данной функции.\nУстановите камеру так, чтобы она была направлена в центр вашей пластинки. Затем запустите проигрыватель на 45 об/мин и нажмите CALIBRATE.\nПосле калибровки VirtualDJ будет отслеживать поведение вашего винила.</VControlHelp>
+    <SoundCard>Звуковые карты</SoundCard>
+    <DragToStart>Перетащите дорожку на этот проигрыватель, чтобы загрузить её</DragToStart>
+    <MissingCD>Вставьте CD '%s' в привод %s</MissingCD>
+    <FadeEntryPoint>Точка входа в фейд</FadeEntryPoint>
+    <FadeExitPoint>Точка выхода из фейда</FadeExitPoint>
+    <CutEntryPoint>Точка входа в срезание (Cut)</CutEntryPoint>
+    <CutExitPoint>Точка входа из срезания (Cut)</CutExitPoint>
+    <TempoEntryPoint>Точка входа в темп</TempoEntryPoint>
+    <TempoExitPoint>Точка выхода из темпа</TempoExitPoint>
+    <FirstAnchor>Первый якорь</FirstAnchor>
+    <LastAnchor>Последний якорь</LastAnchor>
+    <DataBase>Локальная база данных</DataBase>
+    <GlobalDB>Глобальная база данных</GlobalDB>
+    <AutoUpdate>VirtualDJ попытается проверить наличие новой версии в интернете.\n\nЭту функцию можно отключить в меню конфигурации.</AutoUpdate>
+    <SearchCount>Количество найденных совпадений</SearchCount>
+    <SuggestionBox>Советы</SuggestionBox>
+    <MayaConfig>Уровень "Мониторинга" вашей звуковой карты MAYA должен быть убран в ноль для работы с винилом с таймкодом.\nХотите чтобы VirtualDJ сделал это сейчас?</MayaConfig>
+    <OverwritePrompt>Файл уже существует.\nХотите переписать его?</OverwritePrompt>
+    <NoDelete>Вы не можете удалить воспроизводимый файл</NoDelete>
+    <NapsterHelp>Добро пожаловать в глобальную базу данных VirtualDJ поддерживаемую компанией Napster.\n\nЕсли ваш компьютер подключен к Интернет, эта папка позволит вам просматривать миллионы треков выложенных в Napster.\nДля поиска просто наберите что-нибудь в окне ввода запроса.\n\nИскать треки вы можете бесплатно, но для их воспроизведения вы должны купить подписку на Napster.\nВы можете сделать это на сайте http://www.napster.com/\n(Доступно не во всех странах)</NapsterHelp>
+    <DJCHeadphonesHelp>Если вы хотите слушать песню в наушниках, нажмите и держите кнопку с изображением наушников на вашей DJControlMP3</DJCHeadphonesHelp>
+  </Others>
+
+  <Columns>
+    <CD>Компакт-диск</CD>
+    <Number>Номер</Number>
+    <Title>Название</Title>
+    <Author>Автор</Author>
+    <Disc>Диск</Disc>
+    <Path>Путь</Path>
+    <Bpm>Bpm</Bpm>
+    <Length>Длина</Length>
+    <Comment>Комментарии</Comment>
+  </Columns>
+
+  <ContextMenu>
+    <Rename>Переименовать</Rename>
+    <EditComment>Редактировать комментарии</EditComment>
+    <EditBpm>Установить Bpm</EditBpm>
+    <Delete>Удалить</Delete>
+    <MoveTo>Переместить в</MoveTo>
+    <CopyTo>Копировать в</CopyTo>
+    <Analyse>Анализировать</Analyse>
+    <Unmark>Снять отметку со статуса</Unmark>
+    <Preview>Прослушать</Preview>
+    <Recurse>Показать все</Recurse>
+    <SetFavorite>Добавить в избранное</SetFavorite>
+    <RemoveFavorite>Стереть избранное</RemoveFavorite>
+    <ScanHD>Сканнировать HD</ScanHD>
+    <ScanCD>Сканнировать CD</ScanCD>
+    <DeleteCD>Стереть CD</DeleteCD>
+    <AddSearchDB>Добавить в поиск</AddSearchDB>
+    <RemoveSearchDB>Удалить из поиска</RemoveSearchDB>
+    <GotoFolder>Перейти в папку</GotoFolder>
+    <AddToHistory>Добавить к журналу</AddToHistory>
+    <Property>Информация о файле</Property>
+    <Rip>Конвертировать в формат WAV/MP3</Rip>
+    <Load>Загрузить...</Load>
+    <Save>Сохранить...</Save>
+	<Erase>Стерерь</Erase>
+	<Shuffle>Случайно воспроизведение</Shuffle>
+	<Repeat>Повтор</Repeat>
+	<OnlyNew>Убрать прослушанное</OnlyNew>
+	<ToSide>В под-список</ToSide>
+	<FromSide>Из под-списка</FromSide>
+	<ToVFolder>Сделать виртуальную папку</ToVFolder>
+    <Loop>Петля</Loop>
+    <BeatLock>Фиксировать темп</BeatLock>
+    <Sync>Синхронизировать</Sync>
+    <Sync4>4-ая доля</Sync4>
+    <Sync1>Один такт</Sync1>
+    <SyncHalf>Половина такта</SyncHalf>
+    <SyncQuarter>Четверть такта</SyncQuarter>
+    <AutoPlay>Авто-старт</AutoPlay>
+    <ReadOnly>Защищено от записи</ReadOnly>
+    <AbortDownload>Отменить закачку</AbortDownload>
+    <Download>Скачать</Download>
+    <Buy>Купить</Buy>
+  </ContextMenu>
+
+  <Filters>
+    <m3u>Список воспроизведения (*.m3u)\0*.m3u\0</m3u>
+    <wav>Файл Wav (*.wav)\0*.wav\0</wav>
+    <mp3>Файл MP3 (*.mp3)\0*.mp3\0</mp3>
+    <txt>Файл TХТ (*.txt)\0*.txt\0</txt>
+    <Plugin>Дополнение (*.dll)\0*.dll\0</Plugin>
+    <Playlist>Список воспроизведения\0*.m3u;*.pls\0</Playlist>
+    <wavmp3>Файл Wav (*.wav)\0*.wav\0MP3 File (*.mp3)\0*.mp3\0</wavmp3>
+    <bincue>Фаил оттиска CD (*.cue/*.bin)\0*.bin;*.cue\0</bincue>
+    <xml>Фаил XML (*.xml)\0*.xml\0</xml>
+    <Samples>Все сэмплы\0*.wav;*.mp3;*.wma;*.asf;*.cda;*.ogg;*.vdj\0VDJ сэмплы\0*.vdj\0</Samples>
+    <vdj>VDJ Циклы (*.vdj)\0*.vdj\0</vdj>
+    <Images>Все образы\0*.bmp;*.gif;*.jpg;*.png\0BMP файлы\0*.bmp\0GIF файлы\0*.gif\0JPG файлы\0*.jpg\0PNG файлы\0*.png\0</Images>
+  </Filters>
+
+  <BrowserTitles>
+    <LoadPlaylist>Загрузить список проигрывания</LoadPlaylist>
+    <SavePlaylist>Сохранить список проигрывания</SavePlaylist>
+    <RecordFile>Записать файл</RecordFile>
+    <SaveHistory>Сохранить историю</SaveHistory>
+    <RecordPlugin>Записать плагин</RecordPlugin>
+    <CopyTo>Выбрать куда копировать этот файл</CopyTo>
+    <MoveTo>Выбрать куда переместить этот файл</MoveTo>
+    <RipFile>Место назначение файла</RipFile>
+    <LoadShortcut>Загрузить настройки горячих клавиш</LoadShortcut>
+    <SaveShortcut>Сохранить настройки горячих клавиш</SaveShortcut>
+    <LoadSample>Загрузить сэмпл</LoadSample>
+    <SaveSample>Сохранить сэмпл</SaveSample>
+    <LoadImage>Загрузить образ</LoadImage>
+  </BrowserTitles>
+
+  <Windows>
+    <Default>
+      <OK>ОК</OK>
+      <Cancel>Отмена</Cancel>
+    </Default>
+    <EditBpmOnly>
+      <Title>Установить BPM</Title>
+      <OK>ОК</OK>
+      <Cancel>Отмена</Cancel>
+    </EditBpmOnly>
+    <EditComment>
+      <Title>Комментарии</Title>
+      <OK>ОК</OK>
+    </EditComment>
+    <EditFilename>
+      <Title>Имя файла</Title>
+      <OK>ОК</OK>
+    </EditFilename>
+    <ScanHD>
+      <Title>Авто-поиск MP3 файлов на жестком диске</Title>
+      <OK>ОК</OK>
+      <Label5>Осуществить расширенный анализ каждого файла</Label5>
+    </ScanHD>
+    <ScanCD>
+      <Title>Добавить MP3-диск в базу данных поиска</Title>
+      <OK>Сканировать</OK>
+      <Label1>Привод:</Label1>
+      <Label2>Имя</Label2>
+    </ScanCD>
+    <DeleteCD>
+      <Title>Удалить CD из базы данных поиска</Title>
+      <OK>Удалить</OK>
+    </DeleteCD>
+    <Serial>
+      <Title>Серийный номер</Title>
+      <Label1>Добро пожаловать в VirtualDJ\n\nПожалуйста, введите серийный номер, предоставляемый к вашему продукту.</Label1>
+      <OK>ОК</OK>
+    </Serial>
+    <ShortcutEdit>
+      <Title>Горячие клавиши</Title>
+      <OK>ОК</OK>
+      <Cancel>Отмена</Cancel>
+      <Label1>Величина=</Label1>
+      <Label2>Восстановить</Label2>
+      <Label3>Авто</Label3>
+      <Label4>Мгновенно</Label4>
+    </ShortcutEdit>
+    <RenameCue>
+      <Title>Имя метки</Title>
+      <OK>Установить</OK>
+    </RenameCue>
+    <Error>
+      <Title>Критическая ошибка</Title>
+      <OK>Восстановить</OK>
+      <Cancel>Выключение</Cancel>
+      <Label1>Критическая ошибка!\nVirtualDJ попытается автоматически восстановить работу.n\nНажмите "Восстановить" чтобы вернуться к работе.</Label1>
+    </Error>
+    <VScratch>
+      <Title>Виртуальный скретч</Title>
+      <OK>Активировать</OK>
+      <Label1>Веб-камера</Label1>
+      <Label2>Устройство</Label2>
+      <Label3>Источник...</Label3>
+      <Label4>Формат...</Label4>
+      <Label5>Справка</Label5>
+    </VScratch>
+    <VControl>
+      <Title>Управление винилом</Title>
+      <OK>Активировать</OK>
+      <Label1>Веб-камера</Label1>
+      <Label2>Устройство</Label2>
+      <Label3>Источник...</Label3>
+      <Label4>Формат...</Label4>
+      <Label5>Калибрировать</Label5>
+      <Label6>Справка</Label6>
+    </VControl>
+    <Settings>
+      <Title>Настройки</Title>
+      <OK>ОК</OK>
+      <Cancel>Отмена</Cancel>
+      <Label1>Применить</Label1>
+    </Settings>
+    <EditBpm>
+      <Title>Установить BPM</Title>
+      <OK>ОК</OK>
+      <Cancel>Отмена</Cancel>
+    </EditBpm>
+    <EditBpmGrid>
+      <Title>Редактировать решетку</Title>
+      <Label1>Якорь 1</Label1>
+      <Label2>Установить темп</Label2>
+      <Label3>Якорь 2</Label3>
+      <Label4>Установить темп</Label4>
+      <Label5>Межьякорьное расстояние</Label5>
+      <Label6>Темп</Label6>
+      <Label7>Ручной\nЗабить темп</Label7>
+    </EditBpmGrid>
+    <EditBpmBpm>
+      <Title>Редактировать BPM</Title>
+      <Label1>BPM</Label1>
+      <Label2>Фаза</Label2>
+      <Label3>Скопировать с\nдругого носителя</Label3>
+    </EditBpmBpm>
+    <EditBpmAutoMix>
+      <Title>Редактировать АвтоМикс</Title>
+      <Label1>Огибающая кроссфейда</Label1>
+      <Label2>Остановка сведения</Label2>
+      <Label3>Темп сведения</Label3>
+      <Label4>Установить\nместо входа</Label4>
+      <Label5>Установить\nместо выхода</Label5>
+      <Label6>Допустить</Label6>
+    </EditBpmAutoMix>
+    <EditXp10>
+      <Title>Конфигурация XP10</Title>
+      <OK>Установить</OK>
+      <Cancel>Отмена</Cancel>
+      <Label1>По умолчанию</Label1>
+      <Label2>Shift 1</Label2>
+      <Label3>Shift 2</Label3>
+      <Label4>Shift 1+2</Label4>
+    </EditXp10>
+    <Property>
+      <Title>Информация о файле</Title>
+    </Property>
+    <Rename>
+      <Title>Переименовать</Title>
+      <OK>ОК</OK>
+      <Cancel>Отмена</Cancel>
+      <Label1>Имя файла</Label1>
+      <Label2>Исполнитель</Label2>
+      <Label3>Название</Label3>
+    </Rename>
+  </Windows>
+
+  <Options>
+    <General>Общие</General>
+    <SoundCards>Звуковые карты</SoundCards>
+    <FAME>Настройки движка FAME</FAME>
+    <Skin>Скины</Skin>
+    <Shortcuts>Горячие клавиши</Shortcuts>
+    <Network>Сеть</Network>
+    <Remote>Дистанционное управление</Remote>
+    <Extensions>Расширения</Extensions>
+	<Codecs>Кодеки</Codecs>
+	<GlobalDatabase>Глобальная база данных</GlobalDatabase>
+    <Video>Видео</Video>
+    <Infos>Информация</Infos>
+  
+    <MultiUsers>Пользователи</MultiUsers>
+    <Security>Безопасность</Security>
+    <AutoUpdate>Авто-обновление</AutoUpdate>
+    <Charts>Чарты</Charts>
+    <ToolTip>Подсказки</ToolTip>
+    <MemoryLoad>Загрузка памяти</MemoryLoad>
+    <Reactivity>Рективность</Reactivity>
+    <ReadID3>Читать тэги ID3</ReadID3>
+    <WriteID3>Читать тэги VDJ</WriteID3>
+    <Scrolling>Прокручивание</Scrolling>
+    <RPM>Диск</RPM>
+    <PitchRange>Диапазон тона (питч)</PitchRange>
+  
+    <AutoPitch>Авто-BPM</AutoPitch>
+    <AutoLevel>Авто-усиление</AutoLevel>
+    <AutoReset>Авто-восстановление высоты тона</AutoReset>
+    <AutoEqReset>Автосброс эквалайзера</AutoEqReset>
+    <AutoCue>Автоматические метки</AutoCue>
+    <ForceFade>Форсировать фейд</ForceFade>
+    <FadeLength>Длительность фейда</FadeLength>
+    <Crossfader>Кроссфейдер</Crossfader>
+    <Limiter>Лимитер</Limiter>
+    <SoundQuality>Качество звука</SoundQuality>
+    <MasterTempo>Мастер-темп</MasterTempo>
+    <DisengageBeatlock>Отключить фиксацию темпа</DisengageBeatlock>
+    <BpmEngine>Движок BPM</BpmEngine>
+  
+    <Enabled>Включено</Enabled>
+    <Disabled>Выключено</Disabled>
+    <None>Никакой</None>
+    <Ask>Спрашивать</Ask>
+    <Always>Всегда</Always>
+    <Limited>Ограничено</Limited>
+    <5mn>5 мин</5mn>
+    <10mn>10 мин</10mn>
+    <15mn>15 мин</15mn>
+    <30mn>30 мин</30mn>
+    <Other>Другой</Other>
+    <Inverted>Инвертирован</Inverted>
+    <Normal>Нормальный</Normal>
+    <rpm33>33 об/мин</rpm33>
+    <rpm45>45 об/мин</rpm45>
+    <_8to8>-8% до +8%</_8to8>
+    <_12to12>-12% до +12%</_12to12>
+    <_34to34>-34% до +34%</_34to34>
+    <Smooth>Плавный</Smooth>
+    <Full>Полный</Full>
+    <Cut>Срезающий</Cut>
+    <User>Пользователь</User>
+    <ScratchCross>Скретч</ScratchCross>
+    <Manual>Ручной</Manual>
+    <OnLoad>При загрузке</OnLoad>
+    <OnSwitch>При переключении</OnSwitch>
+    <TechnoHipHop>техно/хип-хоп</TechnoHipHop>
+    <AnyMusic>Любой жанр</AnyMusic>
+	<Always0dB>Всегда 0dB</Always0dB>
+	<AlwaysMatch>Всегда подгонять</AlwaysMatch>
+    <Smart>Интеллектуально</Smart>
+    <Title>Название</Title>
+    <TitleComment>Название+Комментарий</TitleComment>
+    <Fast>Быстро</Fast>
+    <Medium>Средне</Medium>
+    <Slow>Медленно</Slow>
+    <HighQuality1>Высокое качество</HighQuality1>
+    <HighQuality2>Сумасшедшее</HighQuality2>
+    <HighQuality3>Безумное</HighQuality3>
+    <HighQuality4>Убойное</HighQuality4>
+	<Quality1>Нормальное</Quality1>
+	<Quality2>Высокое</Quality2>
+	<Quality3>Очень высокое</Quality3>
+  
+    <SoundCard1>Звуковая карта</SoundCard1>
+    <SoundCard2>Звуковая карта 2</SoundCard2>
+    <Software3D>Программное 3D</Software3D>
+    <Output71>Вывод 7.1</Output71>
+    <Invert>Инвертировать</Invert>
+    <DJCHelp>Возможно вам потребуется перевести режим DJConsole в "DJ mode" на панели конфигурации.</DJCHelp>
+	<ASIOConfig>Конфигурация среды ASIO...</ASIOConfig>
+	<TimecodeConfig>Конфигурация тайм-кода</TimecodeConfig>
+    <DJCUseHeadphones>Наушники в тыловом выходе 4.1 (полная настройка поддержки наушников - только в профессиональной версии)</DJCUseHeadphones>
+    <DJCMode1>Обычный режим</DJCMode1>
+    <DJCMode2>Режим микса\n(микшировать MP3 с внешними источниками)</DJCMode2>
+    <DJCMode3>Режим таймкода\n(необходим винил или CD с таймкодом)</DJCMode3>
+  
+    <Hercule>Hercules DJC</Hercule>
+    <DmcDac>DMC1/DAC2/DAC3</DmcDac>
+    <XP10>XP10</XP10>
+    <Midi>Midi</Midi>
+    <DVinyl>D-Vinyl2020</DVinyl>
+    <Webcam>Webcam</Webcam>
+    <VirtualScratch>Virtual Scratch (рукой)</VirtualScratch>
+    <WebcamVinyl>Webcam-vinyl</WebcamVinyl>
+    <iCDX>Numark iCDX</iCDX>
+	<DMX>DMX (SUIDI)</DMX>
+    <Enable>Включить</Enable>
+    <PitchVol>Инвертировать Тон/Звук</PitchVol>
+    <StickScratch>Использовать джойстик для скрэтча</StickScratch>
+    <JogScratch>Использовать джог-вертушку для скрэтча</JogScratch>
+    <Port>Порт:</Port>
+    <AutoDetect>Авто-Определение</AutoDetect>
+    <Swap>Обмен</Swap>
+    <Mapper>Назначение...</Mapper>
+    <MidiText>Используйте панель Горячие клавиши для настройки MIDI-оборудования</MidiText>
+    <ConfigButton>Конфигурация...</ConfigButton>
+    <Card>Карта:</Card>
+    <Channels>Каналы...</Channels>
+    <Programs>Программы...</Programs>
+  
+    <Add>Добавить...</Add>
+    <Change>Изменить...</Change>
+    <Delete>Удалить</Delete>
+    <Up>Вверх</Up>
+    <Down>Вниз</Down>
+    <Load>Загрузить...</Load>
+    <Save>Сохранить...</Save>
+    <Merge>Слить...</Merge>
+
+    <Decoders>Декодеры</Decoders>
+    <Scratch>Скретч</Scratch>
+    <LeftDeck>Левый проигрыватель :</LeftDeck>
+    <RightDeck>Правый проигрыватель :</RightDeck>
+    <Effects>Эффекты</Effects>
+    <DownloadEffects>Загрузить\nновые эффекты</DownloadEffects>
+    <GlobalDB>Глобальная база данных (Napster)</GlobalDB>
+    <NapsterLogin>Войти ...</NapsterLogin>
+    <NapsterAutoLogin>Автоматический вход</NapsterAutoLogin>
+    <NapsterOnlyFree>Показывать только бесплатные треки</NapsterOnlyFree>
+   	<NapsterHide>Скрыть от браузера</NapsterHide>
+
+    <OSCAddress>Адрес:</OSCAddress>
+    <OSCPort>Порт:</OSCPort>
+    <NoOSC>Отсутсвие синхронизации</NoOSC>
+    <OSCSend>Только посылать инфо синхорнизации</OSCSend>
+    <OSCReceive>Толко получать инфо синхорнизации</OSCReceive>
+    <OSCBoth>Полная синхронизация</OSCBoth>
+    <OSCHelp>Используйте адрес 127.0.0.1 только для подключения пользователей на этом же компьютере.\nИспользуйте другой IP адрес (или имя) для соединения двух машин.\nИспользуйте IP трансляции (225.0.0.0 до 239.255.255.255) для подключения множества машин.</OSCHelp>
+
+	<VideoOutput>Видеовыход</VideoOutput>
+	<VideoOptions>Установки</VideoOptions>
+	<VideoOther>Когда видео / караоке доступны</VideoOther>
+	<Activate>Активировать</Activate>
+	<TVOutput>Выход на TV</TVOutput>
+	<HardwareAcceleration>аппаратное ускорение</HardwareAcceleration>
+	<ShowSongTitle>Показывать название трека</ShowSongTitle>
+	<LinkedCrossfaders>Связанные слайдеры</LinkedCrossfaders>
+	<DecodeHidden>Декодировать пока скрыт</DecodeHidden>
+	<ActivateOnLoad>Активировать при загрузке</ActivateOnLoad>
+	<VideoBlack>Черный экран</VideoBlack>
+	<VideoBitmap>Показывать картинку :</VideoBitmap>
+	<VideoVisual>Показывать видео-плагин :</VideoVisual>
+	<VideoSlideshow>Слайд-шоу</VideoSlideshow>
+	<Seconds>сек.</Seconds>
+
+    <AdvancedConfig>Расширенная конфигурация...</AdvancedConfig>
+    <ChannelCol>Канал</ChannelCol>
+    <SoundCardCol>Звуковая карта</SoundCardCol>
+    <OutputCol>Выход</OutputCol>
+    <LeftDeckLine>Левый проигрыватель</LeftDeckLine>
+    <RightDeckLine>Правый проигрыватель</RightDeckLine>
+    <HeadphonesLine>Наушники</HeadphonesLine>
+    <AllSamplesLine>Все сэмплы</AllSamplesLine>
+    <SampleLine>Сэмпл %i</SampleLine>
+    <PreviewLine>Предварительный просмотр</PreviewLine>
+    <OutputInvalid>Недоступно\0</OutputInvalid>
+    <OutputNone>-- Никакой --\0</OutputNone>
+    <OutputSame>-- Такой-же --\0</OutputSame>
+    <ChannelsMono>Моно выход\0</ChannelsMono>
+    <ChannelsStereo>Левый\0Правый\0</ChannelsStereo>
+    <ChannelsQuad>Передний левый\0Передний правый\0Задний левый\0Задний правый\0</ChannelsQuad>
+    <ChannelsSurround>Передний левый\0Передний правый\0Задний левый\0Задний правый\0Центральный\0</ChannelsSurround>
+    <Channels5point1>Передний левый\0Передний правый\0Центральный\0Басовый\0Задний левый\0Задний правый\0</Channels5point1>
+    <Channels7point1>Передний левый\0Передний правый\0Центральный\0Басовый\0Задний левый\0Задний правый\0Левый\0Правый\0</Channels7point1>
+    <ChannelsDirectOut>Канал 1\0Канал 2\0Канал 3\0Канал 4\0Канал 5\0Канал 6\0Канал 7\0Канал 8\0Канал 9\0Канал 10\0Канал 11\0Канал 12\0</ChannelsDirectOut>
+  
+    <Website>Посетить веб-сайт</Website>
+    <History>Сохранить историю</History>
+  </Options>
+
+  <ToolTips>
+    <Close>Закрыть</Close>
+    <Minimize>Свернуть</Minimize>
+    <Maximize>Во весь экран</Maximize>
+    <Play>Старт</Play>
+    <Pause>Пауза</Pause>
+    <Play_Pause>Старт/Пауза</Play_Pause>
+    <Stop>Стоп</Stop>
+    <Stop value="auto">К первому такту</Stop>
+    <Sync>Синхронизировать</Sync>
+    <Cue_Stop>Метка/Остановка</Cue_Stop>
+    <BeatLock notvalue="auto temporary">Зафиксировать темп</BeatLock>
+    <BeatLock value="auto">Синхронизировать</BeatLock>
+    <BeatLock value="temporary" notvalue="auto">Волшебный BeatMatch</BeatLock>
+    <Mix notvalue="auto">Автомикс</Mix>
+    <Mix value="auto">Вкл/выкл автоматическое сведение</Mix>
+    <Edit_Bpm>Установить темп вручную</Edit_Bpm>
+    <Edit_Comment>Добавить комментарии к дорожке</Edit_Comment>
+    <Select>Включить наушники и активировать сокращения</Select>
+    <master_volume>Громкость мастер-выхода</master_volume>
+    <headphone_volume>Громкость в наушниках</headphone_volume>
+    <headphone_mix>Микс в наушниках</headphone_mix>
+    <headphone_crossfader>Кроссфейдер наушников</headphone_crossfader>
+    <Pitch notvalue="auto">Высота тона / темп</Pitch>
+    <Pitch value="auto">Автоматически подстроить темп</Pitch>
+    <Pitch_Reset>Восстановить высоту тона</Pitch_Reset>
+    <Crossfader>Кроссфейдер</Crossfader>
+    <Level>Уровень</Level>
+    <Gain notvalue="auto">Усиление</Gain>
+    <Gain value="auto">Автоматическая регулировка уровня</Gain>
+    <Bass>Низкие частоты</Bass>
+    <Kill_Bass>Убрать низкие частоты</Kill_Bass>
+    <BassFader>Слайдер низких частот</BassFader>
+    <Medium>Средние частоты</Medium>
+    <Kill_Medium>Убрать средние частоты</Kill_Medium>
+    <MediumFader>Слайдер средних частот</MediumFader>
+    <High>Высокие частоты</High>
+    <Kill_High>Убрать высокие частоты</Kill_High>
+    <HighFader>Слайдер высоких частот</HighFader>
+    <Eq_Reset>Восстановить эквалайзер</Eq_Reset>
+    <Menu value="0">Аудио файлы</Menu>
+    <Menu value="1">Сэмплы</Menu>
+    <Menu value="2">Эффекты</Menu>
+    <Menu value="3">Запись</Menu>
+    <Show_Pannel value="41">Показывать команды ремикса</Show_Pannel>
+    <Show_Pannel value="42">Показывать панель меток</Show_Pannel>
+    <Show_Pannel value="43">Показывать панель эквалайзера</Show_Pannel>
+    <Settings>Настройки</Settings>
+    <Loop value="reset">Выйти из цикла</Loop>
+    <Loop value="0" notvalue="+">Автоматический бесшовный цикл</Loop>
+    <Loop value="25" notvalue="+">Цикл из 1/4 такта</Loop>
+    <Loop value="50" notvalue="+">Цикл из 1/2 такта</Loop>
+    <Loop value="1">Цикл из 1 такта</Loop>
+    <Loop value="2">Цикл из 2 тактов</Loop>
+    <Loop value="4">Цикл из 4 тактов</Loop>
+    <Loop value="8">Цикл из 8 тактов</Loop>
+    <Loop value="16">Цикл из 16 тактов</Loop>
+    <Loop value="32">Цикл из 32 тактов</Loop>
+    <Loop value="64">Цикл из 64 тактов</Loop>
+    <Loop value="-1" notvalue="reset">Уменьшить длину цикла</Loop>
+    <Loop value="+1" notvalue="reset">Увеличить длину цикла</Loop>
+    <Loop_Move value="auto">Установить место ввода в цикл</Loop_Move>
+    <Loop_In>Установить место ввода в цикл</Loop_In>
+    <Loop_Out>Установить место вывода из цикла</Loop_Out>
+    <Loop_Length>Установить место вывода из цикла</Loop_Length>
+    <Loop_Move notvalue="auto">Сместить цикл</Loop_Move>
+    <Loop_In notvalue="auto">Передвинуть точку начала цикла</Loop_In>
+    <Loop_Out notvalue="auto">Передвинуть точку конца цикла</Loop_Out>
+    <Loop_Length notvalue="auto">Изменить длину цикла</Loop_Length>
+    <Loop_Shift>Сместить цикл на определенное количество тактов</Loop_Shift>
+    <Beat_Juggle>Beat Juggling</Beat_Juggle>
+    <Beat_Juggle value="1">Beat Juggling</Beat_Juggle>
+    <Skip_Beat value="-64">Назад на 64 такта</Skip_Beat>
+    <Skip_Beat value="-32">Назад на 32 такта</Skip_Beat>
+    <Skip_Beat value="-16">Назад на 16 такта</Skip_Beat>
+    <Skip_Beat value="-8">Назад на 8 такта</Skip_Beat>
+    <Skip_Beat value="-4">Назад на 4 такта</Skip_Beat>
+    <Skip_Beat value="-2">Назад на 2 такта</Skip_Beat>
+    <Skip_Beat value="-1">Назад на 1 такт</Skip_Beat>
+    <Skip_Beat value="1">Вперед на 1 такт</Skip_Beat>
+    <Skip_Beat value="2">Вперед на 2 такта</Skip_Beat>
+    <Skip_Beat value="4">Вперед на 4 такта</Skip_Beat>
+    <Skip_Beat value="8">Вперед на 8 такта</Skip_Beat>
+    <Skip_Beat value="16">Вперед на 16 такта</Skip_Beat>
+    <Skip_Beat value="32">Вперед на 32 такта</Skip_Beat>
+    <Skip_Beat value="64">Вперед на 64 такта</Skip_Beat>
+    <Effect value="1">Эффект 1</Effect>
+    <Effect value="2">Эффект 2</Effect>
+    <Effect value="3">Эффект 3</Effect>
+    <Sample value="1">Сэмпл 1</Sample>
+    <Sample value="2">Сэмпл 2</Sample>
+    <Sample value="3">Сэмпл 3</Sample>
+    <Sample value="4">Сэмпл 4</Sample>
+    <Sample value="5">Сэмпл 5</Sample>
+    <Sample value="6">Сэмпл 6</Sample>
+    <Sample value="7">Сэмпл 7</Sample>
+    <Sample value="8">Сэмпл 8</Sample>
+    <Sample value="9">Сэмпл 9</Sample>
+    <Sample value="10">Сэмпл 10</Sample>
+    <Sample value="11">Сэмпл 11</Sample>
+    <Sample value="12">Сэмпл 12</Sample>
+    <Set_Cue>Сохранить данную позицию как метка 1</Set_Cue>
+    <Set_Cue value="1">Сохранить данную позицию как метка 1</Set_Cue>
+    <Set_Cue value="2">Сохранить данную позицию как метка 2</Set_Cue>
+    <Set_Cue value="3">Сохранить данную позицию как метка 3</Set_Cue>
+    <Set_Cue value="4">Сохранить данную позицию как метка 4</Set_Cue>
+    <Set_Cue value="5">Сохранить данную позицию как метка 5</Set_Cue>
+    <Goto_Cue>Перейти к метке 1</Goto_Cue>
+    <Goto_Cue value="1">Перейти к метке 1</Goto_Cue>
+    <Goto_Cue value="2">Перейти к метке 2</Goto_Cue>
+    <Goto_Cue value="3">Перейти к метке 3</Goto_Cue>
+    <Goto_Cue value="4">Перейти к метке 4</Goto_Cue>
+    <Goto_Cue value="5">Перейти к метке 5</Goto_Cue>
+    <Song_Pos>Позиция на дорожке</Song_Pos>
+    <Scratch>Скрэтч</Scratch>
+    <Scratch value="auto">Автоматический подгон такта</Scratch>
+    <Hold>Остановка диска</Hold>
+    
+    <lock_pannel value="0">Блокировать панель</lock_pannel>
+    <lock_pannel value="1">Блокировать панель</lock_pannel>
+    <favorite_folder>Установить корневые каталоги</favorite_folder>
+    <add_virtualfolder>Добавить новую виртуальную папку</add_virtualfolder>
+    <playlist_options>Управление плей-листом</playlist_options>
+    <load_fromplaylist>Загрузить на следующий проигрыватель</load_fromplaylist>
+    <automix>Вкл/Выкл автоматическое сведение</automix>
+    <randomize>Случайное воспроизведение</randomize>
+    <onlynew>Только новые песни</onlynew>
+    <repeat_playlist>Повтор списка проигрывания</repeat_playlist>
+    <load_playlist>Загрузить список проигрывания</load_playlist>
+    <save_playlist>Сохранить список проигрывания</save_playlist>
+    <free_playlist>Освободить список проигрывания</free_playlist>
+    <working_playlist>Переместить список проигрывания в список файлов</working_playlist>
+    <record>Начать запись</record>
+    <record_cut>Прекратить и переместится на другую дорожку</record_cut>
+    <load_sample value="1">Загрузить сэмпл</load_sample>
+    <load_sample value="2">Загрузить сэмпл</load_sample>
+    <load_sample value="3">Загрузить сэмпл</load_sample>
+    <load_sample value="4">Загрузить сэмпл</load_sample>
+    <load_sample value="5">Загрузить сэмпл</load_sample>
+    <load_sample value="6">Загрузить сэмпл</load_sample>
+    <load_sample value="7">Загрузить сэмпл</load_sample>
+    <load_sample value="8">Загрузить сэмпл</load_sample>
+    <load_sample value="9">Загрузить сэмпл</load_sample>
+    <load_sample value="10">Загрузить сэмпл</load_sample>
+    <load_sample value="11">Загрузить сэмпл</load_sample>
+    <load_sample value="12">Загрузить сэмпл</load_sample>
+    <sample_rec_jingle value="1">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="2">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="3">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="4">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="5">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="6">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="7">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="8">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="9">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="10">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="11">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_jingle value="12">Записать сэмпл в обычном режиме</sample_rec_jingle>
+    <sample_rec_loop value="1">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="2">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="3">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="4">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="5">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="6">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="7">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="8">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="9">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="10">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="11">Записать сэмпл в режиме петли</sample_rec_loop>
+    <sample_rec_loop value="12">Записать сэмпл в режиме петли</sample_rec_loop>
+    <save_sample value="1">Сохранить сэмпл</save_sample>
+    <save_sample value="2">Сохранить сэмпл</save_sample>
+    <save_sample value="3">Сохранить сэмпл</save_sample>
+    <save_sample value="4">Сохранить сэмпл</save_sample>
+    <save_sample value="5">Сохранить сэмпл</save_sample>
+    <save_sample value="6">Сохранить сэмпл</save_sample>
+    <save_sample value="7">Сохранить сэмпл</save_sample>
+    <save_sample value="8">Сохранить сэмпл</save_sample>
+    <save_sample value="9">Сохранить сэмпл</save_sample>
+    <save_sample value="10">Сохранить сэмпл</save_sample>
+    <save_sample value="11">Сохранить сэмпл</save_sample>
+    <save_sample value="12">Сохранить сэмпл</save_sample>
+    <sample_options value="1">Параметры сэмпла</sample_options>
+    <sample_options value="2">Параметры сэмпла</sample_options>
+    <sample_options value="3">Параметры сэмпла</sample_options>
+    <sample_options value="4">Параметры сэмпла</sample_options>
+    <sample_options value="5">Параметры сэмпла</sample_options>
+    <sample_options value="6">Параметры сэмпла</sample_options>
+    <sample_options value="7">Параметры сэмпла</sample_options>
+    <sample_options value="8">Параметры сэмпла</sample_options>
+    <sample_options value="9">Параметры сэмпла</sample_options>
+    <sample_options value="10">Параметры сэмпла</sample_options>
+    <sample_options value="11">Параметры сэмпла</sample_options>
+    <sample_options value="12">Параметры сэмпла</sample_options>
+    <sample_volume_1>Громкость сэмпла</sample_volume_1>
+    <sample_volume_2>Громкость сэмпла</sample_volume_2>
+    <sample_volume_3>Громкость сэмпла</sample_volume_3>
+    <sample_volume_4>Громкость сэмпла</sample_volume_4>
+    <sample_volume_5>Громкость сэмпла</sample_volume_5>
+    <sample_volume_6>Громкость сэмпла</sample_volume_6>
+    <sample_volume_7>Громкость сэмпла</sample_volume_7>
+    <sample_volume_8>Громкость сэмпла</sample_volume_8>
+    <sample_volume_9>Громкость сэмпла</sample_volume_9>
+    <sample_volume_10>Громкость сэмпла</sample_volume_10>
+    <sample_volume_11>Громкость сэмпла</sample_volume_11>
+    <sample_volume_12>Громкость сэмпла</sample_volume_12>
+	<video_transition value="0">Использовать эффект 'Затухание'</video_transition>
+	<video_transition value="1">Использовать эффект 'Окно'</video_transition>
+	<video_transition value="2">Использовать эффект 'Спутник'</video_transition>
+	<video_transition value="3">Использовать эффект 'куб'</video_transition>
+	<video_text>Добавить текст в окно Видео</video_text>
+	<video_crossfade value="auto">Связать слайдеры видео и аудио</video_crossfade>
+	<video_crossfade notvalue="auto">Кроссфейд из одного окна видео в другое</video_crossfade>
+  </ToolTips>
+  
+</language>

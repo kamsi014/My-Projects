@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualDJ_Database Version="700">
+ <FilterFolder Name="Most Played" Filter="top 50 nbplay" />
+ <FilterFolder Name="Recently Added" Filter="top 50 firstseen" />
+ <FilterFolder Name="Compatible Songs" Filter="bpmdiff&lt;=4 and keydiff=0" />
+ <FavoriteFolder Name="Videos" FolderPath="C:\Users\HP\Videos" />
+ <FavoriteFolder Name="Musics" FolderPath="C:\Users\HP\Music" />
+</VirtualDJ_Database>

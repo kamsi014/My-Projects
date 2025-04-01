@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language lang="English" author="Atomix Productions" version="7.0">
+
+  <Errors>
+    <Explorer>Error in the Windows Explorer</Explorer>
+    <Desktop>Impossible to find the desktop</Desktop>
+    <GDI>Error in the video driver</GDI>
+    <Sound>Error in the sound driver</Sound>
+    <DirectSound>Error in the sound driver (DirectX/WDM): Your soundcard is probably not connected, or the settings are incorrect.</DirectSound>
+    <DirectSoundUsed>The sound card is already used by another application</DirectSoundUsed>
+    <DirectSoundMemory>Error in the sound card driver: not enough memory</DirectSoundMemory>
+    <CoreAudio>Error in the sound driver of CoreAudio: Your soundcard is probably not connected, or the settings are incorrect.</CoreAudio>
+    <FixDB>The database on drive %c: is corrupted.\nGo to Config/Browser and click Fix to fix the %c: database.</FixDB>
+    <Skin>Invalid skin file (error line %i in the xml)</Skin>
+    <WDMError>Impossible to init the WDM sound driver. Please check that you have a proper WDM (and not VxD) driver installed, with quad-output functions\n(Please note that Win95 and Win98osr1 do not support WDM drivers)</WDMError>
+    <QueryClose>The music is still playing!\nAre you sure you want to quit VirtualDJ?</QueryClose>
+    <Security>A song is playing on this deck.\nAre you sure you want to stop it?</Security>
+    <DemoLimit2>This is only a trial version of VirtualDJ.\nPlease visit our website http://www.virtualdj.com/ to order the full version</DemoLimit2>
+    <SerialError>Protection error %i. Please contact us on http://www.virtualdj.com/contact/ </SerialError>
+    <InvalidSerial>Invalid serial number</InvalidSerial>
+    <BadCDRip>The CD is unreadable.\nMaybe you should try to clean it.</BadCDRip>
+    <Controller>The controller has not been detected.\nPlease plug in the controller and start VirtualDJ again.</Controller>
+    <Video>Camera initialization failed!</Video>
+    <VideoError>Error in the video driver</VideoError>
+    <AsioError>Error in the ASIO sound driver: Your soundcard is probably not connected, or the settings are incorrect.</AsioError>
+    <AsioChanError>Error in the ASIO sound driver: Not enough channels</AsioChanError>
+    <RewireError>Error in the ReWire connection. Make sure your ReWire source is open and running.</RewireError>
+    <TimecodeSignalError>No timecode signal found.\nPlease play a timecoded vinyl on the turntable and try again.\nIf it's still not working, check your cables, and the volumes of your soundcard.</TimecodeSignalError>
+    <Direct3DError>Invalid version of DirectX.\nPlease install at least DirectX v9.0c.\nYou can download it for free from Microsoft website:\nhttp://www.microsoft.com/directx</Direct3DError>
+    <DJCDemoLimit>The timecode support is a feature only available in the 'Professional' version of VirtualDJ.\nThe 'DJConsole Edition' version provided with your DJConsole will only let you test it for 5 minutes.\n\nIf you want to upgrade to the Pro version, please visit our website:\nhttp://www.virtualdj.com/</DJCDemoLimit>
+    <VideoLimit>Sorry, full-screen video support is only available in the professional version of VirtualDJ.\n\nIf you want to upgrade to the Pro version, please visit our website:\nhttp://www.virtualdj.com/</VideoLimit>
+    <DRMRecord>One of the file you are currently playing is protected with a DRM protection.\nThus, it is forbidden to record or burn it.</DRMRecord>
+    <SkinSize>Warning!\nThe skin you are trying to use has a higher resolution than your screen</SkinSize>
+    <ShortcutExists>This shortcut is already assigned.\n\nClick Yes to add the new shortcut and build up macros.\nClick No to replace the previous shortcut.</ShortcutExists>
+    <DBFull>The drive %c: is full.</DBFull>
+    <ThreadBlocked>Warning!\nThe system was unresponsive (%s).\nVirtualDJ has performed a recovery, and should now work ok again.\nStill, you might want to restart the software next time it's convenient for you to do so.</ThreadBlocked>
+	  <NetSearchCacheUnavailable>This feature is not available on this computer.</NetSearchCacheUnavailable>
+	  <NetSearchCacheError>This cache file has expired. Please connect to the Internet to revalidate it.</NetSearchCacheError>
+	  <NetSearchBadDate>The date on your computer is incorrectly set. Please fix it before using NetSearch</NetSearchBadDate>
+	  <HerculesDrivers>You have old Hercules drivers.\nYou will need to download and install the latest drivers to use your Hercules unit.\nDo you want to download it now?</HerculesDrivers>
+    <MemoryError>Decompressing this file in memory would require %iMb of contiguous memory.\nYour system has only a total of %iMb available free segments (out of the %iMb), and they are too fragmented to hold a contiguous buffer.\n\nTherefore, the song will be loaded on-the-fly from the drive (and the full waveform preview will not be available).</MemoryError>
+    <AdvancedConfig>Invalid Advanced Audio Configuration</AdvancedConfig>
+    <CloseRewire>You must close all ReWire slave applications before closing VirtualDJ.\nPlease close the ReWire slave applications now, then press OK.</CloseRewire>
+    <BadiTunesLocation>There is not iTunes library at this location</BadiTunesLocation>
+  </Errors>
+
+  <Others>
+    <Search>Search: </Search>
+    <Empty>(Empty)</Empty>
+    <LameHelp>Please select an encoder plugin to record in mp3.\n\nIf you need help with this feature, please visit our website.</LameHelp>
+    <VScratchHelp>Welcome in Virtual-Scratch.\nYou will need a webcam or a video camera to use this feature.\nOnce the camera is plugged, pass your hand over the red line to scratch.</VScratchHelp>
+    <VControlHelp>Welcome in Vinyl-Control.\nYou will need a webcam or a video camera to use this feature.\nPlace the camera to see the center of your vinyl, then let your turntable turn at 45RPM and press CALIBRATE.\nOnce calibrated, use your vinyl as usual, and VirtualDJ will follow.</VControlHelp>
+    <DragToStart>Drag a song on this deck to load it</DragToStart>
+    <FadeEntryPoint>Fade Entry Point</FadeEntryPoint>
+    <FadeExitPoint>Fade Exit Point</FadeExitPoint>
+    <CutEntryPoint>Cut Entry Point</CutEntryPoint>
+    <CutExitPoint>Cut Exit Point</CutExitPoint>
+    <TempoEntryPoint>Tempo Entry Point</TempoEntryPoint>
+    <TempoExitPoint>Tempo Exit Point</TempoExitPoint>
+    <AutoMixPoint>AutoMix Point</AutoMixPoint>
+    <FirstAnchor>First Anchor</FirstAnchor>
+    <LastAnchor>Last Anchor</LastAnchor>
+    <AutoUpdate>VirtualDJ will now try to connect to the internet and check if a new version is available.\n\nYou can disable this behavior in the CONFIG menu at any time.</AutoUpdate>
+    <SearchCount>Number of matches found</SearchCount>
+    <MusicGroupsFeed>Suggestion from your MusicGroups feed</MusicGroupsFeed>
+	<OverwritePrompt>This file already exists.\nDo you want to overwrite?</OverwritePrompt>
+    <NoDelete>You can't delete a file that is actually playing</NoDelete>
+    <DJCHeadphonesHelp>If you want to listen to a song into your headphones, press and hold the button with the headphone logo on your DJConsole</DJCHeadphonesHelp>
+    <DateAgo>%ih ago</DateAgo>
+	<MinutesAgo>%imn ago</MinutesAgo>
+	<RecordFile>RECORD AUDIO</RecordFile>
+	<BurnCD>BURN CD</BurnCD>
+	<Broadcast>BROADCAST</Broadcast>
+	<RecordMovie>RECORD VIDEO</RecordMovie>
+	<InitTagEngine>Initializing tag engine...</InitTagEngine>
+	<InitDatabase>Loading database...</InitDatabase>
+	<InitITunes>Loading iTunes database...</InitITunes>
+	<InitMappers>Loading mappers...</InitMappers>
+	<InitInternet>Initializing network engine...</InitInternet>
+	<InitPluginEngine>Initializing plugin engine...</InitPluginEngine>
+	<InitSoundEngine>Initializing sound engine...</InitSoundEngine>
+	<InitSkinEngine>Loading skin...</InitSkinEngine>
+	<InitGrafxEngine>Initializing graphic engine...</InitGrafxEngine>
+	<InitPlugins>Loading plugins...</InitPlugins>
+	<InitActionEngine>Initializing action engine...</InitActionEngine>
+	<InitControllers>Initializing external devices...</InitControllers>
+	<InitEnd>Finalizing initialisation...</InitEnd>
+	<FactoryMapper>Are you sure you want to revert this mapper to factory settings?</FactoryMapper>
+	<NoFactoryMapper>There are no default settings for this device. Do you want to erase it anyway?</NoFactoryMapper>
+	<ConfirmDelete>Are you sure you want to delete this?</ConfirmDelete>
+	<HomeBroadcast>Broadcast is a feature available only in the paid versions of VirtualDJ.\nPlease see www.virtualdj.com for more information about our product line and upgrade prices.\n\n(your broadcast will continue, but only for 10 minutes)</HomeBroadcast>
+  <HomeAudio>Complex audio configuration is a feature available only in VirtualDJ BASIC or VirtualDJ PRO.\nPlease see www.virtualdj.com for more information about our product line and upgrade prices.\n\n(your audio configuration will still be used, but only for 10 minutes)</HomeAudio>
+	<HomeDevice>An external DJ Controller has been detected.\nExternal DJ Controller support is a feature available only in VirtualDJ PRO.\nPlease see www.virtualdj.com for more information about our product line and upgrade prices.\n\n(your controller will still work, but only for 10 minutes)</HomeDevice>
+	<HomeVideo>Fullscreen video output is a feature available only in VirtualDJ PRO.\nPlease see www.virtualdj.com for more information about our product line and upgrade prices.\n\n(your video will still output in fullscreen, but only for 10 minutes)</HomeVideo>
+  </Others>
+
+  <Columns>
+    <Icon>Icon</Icon>
+    <Title>Title</Title>
+    <Author>Artist</Author>
+    <Album>Album</Album>
+    <Genre>Genre</Genre>
+    <Bpm>Bpm</Bpm>
+    <Key>Key</Key>
+    <Length>Length</Length>
+    <Bitrate>Bitrate</Bitrate>
+    <Year>Year</Year>
+    <Comment>Comment</Comment>
+    <PlayCount>Play count</PlayCount>
+    <FirstSeen>First seen</FirstSeen>
+    <FirstPlay>First play</FirstPlay>
+    <LastPlay>Last play</LastPlay>
+    <Drive>Drive</Drive>
+    <Filepath>Filepath</Filepath>
+    <Filename>Filename</Filename>
+    <Filetype>Filetype</Filetype>
+    <Filesize>Filesize</Filesize>
+    <Filedate>Filedate</Filedate>
+    <LinkedVideo>LinkedVideo</LinkedVideo>
+    <KeyNumeric>Key(Numeric)</KeyNumeric>
+    <Composer>Composer</Composer>
+    <BpmCompat>Bpm Diff</BpmCompat>
+    <KeyCompat>Key Diff</KeyCompat>
+    <Stars>Rating</Stars>
+    <User1>Field1</User1>
+    <User2>Field2</User2>
+    <LoadedOn>Loaded On</LoadedOn>
+  </Columns>
+
+  <Search>
+    <Title>Title</Title>
+    <Author>Artist</Author>
+    <FilePath>FilePath</FilePath>
+    <FileName>FileName</FileName>
+    <Comment>Comment</Comment>
+    <Album>Album</Album>
+    <Genre>Genre</Genre>
+    <Year>Year</Year>
+    <Bpm>Bpm</Bpm>
+    <Key>Key</Key>
+    <LinkedVideo>LinkedVideo</LinkedVideo>
+    <Composer>Composer</Composer>
+    <User1>Field1</User1>
+    <User2>Field2</User2>
+  </Search>
+
+  <Filters>
+    <wav>Wav File (*.wav)\0*.wav\0</wav>
+    <mp3>MP3 File (*.mp3)\0*.mp3\0</mp3>
+    <Plugin>Plugins (*.dll)\0*.dll\0</Plugin>
+    <wavmp3>Wave File (*.wav)\0*.wav\0MP3 File (*.mp3)\0*.mp3\0</wavmp3>
+    <bincue>CD Burn File (*.cue/*.bin)\0*.bin;*.cue\0</bincue>
+    <xml>XML File (*.xml)\0*.xml\0</xml>
+    <Samples>All Samples\0*.wav;*.mp3;*.wma;*.asf;*.cda;*.ogg;*.vdj\0VDJ Samples\0*.vdj\0</Samples>
+    <vdj>VDJ Loops (*.vdj)\0*.vdj\0</vdj>
+	<avi>Video File (*.avi)\0*.avi\0</avi>
+	<mov>Video File (*.mov)\0*.mov\0</mov>
+    <skin>Skin File (*.zip)\0*.zip\0</skin>
+  </Filters>
+
+  <BrowserTitles>
+    <RecordFile>Record File</RecordFile>
+    <CopyTo>Select where to copy this file</CopyTo>
+    <MoveTo>Select where to move this file</MoveTo>
+    <RecordPlugin>Record Plugin</RecordPlugin>
+    <RipFile>Destination File</RipFile>
+    <LoadSample>Load Sample</LoadSample>
+    <SaveSample>Save Sample</SaveSample>
+    <LoadSkin>Load Skin</LoadSkin>
+  </BrowserTitles>
+
+  <Windows>
+    <Default><OK>Yes</OK><Cancel>No</Cancel></Default>
+    <EditBpmOnly><Title>Edit BPM</Title><OK>OK</OK><Cancel>Cancel</Cancel></EditBpmOnly>
+    <EditComment><Title>Comment</Title><OK>OK</OK></EditComment>
+    <Serial><Title>Serial Number</Title><Label1>Welcome to VirtualDJ\n\nPlease enter the Serial Number provided with your product.</Label1><OK>OK</OK></Serial>
+    <ShortcutEdit><Title>Shortcut</Title><OK>OK</OK><Cancel>Cancel</Cancel><Label1>Value=</Label1><Label2>Reset</Label2><Label3>Auto</Label3><Label4>Momentarily</Label4></ShortcutEdit>
+    <EditFilename><Title>Filename</Title><OK>OK</OK></EditFilename>
+    <RenameCue><Title>Cue Name</Title><OK>OK</OK></RenameCue>
+    <Error><Title>Crash Guard</Title><OK>Recover</OK><Cancel>Shutdown</Cancel><Label1>A fatal error has occurred !\nVirtualDJ can try to automatically recover from the crash.\n\nJust click on "Recover" and everything should be fine.</Label1><Label2>Send report</Label2></Error>
+    <VScratch><Title>Virtual-Scratch</Title><OK>Active</OK><Label1>WebCam</Label1><Label2>Device</Label2><Label3>Source...</Label3><Label4>Format...</Label4><Label5>Help</Label5></VScratch>
+    <VControl><Title>Vinyl-Control</Title><OK>Active</OK><Label1>WebCam</Label1><Label2>Device</Label2><Label3>Source...</Label3><Label4>Format...</Label4><Label5>Calibrate</Label5><Label6>Help</Label6></VControl>
+    <Settings><Title>Settings</Title><OK>OK</OK><Cancel>Cancel</Cancel><Label1>Apply</Label1></Settings>
+    <EditBpm><Title>Adjust BPM Values</Title><OK>OK</OK><Cancel>Cancel</Cancel></EditBpm>
+    <EditBpmGrid><Title>Edit Grid</Title><Label1>Anchor 1</Label1><Label2>Set Beat</Label2><Label3>Anchor 2</Label3><Label4>Set Beat</Label4><Label5>Anchors distance</Label5><Label6>beats</Label6><Label7>Manual\nBeat Tap</Label7></EditBpmGrid>
+    <EditBpmBpm><Title>Edit Bpm</Title><Label1>Bpm</Label1><Label2>Phase</Label2><Label3>Copy from\nOther deck</Label3><Label4>Re-Analyze</Label4></EditBpmBpm>
+    <EditBpmAutoMix><Title>Edit AutoMix</Title><Label1>Mix Fade</Label1><Label2>Mix Cut</Label2><Label3>Mix Tempo</Label3><Label4>Set Entry\nPoint</Label4><Label5>Set Exit\nPoint</Label5><Label6>Allow</Label6></EditBpmAutoMix>
+    <EditFilter><Title>Filter</Title><OK>OK</OK><Cancel>Cancel</Cancel><Label1>Name:</Label1><Label2>Filter:</Label2><Label3>Syntax error: %s</Label3><Label4>Examples of common filters:\n- top 20 nbplay\n- days since lastplay&lt;31\n- bpmdiff&lt;=2 and keydiff=0\n- isscanned=0\n- top 20 nbplay and hascover=1 and (type=video or type=karaoke)\n- year&gt;=1980 and year&lt;1990\n- filepath starts with "c:\mp3\80s" or filepath starts with "d:\musics\eighties"</Label4></EditFilter>
+	<Address><Title>Zipcode or Address</Title><OK>Go...</OK></Address>
+  </Windows>
+
+  <ContextMenu>
+    <FileInfos>File Infos</FileInfos>
+    <Batch>Batch</Batch>
+    <LoadTitle>Title from tag</LoadTitle>
+    <ParseTitle>Title from filename</ParseTitle>
+    <ReloadTag>Reload tag</ReloadTag>
+    <LoadComment>Comment from tag</LoadComment>
+    <EraseComment>Erase comment</EraseComment>
+    <BPM>BPM</BPM>
+    <ReAnalyze>Re-Analyze</ReAnalyze>
+    <ManualBPM>Manual Edit</ManualBPM>
+    <FilesOp>File operations</FilesOp>
+    <Rename>Rename</Rename>
+    <Delete>Delete</Delete>
+    <MoveTo>Move to</MoveTo>
+    <CopyTo>Copy to</CopyTo>
+	<CreateSub>Create Sub-Folder</CreateSub>
+    <OpenExplorer>Open in Explorer</OpenExplorer>
+    <OpenFinder>Open in Finder</OpenFinder>
+    <Rip>Convert to WAV/MP3</Rip>
+	<Remove>Remove</Remove>
+    <SearchDB>Search DB</SearchDB>
+    <AddSearchDB>Add to search DB</AddSearchDB>
+    <RemoveSearchDB>Remove from search DB</RemoveSearchDB>
+    <CleanSearchDB>Clean search DB</CleanSearchDB>
+    <Unflag>Remove played flag</Unflag>
+    <GotoFolder>Go to folder</GotoFolder>
+	<RemoveVideoLink>Remove video link</RemoveVideoLink>
+    <Recommendations>GeniusDJ</Recommendations>
+    <ShowReco>Show Recommendations for this folder</ShowReco>
+    <DownloadReco>Download all Recommendations for this folder</DownloadReco>
+    <ShowRecoFiles>Show Recommendations for these files</ShowRecoFiles>
+    <DownloadRecoFiles>Download all Recommendations for these files</DownloadRecoFiles>
+    <GetCover>Download cover</GetCover>
+    <ScanBPM>Scan for BPMs</ScanBPM>
+    <ScanTag>Scan for Tags</ScanTag>
+    <Recurse>Recurse</Recurse>
+    <SetFavorite>Set as favorite</SetFavorite>
+    <RemoveFavorite>Remove from favorite</RemoveFavorite>
+    <AddVFolder>Add virtual folder</AddVFolder>
+    <ChangeFilter>Change Filter</ChangeFilter>
+    <LoadPlaylist>Load in Playlist</LoadPlaylist>
+    <MergePlaylist>Merge to Playlist</MergePlaylist>
+    <Load>Load...</Load>
+    <Save>Save...</Save>
+    <StartAutomix>Start Automix</StartAutomix>
+    <StopAutomix>Stop Automix</StopAutomix>
+    <AutomixType>Automix Type</AutomixType>
+    <AutomixNone>None (back-to-back)</AutomixNone>
+    <AutomixSmart>Smart</AutomixSmart>
+    <AutomixSmartWillBe>Smart (will be: %s)</AutomixSmartWillBe>
+    <AutomixFade>Fade (remove intro/outro)</AutomixFade>
+    <AutomixFadeEx>Fade (remove silence)</AutomixFadeEx>
+    <AutomixRadio>Fade (remove nothing)</AutomixRadio>
+    <AutomixLength>Automix Length</AutomixLength>
+    <Automix0s>0s</Automix0s>
+    <Automix1s>1s</Automix1s>
+    <Automix2s>2s</Automix2s>
+    <Automix4s>4s</Automix4s>
+    <Automix8s>8s</Automix8s>
+    <Automix16s>16s</Automix16s>
+    <Repeat>Repeat</Repeat>
+	<RemovePlayed>Auto remove played</RemovePlayed>
+    <Clear>Clear</Clear>
+    <Shuffle>Shuffle</Shuffle>
+    <OnlyNew>Remove already played</OnlyNew>
+    <NoDuplicate>Remove duplicates</NoDuplicate>
+    <SavePlaylist>Save...</SavePlaylist>
+    <Loop>Loop</Loop>
+    <Pitched>Match Pitch</Pitched>
+    <BeatLock>BeatLock</BeatLock>
+    <Sync>Sync on</Sync>
+    <Sync4>4th beat</Sync4>
+    <Sync1>Beat</Sync1>
+    <SyncHalf>Half beat</SyncHalf>
+    <SyncQuarter>Quarter beat</SyncQuarter>
+    <AutoPlay>AutoPlay</AutoPlay>
+    <ReadOnly>Write Protected</ReadOnly>
+    <AbortDownload>Abort Download</AbortDownload>
+    <Download>Download</Download>
+    <Buy>Buy</Buy>
+    <SongRepeat>Repeat song</SongRepeat>
+	<MixNow>Mix now</MixNow>
+    <ColumnsOrder>Order...</ColumnsOrder>
+    <ShowCovers>Show Covers</ShowCovers>
+    <ShowPrelisten>Show Prelisten</ShowPrelisten>
+    <ShowMusic>Show Music</ShowMusic>
+    <ShowVideo>Show Video</ShowVideo>
+    <ShowKaraoke>Show Karaoke</ShowKaraoke>
+	<SearchFolder>Search in Folder</SearchFolder>
+	<SearchDrives>Search in Drives</SearchDrives>
+	<NetSearchAudio>NetSearch Audio</NetSearchAudio>
+	<NetSearchVideo>NetSearch Video</NetSearchVideo>
+	<NetSearchAlways>Only NetSearch when no local results</NetSearchAlways>
+	<NetSearchVideoAlways>Only NetSearch Video when video activated</NetSearchVideoAlways>
+	<RefreshCache>Refresh cache authorizations</RefreshCache>
+	<DownloadCache>Download to cache</DownloadCache>
+	<CancelCache>Cancel download to cache</CancelCache>
+	<ShowConnected>Show only connected devices</ShowConnected>
+	<RescanDevices>Rescan for new devices</RescanDevices>
+	<InvertDevices>Switch the devices</InvertDevices>
+	<UseKeyboard>Use Keyboard shortcuts</UseKeyboard>
+	<UseMIDI>Use MIDI devices</UseMIDI>
+	<UseHID>Use HID devices</UseHID>
+  <UseFirewire>Use Firewire devices</UseFirewire>
+	<UseSerial>Use Serial devices</UseSerial>
+	<Reload>Reload</Reload>
+  <BaseFolder>Set alternative base folder</BaseFolder>
+  <DeckAssign>Deck Assignment</DeckAssign>
+  <DeckDefault>Default</DeckDefault>
+  <DeckLeftRight>Left &amp; Right</DeckLeftRight>
+  <DeckX>Deck %s</DeckX>
+  <LoadOn>Load on</LoadOn>
+  <DeckI>Deck %i</DeckI>
+  <DeckIPlaying>Deck %i (playing)</DeckIPlaying>
+  <DeckIEmpty>Deck %i (empty)</DeckIEmpty>
+  <PrelistenKeep>Keep playing on change</PrelistenKeep>
+  <PrelistenOutput>Prelisten on :</PrelistenOutput>
+  <PrelistenAutomatic>Automatic</PrelistenAutomatic>
+  <PrelistenOutputI>Output %i</PrelistenOutputI>
+  </ContextMenu>
+
+  <Options>
+    <SoundSetup>Sound Setup</SoundSetup>
+	<Skin>Skins</Skin>
+	<Mappers>Mappers</Mappers>
+	<Video>Video</Video>
+	<Options>Options</Options>
+	<Internet>Internet</Internet>
+  <iDevices>iPhone/iPad</iDevices>
+	<Codecs>Codecs</Codecs>
+	<Performances>Performances</Performances>
+    <Browser>Browser</Browser>
+    <Infos>Info</Infos>
+    <FullVersion>Advanced Options</FullVersion>
+
+    <Security>Security</Security>
+    <ToolTip>Tooltip</ToolTip>
+    <MSNPublish>MSN</MSNPublish>
+    <AutoLoadPlaylist>AutoLoad Playlists</AutoLoadPlaylist>
+    <AutoSaveUnplayed>AutoSave Unplayed</AutoSaveUnplayed>
+    <Scrolling>Scrolling</Scrolling>
+    <RPM>Disc</RPM>
+    <PitchRange>Pitch Range</PitchRange>
+    <AutoUpdate>AutoUpdate</AutoUpdate>
+    <AutoPitchMatch>Auto Pitch Matching</AutoPitchMatch>
+    <AutoLevel>Auto Gain</AutoLevel>
+    <PitchReset>Pitch Reset on Load</PitchReset>
+    <EqReset>EQ Reset on Load</EqReset>
+    <AutoCue>Auto Cue</AutoCue>
+    <AutoHeadphones>Auto Headphones</AutoHeadphones>
+    <AutoCrossfadeLength>Auto-Cross Length</AutoCrossfadeLength>
+    <Crossfader>Crossfader</Crossfader>
+    <DisengageBeatlock>Disengage BeatLock</DisengageBeatlock>
+    <SmartBeatTap>Smart BeatTap</SmartBeatTap>
+    <AllowSmallBpm>Allow BPM&lt;80</AllowSmallBpm>
+	<JogMode>Jog Mode</JogMode>
+	<JogSensitivityScratch>Jog Sensitivity (Scratch)</JogSensitivityScratch>
+	<JogSensitivityCue>Jog Sensitivity (Cue)</JogSensitivityCue>
+	<JogSensitivityBend>Jog Sensitivity (Bend)</JogSensitivityBend>
+	<ScratchMode>Jogwheel Scratch</ScratchMode>
+	<EqInHeadphones>Eq in Headphones</EqInHeadphones>
+	<FXReset>FX Reset on Load</FXReset>
+
+    <Enabled>Enabled</Enabled>
+    <Disabled>Disabled</Disabled>
+    <None>None</None>
+    <Ask>Ask</Ask>
+    <Always>Always</Always>
+    <Limited>Limited</Limited>
+    <Other>Other</Other>
+    <Inverted>Inverted</Inverted>
+    <Normal>Normal</Normal>
+    <rpm33>33rpm</rpm33>
+    <rpm45>45rpm</rpm45>
+    <_6to6>-6% to +6%</_6to6>
+    <_8to8>-8% to +8%</_8to8>
+    <_10to10>-10% to +10%</_10to10>
+    <_12to12>-12% to +12%</_12to12>
+    <_15to15>-15% to +15%</_15to15>
+    <_20to20>-20% to +20%</_20to20>
+    <_25to25>-25% to +25%</_25to25>
+    <_33to33>-33% to +33%</_33to33>
+    <_50to50>-50% to +50%</_50to50>
+    <_100to100>-100% to +100%</_100to100>
+    <Smooth>Smooth</Smooth>
+    <Full>Full</Full>
+    <Cut>Cut</Cut>
+    <User>User</User>
+    <ScratchCross>Scratch</ScratchCross>
+    <Manual>Manual</Manual>
+    <OnLoad>on Load</OnLoad>
+    <OnSwitch>on Switch</OnSwitch>
+	<AutoRemember>Auto+Remember</AutoRemember>
+	<Remember>Remember</Remember>
+	<Auto>Auto</Auto>
+    <Smart>Smart</Smart>
+	<CDMode>CD</CDMode>
+	<VinylMode>Vinyl</VinylMode>
+	<VinylLeft>Vinyl/CD</VinylLeft>
+	<VinylRight>CD/Vinyl</VinylRight>
+
+    <SoundInputs>Inputs :</SoundInputs>
+    <SoundOutputs>Outputs :</SoundOutputs>
+    <SoundCards>Sound card :</SoundCards>
+    <TimecodeConfig>Timecode\nConfig...</TimecodeConfig>
+    <ASIOConfig>ASIO config...</ASIOConfig>
+    <ASIOUltraLatency>Ultra-latency ASIO</ASIOUltraLatency>
+    <Chan12>Chan 1&amp;2</Chan12>
+    <Chan34>Chan 3&amp;4</Chan34>
+    <Chan56>Chan 5&amp;6</Chan56>
+    <Chan1>Chan 1</Chan1>
+    <Chan2>Chan 2</Chan2>
+	<Input1>Input 1</Input1>
+	<Input2>Input 2</Input2>
+	<Output1>Output 1</Output1>
+	<Output2>Output 2</Output2>
+    <Output3>Output 3</Output3>
+    <LeftChan>Left chan</LeftChan>
+    <RightChan>Right chan</RightChan>
+    <FirstCard>First card</FirstCard>
+    <SecondCard>Second card</SecondCard>
+    <FrontOutput>Front output</FrontOutput>
+    <RearOutput>Rear output</RearOutput>
+    <CenterOutput>Center output</CenterOutput>
+    <Master>Master</Master>
+    <Headphones>Headphones</Headphones>
+    <LeftDeck>Deck 1</LeftDeck>
+    <RightDeck>Deck 2</RightDeck>
+    <ThirdDeck>Deck 3</ThirdDeck>
+    <SamplesPreview>Samples/preview</SamplesPreview>
+    <SeratoPhono>Phono level</SeratoPhono>
+    <SeratoLine>Line level</SeratoLine>
+	<Apply>Apply</Apply>
+
+    <Browser>Browser</Browser>
+    <ShowVolumes>Show Volumes</ShowVolumes>
+    <ShowDesktop>Show Desktop</ShowDesktop>
+    <ShowNetSearch>Show NetSearch</ShowNetSearch>
+    <ShowRecommendation>Show GeniusDJ</ShowRecommendation>
+    <ShowGenres>Show Genres</ShowGenres>
+    <ShowHistory>Show History</ShowHistory>
+    <ShowiTunes>Show iTunes</ShowiTunes>
+    <ShowCrates>Show Crates</ShowCrates>
+    <ShowPlaylists>Show Playlists</ShowPlaylists>
+    <ShowFavorites>Show Favorites</ShowFavorites>
+    <ShowVirtualFolders>Show VirtualFolders</ShowVirtualFolders>
+    <ShowFilterFolders>Show FilterFolders</ShowFilterFolders>
+    <InfosGathering>Infos Gathering</InfosGathering>
+    <ReadTags>Read ID3 Tags</ReadTags>
+	<ReadTitleArtist>ID3 Artist/Title</ReadTitleArtist>
+    <ReadComment>ID3 Comments</ReadComment>
+    <Cover>Cover</Cover>
+    <SearchDB>Search Database</SearchDB>
+    <CoverNever>Don't search</CoverNever>
+    <CoverLocal>Local search only</CoverLocal>
+    <CoverDownloadMatch>Download exact match</CoverDownloadMatch>
+    <CoverDownloadAlways>Download no matter what</CoverDownloadAlways>
+    <SearchDBManual>Add manually</SearchDBManual>
+    <SearchDBAuto>Add automatically</SearchDBAuto>
+    <Database>Database</Database>
+    <DBDrive>Drive:</DBDrive>
+    <DBCheck>Check</DBCheck>
+    <DBClean>Clean</DBClean>
+    <DBFix>Fix</DBFix>
+
+    <CheckUpdates>Check for\nUpdates</CheckUpdates>
+    <DownloadPlugins>Download\nPlugins</DownloadPlugins>
+    <ResetSettings>Reset to\nFactory settings</ResetSettings>
+
+	<NetworkNetSearch>Use NetSearch</NetworkNetSearch>
+	<NetworkMusicGroups>Use MusicGroups</NetworkMusicGroups>
+	<NetworkAnonymousSession>Disable MusicGroups for this session only</NetworkAnonymousSession>
+	<NetworkLogin>VirtualDJ.com login :</NetworkLogin>
+	<NetworkPassword>VirtualDJ.com password :</NetworkPassword>
+	<NetworkConnect>Log in</NetworkConnect>
+  <NetworkDisconnect>Log out</NetworkDisconnect>
+	  
+    <VideoOutput>Video output</VideoOutput>
+    <VideoOptions>Options</VideoOptions>
+    <VideoActivate>Activate</VideoActivate>
+    <TVOutput>TV Output</TVOutput>
+    <HardwareAcceleration>use hardware acceleration</HardwareAcceleration>
+	<AutoCrossfader>Video crossfader automatic</AutoCrossfader>
+    <LinkedCrossfaders>Video crossfader linked to Audio crossfader</LinkedCrossfaders>
+    <DecodeHidden>Decode while hidden</DecodeHidden>
+    <DecodeMultithread>Decode in multithread</DecodeMultithread>
+    <ActivateOnLoad>Activate on load</ActivateOnLoad>
+	<LinkOnDrop>Link video when dropped on preview window</LinkOnDrop>
+    <NoLogo>Hide logo</NoLogo>
+    <FadeToBlack>Fade to black on volume sliders</FadeToBlack>
+	<VideoKeepRatioCrop>Keep ratio (crop)</VideoKeepRatioCrop>
+	<VideoKeepRatioFull>Keep ratio (full)</VideoKeepRatioFull>
+    <EmptyFx>Use this plugin for audio-only files:</EmptyFx>
+
+    <SoundCardPerf>Sound Card</SoundCardPerf>
+    <Latency>Latency :</Latency>
+    <SafeMode>Safe Mode</SafeMode>
+    <ScratchPerf>Scratch</ScratchPerf>
+    <OptimizeQuality>Optimize for Quality</OptimizeQuality>
+    <OptimizeLatency>Optimize for Latency</OptimizeLatency>
+    <MasterTempoPerf>Master Tempo</MasterTempoPerf>
+    <PureMT>PureScratch (no Master Tempo)</PureMT>
+    <FastMT>Fast Stretching</FastMT>
+    <AdvancedMT>Advanced Stretching</AdvancedMT>
+    <MemoryPerf>Memory</MemoryPerf>
+    <MaxLoad>Don't pre-load files bigger than :</MaxLoad>
+    <SkinPerf>Skin Resizing</SkinPerf>
+    <FastResize>Fast resizing</FastResize>
+    <QualityResize>Quality resizing</QualityResize>
+
+    <LEHelp>Welcome to VirtualDJ LE.\n\nVirtualDJ LE is the perfect software companion to your new controller.\nIts features have been tailored to fit your controller and give you the most enjoyable mixing experience.\n\nIf you need more advanced features, VirtualDJ LE also let you test for free the features of the VirtualDJ PRO software.\nYou can activate VirtualDJ PRO's features for a period of 20 days. After these 20 days, the features available will be those of VirtualDJ LE again.</LEHelp>
+    <LEActivate>Try\n20-days\nPRO version</LEActivate>
+    <LEBuy>Upgrade to\nPRO version</LEBuy>
+    <LENotActivated>20-days trial not used yet</LENotActivated>
+    <LEActivated>PRO version for %i days</LEActivated>
+    <LEOver>20-days trial already used</LEOver>
+	<LEHelp2>You can now use all the features from VirtualDJ PRO.\nPlease restart VirtualDJ to access all the new features.\nAt the end of this period, your software will automatically revert to the Limited Edition features</LEHelp2>
+
+	  <TCVinyl>Vinyl :</TCVinyl>
+	  <TCMode>Mode :</TCMode>
+	  <TCSmart>Smart relative</TCSmart>
+	  <TCAbsolute>Absolute</TCAbsolute>
+	  <TCRelative>Relative</TCRelative>
+	  <TCLeftRight>Left / Right :</TCLeftRight>
+	  <TCPhaseAnti>Phase / Anti :</TCPhaseAnti>
+	  <TCGain>Gain :</TCGain>
+	  <TCSilence>Silence :</TCSilence>
+	  <TCDebug>Debug...</TCDebug>
+	  <TCBothDeck>Both</TCBothDeck>
+	  <TCInvertStereo>Invert Signal Stereo</TCInvertStereo>
+	  <TCInvertPhase>Invert Signal Phase</TCInvertPhase>
+	  <TCRIAA>Apply RIAA phono filter</TCRIAA>
+	  <TCNoiseFilter>Apply noise LP filter</TCNoiseFilter>
+	  <TC45RPM>Adjust for 45 RPM</TC45RPM>
+	  <TCNoPitch>Disable Pitch</TCNoPitch>
+	  <TCNoClearSound>Disable ClearSound</TCNoClearSound>
+	  <TCNoAntiSkip>Disable AntiSkip</TCNoAntiSkip>
+	  <TCPitchSensibility>Pitch sensibility</TCPitchSensibility>
+	  <TCPitchStable>Delayed</TCPitchStable>
+	  <TCLeadTime>Lead time :</TCLeadTime>
+	  <TCSaveCapture>Save capture...</TCSaveCapture>
+
+    <NetsearchLoginWindow>Welcome to VirtualDJ.\rIf you have a VirtualDJ account, please enter your login and password:</NetsearchLoginWindow>
+    <NetsearchReloginWindow>Another computer used your credentials to connect to our servers.\rFor security reasons, please re-enter your login and password:</NetsearchReloginWindow>
+    <NetsearchLogin>Login</NetsearchLogin>
+    <NetsearchPassword>Password</NetsearchPassword>
+    <NetsearchConnect>Log in</NetsearchConnect>
+    <NetsearchSkip>Skip</NetsearchSkip>
+    <NetsearchNoLoginLink>If you don't, &lt;a&gt;click here&lt;/a&gt; for more information.</NetsearchNoLoginLink>
+    <NetsearchBadloginLink>Incorrect login or password. &lt;a&gt;Click here&lt;/a&gt; to create a login.\r&lt;a&gt;Click here&lt;/a&gt; if you forgot your password.</NetsearchBadloginLink>
+    <NetsearchBadLevel>Full NetSearch streaming is only available to Premium Members.\rYour current membership level only let you stream 30s extracts.\r&lt;a&gt;Click here&lt;/a&gt; for more information.</NetsearchBadLevel>
+    <NetsearchNotConnected>Full NetSearch streaming is only available to Premium Members.\rIf you are a Premium Member, &lt;a&gt;click here&lt;/a&gt; to log in.\rOtherwise &lt;a&gt;click here&lt;/a&gt; for more information.\rWithout a Premium Membership, you can only stream 30 second extracts.</NetsearchNotConnected>
+    <NetsearchBadLevelCache>NetSearch caching is only available to Premium Members.\r&lt;a&gt;Click here&lt;/a&gt; for more information.</NetsearchBadLevelCache>
+    <NetsearchNotConnectedCache>NetSearch caching is only available to Premium Members.\rIf you are a Premium Member, &lt;a&gt;click here&lt;/a&gt; to log in.\rOtherwise &lt;a&gt;click here&lt;/a&gt; for more information.</NetsearchNotConnectedCache>
+    <NetsearchLoginError>Invalid login/password</NetsearchLoginError>
+    <DontShowAgain>Don't show again</DontShowAgain>
+
+    <iRemoteWelcome>Download &lt;a&gt;VirtualDJ iRemote&lt;/a&gt; for your iPhone/iPad.</iRemoteWelcome>
+    <iRemoteRescan>Rescan</iRemoteRescan>
+    <iRemoteForceManualIP>Use manual IP...</iRemoteForceManualIP>
+    <iRemoteConnect>Connect</iRemoteConnect>
+    <iRemoteForget>Forget</iRemoteForget>
+    <iRemoteUploadSkin>Upload new skin...</iRemoteUploadSkin>
+    <iRemoteDevices>Devices:</iRemoteDevices>
+    <iRemoteDevice>Device</iRemoteDevice>
+    <iRemoteStatus>Status</iRemoteStatus>
+    <iRemoteStatusConnected>Connected</iRemoteStatusConnected>
+    <iRemoteStatusError>Error</iRemoteStatusError>
+    <iRemoteStatusWaiting>Waiting</iRemoteStatusWaiting>
+    <iRemoteStatusNotHere>Not here</iRemoteStatusNotHere>
+    <iRemoteDeviceNeedApprove>This is a new device. Select Connect to approve it.</iRemoteDeviceNeedApprove>
+    <iRemoteDeviceConnected>This device has been successfully connected.</iRemoteDeviceConnected>
+    <iRemoteDeviceNotConnected>This device is in your approved list, but is not running VirtualDJ iRemote at the moment, or is not connected on your local network.</iRemoteDeviceNotConnected>
+    <iRemoteDeviceError>The connection failed.</iRemoteDeviceError>
+    <iRemoteManualIPWindow>Enter the IP address of your iRemote</iRemoteManualIPWindow>
+
+    <Tooltips>
+		<SoundInput>Select if you will use timecode inputs and how many</SoundInput>
+		<SoundOutput>Select how many and what channels VirtualDJ should output</SoundOutput>
+		<SoundCards>Select which soundcard(s) VirtualDJ should use (the list will show the available soundcard for the input/output configuration you selected)</SoundCards>
+		<SoundTimecode>Click here to calibrate your timecode vinyls</SoundTimecode>
+		<SoundInputChannels>Select which input comes from which line</SoundInputChannels>
+		<SoundOutputChannels>Select which output goes to which line</SoundOutputChannels>
+		<SoundOutputDriver>Select the primary soundcard</SoundOutputDriver>
+		<SoundOutputDriver2>Select the second soundcard</SoundOutputDriver2>
+		<SoundOutputDriverASIO>Select the ASIO driver to use</SoundOutputDriverASIO>
+		<SoundDJC>If selected, the Hercules soundcard will be used in ASIO mode, and when bypass is used, the input will be processed by VirtualDJ to apply equalization</SoundDJC>
+		<SoundDJCMac>If selected, the inputs of the DJConsole soundcard will be used, and when bypass is used, the input will be processed by VirtualDJ to apply equalization</SoundDJCMac>
+		<SoundSSLPhono>Select this to use the SL1 card with a turntable</SoundSSLPhono>
+		<SoundSSLLine>Select this to use the SL1 card with a CD player</SoundSSLLine>
+		<SoundASIOUltra>In ASIO Ultra-Latency mode, the latency will be even smaller, but not every ASIO driver can cope with it</SoundASIOUltra>
+		<SoundApply>Click here to apply the modifications you made</SoundApply>
+
+		<SkinSkin>Select a new graphical interface (you can download additional skins from http://www.virtualdj.com/) </SkinSkin>
+		<SkinLanguage>Change the default language (you can download additional languages from http://www.virtualdj.com/) </SkinLanguage>
+		
+		<MapperOptions>Mappers options...</MapperOptions>
+		<MapperDevice>Select a controller</MapperDevice>
+		<MapperRevert>Revert the mapper to factory settings</MapperRevert>
+		<MapperDel>Delete this key</MapperDel>
+		<MapperAdd>Add a new key</MapperAdd>
+		<MapperKeyLearn>Select Key-Learn then use the key/button/slider on your keyboard/controller to get its name</MapperKeyLearn>
+		<MapperKey>Select a key</MapperKey>
+		<MapperActionLearn>Select Action-Learn then click an element on the interface (skin) to get its action</MapperActionLearn>
+		<MapperAction>Enter an action for this key, in VDJscript language</MapperAction>
+		<MapperInfos>Learn more about VDJscript (Internet connection required)</MapperInfos>
+
+		<CodecAdd>Add a new extension</CodecAdd>
+		<CodecRemove>Delete the selected extension</CodecRemove>
+		<CodecList>List of known extensions (double-click to modify)</CodecList>
+
+		<BrowserVolumes>the Volumes folder lists all the drives connected</BrowserVolumes>
+		<BrowserDesktop>the Desktop folder has the content of your desktop</BrowserDesktop>
+		<BrowserNetSearch>the NetSearch folder holds the files cached from NetSearch, and let you use NetSearch when you removed it from your regular search options</BrowserNetSearch>
+		<BrowserRecommendation>the GeniusDJ folder automatically shows you recommendations based on what you are playing</BrowserRecommendation>
+		<BrowserGenres>the Genre folder sort all your songs by genre, according to their ID3 tag</BrowserGenres>
+		<BrowserHistory>the History folder has all your past tracklisting, sorted by date</BrowserHistory>
+		<BrowseriTunes>the iTunes folder has all your iTunes playlists</BrowseriTunes>
+		<BrowserCrates>the Crates folder has all your SSL crates</BrowserCrates>
+		<BrowserPlaylists>the Playlist folder has all your saved playlists</BrowserPlaylists>
+		<BrowserFavorites>the Favorite folders are the folder you selected as "monitored" folders</BrowserFavorites>
+		<BrowserVFolders>the Virtual folders are the "unmonitored" folders you created</BrowserVFolders>
+		<BrowserFFolders>the Filter folders are the "automatic" folders you created</BrowserFFolders>
+		<BrowserCheck>Check which songs from your database are not present on your computer anymore, and remove them from the search results</BrowserCheck>
+		<BrowserClean>Clean from your database all songs that are not present on your computer anymore</BrowserClean>
+		<BrowserFix>Fix your database if it has been corrupted, and recompress it</BrowserFix>
+		<BrowserTag>let VirtualDJ automatically load and use the ID3 tags of the songs it encounters</BrowserTag>
+		<BrowserTagTitle>get the artist/title information from the ID3 tags or from the filename</BrowserTagTitle>
+		<BrowserTagComment>get the comments from the ID3 tags</BrowserTagComment>
+		<BrowserCover>Automatically search the Internet for cover artwork if not available locally</BrowserCover>
+		<BrowserSearch>Automatically add every encountered song to the search database when you browse through folders</BrowserSearch>
+
+		<NetworkNetSearch>NetSearch is a feature that let VirtualDJ automatically search various sources on the Internet for music and videos, and let you stream them directly on your decks.\nYou need to be a VirtualDJ Member in order to use NetSearch.</NetworkNetSearch>
+		<NetworkMusicGroups>MusicGroups is a feature that let you share your playlist with other users on VirtualDJ.com, and/or benefit from their playlists to get live advices on your music selection.\nYou need to be a VirtualDJ Member in order to use MusicGroups.</NetworkMusicGroups>
+		<NetworkAnonymousSession>Don't send your playlist during this session. This setting will be reseted next time you start VirtualDJ.</NetworkAnonymousSession>
+		<NetworkLogin>Enter your VirtualDJ.com login. Go to www.virtualdj.com to create one if you don't already have.</NetworkLogin>
+		<NetworkPassword>Enter your VirtualDJ.com password.</NetworkPassword>
+		<NetworkConnect>Send your login/password to VirtualDJ.com. Please note that you only need to do this once. Once successfully connected, VirtualDJ will automatically reconnect in the future.</NetworkConnect>
+
+		<VideoDisable>Disable or enable the video engine</VideoDisable>
+		<VideoActivate>Open or close the video window.</VideoActivate>
+		<VideoTVOutput>In order to use TV output, you must put your videocard in "Dual Display". The second display should then appears here.</VideoTVOutput>
+		<VideoHardware>If something goes wrong with your videocard, try to disable this (but most effects and transitions won't work then)</VideoHardware>
+		<VideoAutoCross>Let VirtualDJ moves the video crossfader automatically according to your mixing</VideoAutoCross>
+		<VideoLinked>Link the video crossfader to the audio crossfader</VideoLinked>
+		<VideoDecode>Decode the video streams even when the video is hidden (faster transitions, but uses more CPU)</VideoDecode>
+		<VideoMultithread>Decode the video streams using all available CPUs/GPUs (faster, but on some computers it can sometimes fail to load the video)</VideoMultithread>
+		<VideoOnLoad>Automatically activate the video window if you load a video file</VideoOnLoad>
+		<VideoNoLogo>Remove the VirtualDJ logo from the video output (and get bad karma)</VideoNoLogo>
+		<VideoLinkOnDrop>When activated, if you drop a video file on the preview window, its video track will replace the video track of the actual file. If the actual file is audio-only, it will use this video track from now on.</VideoLinkOnDrop>
+		<VideoFadeToBlack>Fade the video channel to black when you use the volume sliders</VideoFadeToBlack>
+		<VideoKeepRatioCrop>Keep the videos in 16/9 or 4/3 no matter what the screen resolution is, by cropping the videos on the sides</VideoKeepRatioCrop>
+		<VideoKeepRatioFull>Keep the videos in 16/9 or 4/3 no matter what the screen resolution is, by adding black bars on the sides</VideoKeepRatioFull>
+		<VideoEmptyFx>Use this plugin when the video window is open and there is no video, or the track playing is audio-only</VideoEmptyFx>
+
+		<PerfLatency>Change the latency used by the soundcard. If you are not using timecodes, we recommend leaving this to auto.</PerfLatency>
+		<PerfSafeMode>If you experience cracks in the sound even with reasonably high latency, try to use this.</PerfSafeMode>
+		<PerfOptimQuality>Optimize the scratching algorithm for the best sound quality</PerfOptimQuality>
+		<PerfOptimLatency>Optimize the scratching algorithm for the best latency</PerfOptimLatency>
+		<PerfPureMT>Don't use timestretch, but focus on getting a pure scratching sound</PerfPureMT>
+		<PerfFastMT>Use a low-CPU timestretch algorithm</PerfFastMT>
+		<PerfAdvancedMT>Use an advanced timestretch algorithm. The sound will be better at extreme pitch changes, but this algorithm uses more CPU</PerfAdvancedMT>
+    <PerfMaxLoad>Files bigger than this limit will be streamed directly from the drive instead of being pre-loaded in memory</PerfMaxLoad>
+    <PerfFastResize>If you change the size of VirtualDJ's window, the graphic engine will try to minimize CPU usage to perform the resizing of the skin</PerfFastResize>
+    <PerfQualityResize>If you change the size of VirtualDJ's window, the graphic engine will try to resize the skin as faithfully as possible</PerfQualityResize>
+
+		<TCVinyl>Select what kind of timecode control record you will be using. For best performance, we recommend Serato vinyl or VirtualDJ v5 vinyl.</TCVinyl>
+		<TCLeftRight>Use this knob if the graphic shows an "egg" instead of a pure circle</TCLeftRight>
+		<TCPhaseAnti>Use this knob if the graphic shows a tilted egg instead of a pure circle</TCPhaseAnti>
+		<TCGain>Use this knob if the graphic is too small or too big for the window</TCGain>
+		<TCSilence>Use this knob to adjust the gray zone on the graphic, so that it doesn't touch the green circle while in normal operation, but completely covers the green lines when you stop the turntable</TCSilence>
+		<TCMode>Select what timecode mode you want to use. In doubt, use "Smart Relative", which is the default and should be used unless you have specific needs</TCMode>
+		<TCDebug>If you have problems getting 100% timecode quality, use these tools to try to adjust your timecode signal</TCDebug>
+		<TCInvertStereo>Invert the left and right of the incoming signal (if you inverted the red and white cables from your turntable). use this if your song is playing backward.</TCInvertStereo>
+		<TCInvertPhase>Invert the phase of the incoming signal (if your needle has its internal wires inverted). use this if your song is playing backward.</TCInvertPhase>
+		<TCRIAA>Apply a software RIAA filter. use this if you are plugging a turntable (with no "line-output" switch) into a regular soundcard that doesn't have a phono pream (no "phono" switch).</TCRIAA>
+		<TCNoiseFilter>Use this if the graphic is blurry, or if the dots are dispersed instead of forming a continuous circular line</TCNoiseFilter>
+		<TC45RPM>Use this if your turntable turns at 45RPM instead of 33RPM.</TC45RPM>
+		<TCNoPitch>If you disable SmartPitch, the pitch slider inside VirtualDJ will not move to reflect the pitch on your turntable, and the BPM of your song will not reflect the pitch change neither.</TCNoPitch>
+		<TCNoClearSound>ClearSound uses a technology that gives a better sound when you don't scratch, at the expense of a very small delay when you scratch</TCNoClearSound>
+		<TCNoAntiSkip>AntiSkip uses a technology that will ensure that VirtualDJ will not skip even if your needle skips on your record.</TCNoAntiSkip>
+		<TCPitchSensibility>The Pitch Sensibility is used to adjust how much the pitch slider in VirtualDJ should follow the turntable speed. If set too low, the pitch slider will take some time to adjust. If set too high, the pitch slider will move when you just want to scratch.\n(remember, with the Timecode technology, a software has no clear way to know the difference between a disc turning faster because of the turntable's pitch being moved, or because of the disc being nudged or scratched. both result in the timecode signal coming faster.)</TCPitchSensibility>
+		<TCPitchStable>Wait for a stable pitch before moving the pitch slider (in order to avoid pitch changes during pitch-bend on the CD player)</TCPitchStable>
+		<TCLeadTime>Adjusts how much lead time is used on the vinyl before the start of the song. This is used so that VirtualDJ can track timecode movement before the actual start of the song.</TCLeadTime>
+		<TCSaveCapture>Use this button to save a .bmp file of your config. You can then upload this image on www.virtualdj.com forums if you need to ask for help to configure/optimize your timecode signal.</TCSaveCapture>
+
+    <FileInfoGetFromID3>Get value from the ID3 tag</FileInfoGetFromID3>
+    <FileInfoSaveID3>Write value to the ID3 tag</FileInfoSaveID3>
+    <FileInfoRename>Rename file as '{artist} - {title}.mp3'</FileInfoRename>
+    <FileInfoParseFilename>Get the Artist and Title from the filename</FileInfoParseFilename>
+    <FileInfoChangeCover>Change the Cover artwork</FileInfoChangeCover>
+    <FileInfoSetCover>Search and download a Cover artwork</FileInfoSetCover>
+    <FileInfoEraseComment>Erase the comment</FileInfoEraseComment>
+    <FileInfoPrev>Save modifications on this file, and go to the previous file in the list</FileInfoPrev>
+    <FileInfoNext>Save modifications on this file, and go to the next file in the list</FileInfoNext>
+      
+</Tooltips>  
+
+</Options>
+
+  <Actions>
+<play>start the deck.</play>
+<play_stutter>if paused, start the deck. if playing, restart from last stutter point.</play_stutter>
+<play_pause>if paused, start the deck. if playing, pause the deck.</play_pause>
+<pause_stop>if playing, pause the deck. if stopped, rewind to begining of the song, then cycle through all cue points each time pressed.</pause_stop>
+<cue_stop>if playing, pause and go to the last cue point. if paused, set the current position as cue point, and preview the cue as long as pressed. you can specify a number ('cue_stop 1', 'cue_stop 57') to work with several cues. number 0 or no number works on the last used cue.</cue_stop>
+<cue_play>if playing, pause and go to the last cue point. if paused, set the current position as cue point, and preview the cue as long as pressed. if you kept pressed more than 2s (or the time specified), it will continue playing once you release. syntax: 'cue_play 1 1000ms'</cue_play>
+<cue>if playing, go to the last cue point and continue playing. if paused, set the current position as cue point, and preview the cue as long as pressed. if in loop, change loop_in to the cue point but keep the loop's length. you can specify a number ('cue 1', 'cue 57') to work with several cues. number 0 or no number works on the last used cue.</cue>
+<hot_cue>if no cue point is set, set one at the current position. otherwise go to the cue point and start or continue playing. if in loop, set the cue point as new loop_in but keep loop_length. you can specify a number ('hot_cue 1', 'hot_cue 57') to work with several cues. number 0 or no number works on the last used cue.</hot_cue>
+<cue_select>Select the nth cue point as default cue point for cue, hotcue, etc.. actions</cue_select>
+<stop>stop to the last cue point, then on second press to the begining of the song, then cycle through the cue points.</stop>
+<pause>pause the deck.</pause>
+<play_button>depending on the play_mode, act like play_stutter (Numark way) or play_pause (Pioneer way).</play_button>
+<stop_button>depending on the play_mode, act like pause_stop (Numark way) or stop (Pioneer way).</stop_button>
+<cue_button>depending on the play_mode, act like cue_stop (Numark way) or cue (Pioneer way).</cue_button>
+<crossfader>move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.</crossfader>
+<volume>set the volume of the deck.</volume>
+<pitch>set the pitch of the deck. used with a number, it gives the position on the slider (and therefore account for pitch_range). used with a percent it gives an absolute position.  'pitch 112%' set pitch at +12%, 'pitch 0.25' set pitch at -10% if pitch_range is 20.</pitch>
+<pitch_slider>set the pitch of the deck, to be used by hardware controllers. if the pitch is changed by the software, the hardware slider will be unlinked from the real pitch until it reaches the actual pitch position again.</pitch_slider>
+<pitch_relative>set the pitch of the deck, to be used by hardware controllers if you prefere the change to be relative to the software pitch position</pitch_relative>	  
+<volume_slider>set the volume of the deck, but can be 'unlinked' from the actual volume if the slider position does not match the software volume position</volume_slider>
+<volume_relative>set the volume of the deck, relative to the software volume position</volume_relative>	  
+<crossfader_slider>move the crossfader, but can be 'unlinked' from the actual crossfader if the slider position does not match the software crossfader position</crossfader_slider>
+<crossfader_relative>move the crossfader, relative to the software crossfader position</crossfader_relative>	  
+<gain_slider>change the gain, but can be 'unlinked' from the actual gain if the slider position does not match the software gain position</gain_slider>
+<gain_relative>change the gain, relative to the software gain position</gain_relative>	  
+<jogwheel>used for a jogwheel without touch sensitivity. 'jogwheel +1.0' means a full rotation of the wheel.</jogwheel>
+<touchwheel>used for a jogwheel with touch sensitivity. 'touchwheel +1.0' means a full rotation of the wheel.</touchwheel>
+<touchwheel_touch>use when the touchwheel is touched, to hold the song and start to scratch.</touchwheel_touch>
+<speedwheel>used for a precision touchwheel that reports both position and speed. 'speedwheel +1.0 1.5' means a full rotation of the wheel, at 150% speed.</speedwheel>
+<speedwheel_touch>use when the speedwheel is touched, to hold the song and start to scratch.</speedwheel_touch>
+<motorwheel>used for a motorized jogwheel. Each time the jogwheel moves, send 'motorwheel "move" +1.0' followed by 'motorwheel "timestamp" 1000.0'. 'move +1.0' means a full platter rotation. 'timestamp 1.0' means 1ms since last message. You should query 'motorwheel' and turn the motor on when it returns true and off when false.</motorwheel>
+<motorwheel_instant_play>when set to on, the song will start instantly, bypassing the ramp up time the motor takes to reach its full rotation speed (the drawback is that then you cannot hold the disc still when your start the motor)</motorwheel_instant_play>
+<select>select this deck as 'working deck'. the beat of the working deck will be shown in front in the display, and shortcuts and actions with no specified deck will affect this deck.\nUnless PFL has been set manually, the PFL will also follow the working deck.</select>
+<masterdeck>select/unselect this deck as 'master deck'. When a master deck is set, all synchronization operations will take the master deck as reference. (for skins with more than 2 decks)</masterdeck>
+<pfl>select if this deck is sent to the headphones. (can be used with a slider or a % to specify the volume: 'pfl 75%')</pfl>
+<leftdeck>select this deck to be the left deck: "deck 3 leftdeck" or "leftdeck +1"</leftdeck>
+<rightdeck>select this deck to be the right deck: "deck 3 rightdeck" or "rightdeck +1"</rightdeck>
+<leftcross>assign this deck to the left of the crossfader: "deck 3 leftcross"</leftcross>
+<rightcross>assign this deck to the right of the crossfader: "deck 3 rightcross"</rightcross>
+<cross_assign>assign this deck to a side of the crossfader: "deck 3 cross_assign 'left'" or "deck 3 cross_assign 'thru'"</cross_assign>
+<leftvideo>assign this deck to the left of the video crossfader: "deck 3 leftvideo" or "leftvideo +1" or "leftvideo 'auto'".</leftvideo>
+<rightvideo>assign this deck to the right of the video crossfader: "deck 3 rightvideo" or "rightvideo +1" or "rightvideo 'auto'".</rightvideo>
+<overvideo>force this deck's video output on the video master</overvideo>
+<leftvideo_button>simple button to control the left video source: "deck 3 leftvideo_button".</leftvideo_button>
+<rightvideo_button>simple button to control the right video source: "deck 3 rightvideo_button".</rightvideo_button>
+<sync>smoothly synchronize the song with the other deck.</sync>
+<play_sync>play the song instantly synchronized with the other deck.</play_sync>
+<play_sync_onbeat>instantly synchronize the song with the other deck, using local beat information instead of the global beatgrid.</play_sync_onbeat>
+<play_onbeat>instantly synchronize the song with the other deck, using local beat information instead of the gloabl beatgrid, but don't change the pitch.</play_onbeat>
+<goto>change the position in the song. 'goto +10ms' jumps 10ms forward. 'goto -4' jumps 4 beats backward. 'goto 20%' goes at 20% of the song's length.</goto>
+<goto_bar>put the song on its nth beat after the downbeat without loosing sync: 'goto_bar 4'</goto_bar>
+<song_pos>position in the song. (the difference between song_pos and goto is that song_pos can be used as a slider).</song_pos>
+<loop>set or remove a loop. 'loop 4', 'loop 0.5' set a loop in beats. 'loop 10ms' set a loop in ms. 'loop 200%' multiply by 2 the size of the loop. 'loop 50%' divides by 2. 'loop' alone set a loop at the actual position with the same beat size as the last set loop.</loop>
+<loop_in>if not in loop, set the begining of a loop. if in loop, jump back to the begining of the loop.</loop_in>
+<loop_out>if not in loop, set the deck in loop, starting from the last set loop_in point or stutter point. if in loop, exit the loop.</loop_out>
+<loop_length>change the length of the loop. 'loop_length 15ms' set the length in ms, 'loop_length 0.5' set the length in beats, 'loop_length +100%' set the length in percentage of the actual length.</loop_length>
+<loop_move>move the loop without changing its length. 'loop_move +10ms' set the distance in ms, 'loop_move +2' set the distance in beats, 'loop_move +50%' set the distance in percentage of the actual length.</loop_move>
+<loop_double>double the size of the loop.</loop_double>
+<loop_half>halve the size of the loop.</loop_half>
+<loop_exit>remove the loop.</loop_exit>
+<loop_select>set the loop size (or default loop size if no loop is active). If no parameter is provided, a popup list of loop values to choose from will be displayed.</loop_select>
+<reloop>jump to the loop_in point.</reloop>
+<reloop_exit>if in loop, remove the loop. otherwise, reactivate the last used loop.</reloop_exit>
+<loop_button>one-button smart loop: Set the loop in on the first press, set the loop out on second press, remove the loop on third press.</loop_button>
+<set_cue>store the current position in the cue. if one parameter is given, it's the number of the cue to use. if two parameters are given, the second is the position to store, in ms, in beats, or in percentage of the song length.</set_cue>
+<goto_cue>jump to the specified cue.</goto_cue>
+<delete_cue>delete the cue. a cue number can be specified.</delete_cue>
+<cue_name>change the name of the cue.  if one parameter is given, it's the number of the cue to use. if two parameters are given, the second is the name to give to the cue. If no second parameter is given, a window will popup to ask for the name.</cue_name>
+<goto_first_beat>automatically goes to the first beat in the song.</goto_first_beat>
+<filter>apply a resonant filter.</filter>
+<eq_high>set the trebble equalizer.</eq_high>
+<eq_mid>set the medium equalizer.</eq_mid>
+<eq_low>set the bass equalizer.</eq_low>
+<eq_kill_high>mute the trebble.</eq_kill_high>
+<eq_kill_mid>mute the medium.</eq_kill_mid>
+<eq_kill_low>mute the bass.</eq_kill_low>
+<eq_crossfader_high>crossfade the trebble between both decks.</eq_crossfader_high>
+<eq_crossfader_mid>crossfade the medium between both decks.</eq_crossfader_mid>
+<eq_crossfader_low>crossfade the bass between both decks.</eq_crossfader_low>
+<eq_reset>reset the equalizer.</eq_reset>
+<fake_crossfader>move the crossfader on the skin without changing the sound.</fake_crossfader>
+<fake_level>move the volume fader on the skin without changing the sound.</fake_level>
+<fake_eq_high>move the equalizer on the skin without changing the sound.</fake_eq_high>
+<fake_eq_mid>move the equalizer on the skin without changing the sound.</fake_eq_mid>
+<fake_eq_low>move the equalizer on the skin without changing the sound.</fake_eq_low>
+<gain>set the gain, up to -30dB in the negative, and up to +7.5dB in the positive.</gain>
+<power_gain>set the gain, allowing up to +30dB in the positive.</power_gain>
+<match_gain>set the gain to match the other deck.</match_gain>
+<set_gain>set the gain in order to bring the song to the specified dBA (with 0dBA being the maximum level outputable by the soundcard without compression): 'set_gain 0'</set_gain>
+<match_bpm>set the pitch to mathc the BPM of the other deck.</match_bpm>
+<key>change the key of the song, from -12 (one octave down) to +12 (one octave up), only in multiple of semitones.</key>
+<key_smooth>change the key of the song, from -12 (one octave down) to +12 (one octave up), allowing not only multiple of semitones.</key_smooth>
+<key_move>move the key up or down from the given amount of semitones.</key_move>
+<match_key>change the key of the song to match the given key. you can use standard notation ('set_key "A#m"') or numeric ('set key "03A"'). if no given key, it will use the other deck. the change will be the smallest change to make it compatible with the given key.</match_key>
+<set_key>change the key of the song to match the given key. you can use standard notation ('set_key "A#m"') or numeric ('set key "03A"'). if no given key, it will use the other deck. the change will match the exact key.</set_key>
+<pitch_reset>slowly brings the pitch back to 0%. you can specify the speed in % per second (default 1% per second): 'pitch_reset 5%'</pitch_reset>
+<pitch_range>set the range for the pitch slider. 'pitch 12%' set the range from -12% to +12%. 'pitch +1' scrolls through the defaut pitch ranges. 'pitch "12,16,25" +1' scrolls through the provided list of pitch ranges.</pitch_range>
+<pitch_bend>slow down or speed up the song: 'pitch_bend +3%'. you can make the bend to increase slowly by specifying a second time parameter: 'pitch_bend +1% 500ms' will start at +1% and will double every 500ms.</pitch_bend>
+<master_tempo>activate/deactivate the master tempo (to make the pitch slider change the speed of the song, but keep the original key of the song).</master_tempo>
+<key_lock>activate/deactivate the key lock (to make the pitch slider change the speed of the song, but keep the key of the song like it is now).</key_lock>
+<seek>move into the song while the button is pressed. 'seek +2' moves beat by beat, skipping 2 beats every 10ms. 'seek +420ms' moves from 420ms every 10ms. using skip with a beat number keep the song playing correctly while moving inside.</seek>
+<reverse>play the song backward</reverse>
+<dump>reverse the playback direction while dump is active, then when deactivated, start again forward from where the song should have been if it had been playing forward during the dump.</dump>
+<minimize>minimize the application in the taskbar.</minimize>
+<maximize>maximize the application full screen, or back to normal.</maximize>
+<close>close the application.</close>
+<settings>open the configuration window.</settings>
+<page>change the page displayed in the browser window. 'page "browser"', 'page "sampler"', 'page "effects"', 'page "record"' set a specific page. 'page +1', 'page -1' scroll through the pages.</page>
+<booth_volume>change the volume of the booth output.</booth_volume>
+<master_balance>change the left/right balance on the master output.</master_balance>
+<master_volume>change the volume of the master output.</master_volume>
+<headphone_volume>change the volume of the PFL output.</headphone_volume>
+<headphone_gain>change the gain of the PFL output (from -30dB to +30dB)</headphone_gain>
+<headphone_mix>change the mix of the PFL (0% is only the cued deck, 100% is the master output).</headphone_mix>
+<headphone_crossfader>change the PFL fader (0% is only the left deck, 100% is only the right deck).</headphone_crossfader>
+<zoom>set the zoom level on the rhythm display. use 'zoom "near"', 'zoom "default"', 'zoom "far"' for the pre-set zoom levels, or use 'zoom 42%' to get to a precise zoom level.</zoom>
+<smart_loop>when smart_loop is activated, loop are automagically adjusted to sound perfect.</smart_loop>
+<smart_play>when smart_play is activated, songs are automagically synchronized when played.</smart_play>
+<smart_cue>when smart_cue is activated, songs are automatigically re-synchronized when jumped to a new position or cue.</smart_cue>
+<smart_scratch>when smart_scratch is activated, backward scratching is automatically muted, only forward scratching will be heard.</smart_scratch>
+<vinyl_mode>set the jogwheel in vinyl mode (with scratch), or in cd mode (with pitchbend). 1 is vinyl mode (default), 0 is cd mode.</vinyl_mode>
+<wheel_mode>change the mode of the jogwheel between: "jog", "search", "loop_move", "loop_out", "loop_in", "browser", or use +1 and -1 to cycle through all modes. You can select from a subset using a syntax like 'wheel_mode "loop_move,loop_in,loop_out" +1'.</wheel_mode>
+<play_mode>set the mode for play/stop/cue buttons: 'play_mode "numark"', or 'play_mode "pioneer"'.</play_mode>
+<display_time>set the mode to display time: "total", "remain", "elapsed", +1 or -1.</display_time>
+<auto_cue>set the auto_cue mode: "off", "on", "always".</auto_cue>
+<beatlock>activate/deactivate the beatlock (to keep the songs always in sync, even while moving the pitch).</beatlock>
+<pitchlock>lock the pitch sliders on both decks so both will move together.</pitchlock>
+<auto_crossfade>automatically crossfade to the other deck. You can specify the duration of the crossfade in ms: 'auto_crossfade 2000ms'</auto_crossfade>
+<scratch>'scratch +120ms' to scratch 120ms forward.</scratch>
+<scratch_hold>'scratch_hold on' or 'scratch_hold off' (or 'scratch_hold toggle') to stop the disc for scratching, or release it.</scratch_hold>
+<nudge>'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated).</nudge>
+<linein>activate or desactivate the linein on this deck.\nYou can also specify a linein number to assign another linein: "deck 1 linein 2 on".\nOr you can assign the microphone input: "deck 3 linein 'mic' on".</linein>
+<linein_rec>record the linein input on this deck.</linein_rec>
+<mic>activate or desactivate the microphone input</mic>
+<mic_volume>set the volume of the microphone</mic_volume>
+<mic_rec>record the microphone input on this deck</mic_rec>
+<timecode_active>select if the deck is controlled by a timecode signal.\n(note: you can use "timecode_active x" where x is the turntable number, to assign the same turntable to control several decks at once: "deck 1 timecode_active 1 on &amp; deck 2 timecode_active 2 on").</timecode_active>
+<timecode_bypass>use the timecode turntable as linein input.</timecode_bypass>
+<timecode_mode>set the timecode mode: "smart", "absolute", "relative".</timecode_mode>
+<timecode_config>open the timecode config window</timecode_config>
+<nothing>do nothing.</nothing>
+<true>return true.</true>
+<false>return false.</false>
+<on>turn on the LED.</on>
+<off>turn off the LED.</off>
+<blink>turn on and off the LED, once per second. You can specify the speed: 'blink 1000ms'</blink>
+<var>syntax: 'var "my_var" ? my_action1 : my_action2'. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise.</var>
+<var_equal>syntax: 'var_equal "my_var" 42 ? my_action1 : my_action2'. execute my_action1 if my_var equals 42, execute my_action2 otherwise.</var_equal>
+<var_not_equal>syntax: 'var_not_equal "my_var" 42 ? my_action1 : my_action2'. execute my_action1 if my_var doesn't equal 42, execute my_action2 otherwise.</var_not_equal>
+<var_smaller>syntax: 'var_smaller "my_var" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise.</var_smaller>
+<var_greater>syntax: 'var_greater "my_var" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise.</var_greater>
+<set>syntax: 'set "my_var" 42'. set my_var to 42. if the variable name starts with '$', the variable is global (ie the same for all decks): 'set "$myglobalvar"'.</set>
+<toggle>syntax: 'toggle "my_var"'. toggle my_var between true and false.</toggle>
+<cycle>syntax: 'cycle "my_var" 42'. increment my_var, and goes back to 0 when it reaches 42. 'cycle "my_var" -42' decrements my_var, and goes to 41 after it reached 0.</cycle>
+<param_equal>check if the value of the calling slider/encoder/button is equal to something.</param_equal>
+<param_greater>check if the value of the calling slider/encoder/button is greater than something: 'param_greater 0 ? sampler loop 200% : sampler loop 50%'</param_greater>
+<param_smaller>check if the value of the calling slider/encoder/button is smaller than something: 'param_smaller 0 ? sampler loop 200% : sampler loop 50%'</param_smaller>
+<param_multiply>multiply the value of the calling slider/encoder/button by the given value: 'param_multiply 300% &amp; effect slider'</param_multiply>
+<param_add>add the given value to the value of the calling slider/encoder/button</param_add>
+<param_invert>invert the value of the calling slider/encoder/button: 'param_invert &amp; pitch_slider'</param_invert>
+<param_mod>wrap the value of the calling slider/encoder if more than the given value</param_mod>
+<param_pingpong>transform the value of the calling slider/encoder from a linear scale to a forth-and-back scale</param_pingpong>
+<action_deck>return true if the button calling this action is on the specified deck: 'action_deck 1 ? actionA : actionB'</action_deck>
+<device_side>assign a different action for a button or slider of a device depending on which side of the device it is on: "device_side 'left' ? action_for_left : action_for_right".\nFor more than 2-deck controllers, you can use "device_side 1 ? action1 : device_side 2 ? action2 ? device_side 3 ? action3 : etc..."</device_side>
+<loaded>return true if a song is loaded on the deck</loaded>
+<holding>execute different actions depending if the key is pressed for a long time or not: 'holding ? automix : mix_now'. you can specify the time ('holding 1000ms'), by default it's 500ms.</holding>
+<up>execute different actions depending if the key if pressed or released: 'up ? action1 : action2'</up>
+<down>execute different actions depending if the key if pressed or released: 'down ? action1 : action2'</down>
+<isrepeat>execute different actiosn depending if the key is being repeated or if it's the first message (only keyboard shortcuts are repeated while held down): 'isrepeat ? nothing : goto_cue')</isrepeat>
+<video>open or close the video window</video>
+<video_crossfader>set the position of the video crossfader</video_crossfader>
+<video_crossfader_link>link or unlink the video crossfader to the audio crossfader</video_crossfader_link>
+<video_crossfader_auto>move the video crossfader automatically according to which side is playing, cueing, scratching, etc...</video_crossfader_auto>
+<video_transition>launch a transition from one video deck to the other. you can specify the duration of the transition: 'video_transition 1000ms'</video_transition>
+<video_transition_select>select the plugin used for video transitions. you can specify by name ('video_transition_select "my_plugin"'), relative ('video_transition_select +1') or without parameters to open a popup window listing the available plugins</video_transition_select>
+<video_transition_slider>move the n-th slider of the video transition plugin</video_transition_slider>
+<video_transition_button>push the n-th button of the video transition plugin</video_transition_button>
+<video_fx>activate/deactivate the selected video effect</video_fx>
+<video_fx_select>select a video effect plugin. you can specify by name ('video_fx_select "my_plugin"'), relative ('video_fx_select +1') or without parameters to open a popup window listing the available plugins</video_fx_select>
+<video_fx_slider>move the n-th slider of the video effect plugin</video_fx_slider>
+<video_fx_button>push the n-th button of the video effect plugin</video_fx_button>
+<video_fx_clear>deactivate all the active video effects</video_fx_clear>
+<video_fadetoblack>activate/deactivate fade-to-black on volume sliders</video_fadetoblack>
+<videofile_link>link a new video to be used as image for the audio song currently on the specified deck. you can specify a filename ('videofile_link "my_video"'). if you don't give a parameter, the file currently selected in the browser is used. use 'videofile_link off' to remove the link.</videofile_link>
+<add_favoritefolder>make the selected folder a favorite folder (monitored folders).</add_favoritefolder>
+<add_filterfolder>create a new filter folder.</add_filterfolder>
+<add_virtualfolder>create a new virtual folder (unmonitored folder).</add_virtualfolder>
+<goto_last_folder>go back to the last browsed folder.</goto_last_folder>
+<browser_scroll>scroll through the songs or folders.</browser_scroll>
+<browser_enter>if focus is on songs, load the selected song. if focus is on folders, change focus to songs.</browser_enter>
+<browser_folder>if focus is on songs, change focus to folders. if focus is on folders, open or close the subfolders of the selected folder.</browser_folder>
+<browser_window>change the active browser zone. 'browser_window "folders"', 'browser_window "songs"', 'browser_window "playlist"', 'browser_window "sidelist"', or 'browser_window +1'.</browser_window>
+<search>put the keyboard focus on the search zone, or, if a text parameter is specified, search for this text.</search>
+<clear_search>clear the search string</clear_search>
+<edit_search>put the keyboard focus in the search zone but keep the actual search string.</edit_search>
+<log_search>log the current search in the SearchLog.txt file, so you can easily search for your failed requests once the gig is over.</log_search>
+<browser_zoom>zoom or unzoom the browser to be displayed on the whole window.</browser_zoom>
+<automix>start or stop the automatic playlist mixing.</automix>
+<automix_skip>if automix is active, skip the actual song and mix to the next one in the playlist.</automix_skip>
+<playlist_options>display a drop-down with the list of options for the playlist.</playlist_options>
+<playlist_randomize>shuffle the order of the songs in the playlist.</playlist_randomize>
+<playlist_remove_played>remove from the playlist all the songs that have already been played since the software was launched.</playlist_remove_played>
+<playlist_repeat>repeat (or stop to repeat) the playlist while automixing.</playlist_repeat>
+<playlist_clear>empty the playlist.</playlist_clear>
+<playlist_save>save the playlist in a file.</playlist_save>
+<playlist_remove_duplicates>remove duplicate songs from the playlist.</playlist_remove_duplicates>
+<create_virtualfolder_from_playlist>save the playlist in a virtual folder.</create_virtualfolder_from_playlist>
+<playlist_add>add to the playlist the songs selected in the browser.</playlist_add>
+<playlist_load_and_keep>load the first song in the playlist on the deck, but keep it in the playlist.</playlist_load_and_keep>
+<playlist_load_and_remove>load the first song in the playlist on the deck, and remove it from the playlist.</playlist_load_and_remove>
+<switch_sidelist_playlist>exchange the content of the playlist and the sidelist.</switch_sidelist_playlist>
+<sidelist_clear>clear the sidelist.</sidelist_clear>
+<sidelist_add>add to the sidelist the songs selected in the browser.</sidelist_add>
+<sidelist_load_and_keep>load the first song from the sidelist.</sidelist_load_and_keep>
+<sidelist_load_and_remove>load the first song from the sidelist, and remove it from the sidelist.</sidelist_load_and_remove>
+<virtualfolder_add>add to the specified virtualfolder the songs selected in the browser. 'virtualfolder_add "my_vfolder"'. if no folder name is given, add to the last one.</virtualfolder_add>
+<load>load the selected song on the deck. you can also specify a fullpath to load 'load "path_to_my_song"'.</load>
+<save_deck_set>set the current configuration (which song is loaded on which deck) in a file.</save_deck_set>
+<load_deck_set>reload a previously saved deck_set file.</load_deck_set>
+<file_info>open a window to edit many informations about the loaded track.</file_info>
+<browsed_file_info>open a window to edit many informations about the selected track.</browsed_file_info>
+<prelisten>pre-listen the selected track.</prelisten>
+<prelisten_output>set this deck to be used for the prelisten. Use 'prelisten_output "menu"' to display a context menu with the available outputs.</prelisten_output>
+<prelisten_pos>move the position of the prelistening.</prelisten_pos>
+<edit_comment>open a window to edit the comment on the selected track.</edit_comment>
+<browser_sort>sort the browser files on the specified columne: 'browser_sort "smart"', 'browser_sort "author"', 'browser_sort "lastplay"', etc...</browser_sort>
+<browser_gotofolder>'browser_gotofolder' goes to the folder containing the current file. 'browser_gotofolder "/my_path/my_folder"' goes to the specified folder. 'browser_gotofolder 4' goes to the fourth virtual/favorite folder.</browser_gotofolder>
+<recurse_folder>display the content of both the selected folder and all its subfolders in the browser list.</recurse_folder>
+<search_options>popup the list of search options. to set one directly, you can use 'search_options "composer" toggle' etc...</search_options>
+<view_options>popup the list of view options. to set one directly, you can use 'view_options "showkaraoke" on' etc...</view_options>
+<lock_panel>'lock_panel "folders"' or 'lock_panel "playlist"'.</lock_panel>
+<beat_tap>tap on a few beats to set a new bpm for the song if the application didn't got it right on the first time.</beat_tap>
+<set_bpm>set the bpm of the song to the set value: 'set_bpm 129.3', or relative to the actual value: 'set_bpm 50%'.</set_bpm>
+<edit_bpm>open a window with tools to fine-tune the bpm of the song.</edit_bpm>
+<adjust_cbg>adjust the beat grid. 'adjust_cbg +2' moves the start bar from 4:4. 'adjust_cbg +10%' moves the actual bars.</adjust_cbg>
+<goto_mixpoint>go to the specified mix point, from "StartTempo", "EndTempo", "StartCut", "EndCut", "StartFade", "EndFade".</goto_mixpoint>
+<set_mixpoint>set the specified mix point to the actual pos, or to the specified pos.</set_mixpoint>
+<record>start recording the session.</record>
+<record_cut>cut the current recording to a new file (or new track if recording to CD)</record_cut>
+<record_config>open the record configuration panel</record_config>
+<crossfader_curve>select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name ("smooth", "full", "scratch", "cut", "disabled"). or you can draw your own curve, using a syntax like 'crossfader_curve "0=[1,0]/0.5=[1,1]/1=[0,1]"'.</crossfader_curve>
+<crossfader_hamster>invert the crossfader.</crossfader_hamster>
+<show_pluginpage>show the specified plugin page: "Sound Effects", "Video Effects", "Video Transitions", "Others".</show_pluginpage>
+<unload>unload the song from the deck.</unload>
+<not_played>don't mark the song on this deck as 'played'.</not_played>
+<clone_deck>clone the deck (load the same song on the other deck, and play it from the same position, ready for beat-juggling).</clone_deck>
+<clone_deck_nopitch>clone the deck (load the same song on the other deck, and play it from the same position, ready for beat-juggling), but do not match the pitch (for timecode turntable pitching).</clone_deck_nopitch>
+<skin_panel>show or hide the nammed panel from the skin: 'skin_panel "my_panel" on'.</skin_panel>
+<multibutton>click on the named multibutton: 'multibutton "my_button"'.</multibutton>
+<multibutton_select>open the selection menu for the named multibutton. if a second text parameter is provided after the name, use it as the new action to load in the multibutton: 'multibutton_select "my_button" "goto_cue 2 &amp; play"'.</multibutton_select>
+<mix_now>Smoothly crossfade from one side to the other, using beatsync if both songs have enough beat.</mix_now>
+<mix_now_nosync>Smoothly crossfade from one side to the other.</mix_now_nosync>
+<mix_next>if the non-playing deck has a song loaded that's already been played, load a new one from the playlist. then, smoothly crossfade from the playing deck to the other, using beatsync if both songs have enough beat.</mix_next>
+<mix_next_sidelist>if the non-playing deck has a song loaded that's already been played, load a new one from the sidelist. then, smoothly crossfade from the playing deck to the other, using beatsync if both songs have enough beat.</mix_next_sidelist>
+<automix_dualdeck>enable or disable automix using both decks (deprecated).</automix_dualdeck>
+<relay_play>enable or disable the decks to automatically start playing when the opposite deck reached its end</relay_play>
+<fader_start>enable or disable fader start</fader_start>
+<beat_juggle>alternatively jumps one beat forward and backward</beat_juggle>
+<assign_controller>assign a specific controller to this deck. Example: 'deck 1 assign_controller "CDJ400" 2' assigns the second CDJ400 to deck 1.</assign_controller>
+<invert_controllers>invert the deck of the controllers.</invert_controllers>
+<rescan_controllers>rescan for newly connected controllers.</rescan_controllers>
+<refresh_controller>refresh the display of the specified controller (or all if none specified).</refresh_controller>
+<reinit_controller>reinit the specified controller (or all if none specified), going through the exit and init sequences (you can specify a delay between exit and init: 'reinit_controllers "mycontroller" 200ms'.</reinit_controller>
+<menu>display a menu on the controller's screen, that allows to change the behaviour of the menu_buttons. you can navigate through the menu using the browser_scroll action'.</menu>
+<menu_button>defines a button whose behaviour can be changed by a menu. Syntax: 'menu_button 1 "hotcue,sampler,effect,loop"'.</menu_button>
+<show_text>display the text provided for a limited time (default 3 seconds). '$myvar$' in the text are replaced by the value of myvar. '$?myvar$' are replaced by 'on' or 'off'. '|' goes to new line. syntax: 'show_text "Shift:|Value=$?shift$" 5000ms'</show_text>
+<songpos_remain>get the remaining time in %. if used with a parameter (in % or ms), returns true if the time left is less or equal than the value: 'songpos_remain 500ms blink'.</songpos_remain>
+<getfood>because no DJ should work on an empty stomach</getfood>
+<open_help>open the user guide</open_help>
+<is_pc>return true if the computer is a PC, false if it's a MAC (example: &lt;panel visible="is_pc" /&gt;)</is_pc>
+<is_mac>return true if the computer is a MAC, false if it's a PC</is_mac>
+<dmx>show/hide the lights control window</dmx>
+<dmx_color>set the color program</dmx_color>
+<dmx_chase>set the chase program</dmx_chase>
+<dmx_black>black all lights</dmx_black>
+<dmx_strobe>activate/deactivate the strobe</dmx_strobe>
+<dmx_flash>flash all lights</dmx_flash>
+<dmx_setvalue>Set an individual dmx value. first parameter is channel, second is value</dmx_setvalue>
+<sampler_play>play the selected sample. syntax 'sampler play' plays the default sample. 'sampler 4 play' plays the fourth sampler slot.</sampler_play>
+<sampler_play_stutter>play the selected sample. if already playing, restart from begining.</sampler_play_stutter>
+<sampler_play_stop>play the selected sample if it's not already playing, or stop it if it's already playing.</sampler_play_stop>
+<sampler_stop>stop the selected sample. syntax 'sampler stop' stops the default sample. 'sampler 4 stop' stops the fourth sampler slot. 'sampler all stop' stops all samples.</sampler_stop>
+<sampler_volume>change the volume of the selected sample.</sampler_volume>
+<sampler_rec>on first press, start to record a new sample in the selected slot. on second press, stop to record.</sampler_rec>
+<sampler_start_rec>start to record a new sample in the selected slot.</sampler_start_rec>
+<sampler_stop_rec>stop to record the new sample.</sampler_stop_rec>
+<sampler_abort_rec>abort the recording of the sample.</sampler_abort_rec>
+<sampler_loop>put the sample in loop, or change the size of the loop: 'sampler default loop on' or 'sampler default loop 50%'.</sampler_loop>
+<sampler_pitched>lock or unlock the pitch of the sample on the current song.</sampler_pitched>
+<sampler_beatlock>lock or unlock the phase of the sample on the current song.</sampler_beatlock>
+<sampler_options>popup the sample menu.</sampler_options>
+<sampler_select>select which sample is the default sampler slot for that deck. syntax 'sampler select 5' selects the fifth sampler slot. 'sampler select +1' scrolls through the sampler slots. 'sampler select' open a popup menu to select the new default sampler slot.</sampler_select>
+<sampler_load>load a new sample in the selected slot. 'sampler load "my_sample.vds"' loads a specified file. 'sampler load' open a selection window.</sampler_load>
+<sampler_save>save the current sample in a file. 'sampler save "my_sample.vds"' saves in a specified file. 'sampler_save' open a selection window.</sampler_save>
+<sampler_position>get the current position of the sample</sampler_position>
+<effect_active>start or stop the effect. you can also specify an effect by name ('effect "my_effect" active on'), or use a different effect slot ('effect 3 active').</effect_active>
+<effect_select>select a new effect. you can specify the effect by name ('effect select "my_effect"'), or relative to the current effect ('effect select +1'). with no parameters ('effect select'), it will open a popup under the mouse with the list of available effects. you can also specify a different effect slot ('effect 4 select "my_effect"').</effect_select>
+<effect_slider>move the n-th slider on the given effect</effect_slider>
+<effect_button>push the n-th button on the given effect</effect_button>
+<get_text>get some text. You can use the inverted apostrophe to query VDJScript results within the text: "get text 'You are listening to `get loaded_song "title"` at `volume` volume.".\nVDJScript returning booleans (buttons) will be displayed as "on" or "off".\nVDJScript returning values (sliders) will be displayed as a percentage.\n(you can also (but it's being deprecated in VDJ7) use % shortcuts for some common queries: "get text 'you are listening to %title by %author'")</get_text>
+<get_display>get some text to display. depending on the latest action, it can be the name of an effect, the folder being browsed, the title of the current song, etc... for multiline displays, you can add the line number: "get display 1", "get display 2".</get_display>
+<get_time_min>get the minutes of the elapsed time (or remaining or total, depending on "display_time"). use 'get time_min "absolute"' if you don't want to take the pitch variations in account. you can write 'get time_min "elapsed"' or "remain" or "total" to bypass the setting of display_time</get_time_min>
+<get_time_sec>get the seconds of the elapsed time (or remaining or total, depending on "display_time").</get_time_sec>
+<get_time_ms>get the milliseconds of the elapsed time (or remaining or total, depending on "display_time").</get_time_ms>
+<get_totaltime_min>get the minutes of the length of the song (this is equivalent to 'get time_min "total"').</get_totaltime_min>
+<get_totaltime_sec>get the seconds of the length of the song.</get_totaltime_sec>
+<get_totaltime_ms>get the milliseconds of the length of the song.</get_totaltime_ms>
+<get_pitch>get the pitch from -100% to +100%, centered on 0%</get_pitch>
+<get_pitch_value>get the pitch from 0% to 200%, centered on 100%</get_pitch_value>
+<get_pitch_zero>is true if the pitch is zero, with an optional precision parameter: "get pitch_zero 5%" (the % is relative to the pitch range. Use "get pitch_zero 'absolute' 0.1%" to use absolute precision)</get_pitch_zero>
+<get_bpm>get the bpm of the song.</get_bpm>
+<get_beat>get the intensity of the beat at the current position (0% to 100%).</get_beat>
+<get_beat2>get the intensity of the beats from both decks at the same time.</get_beat2>
+<get_beatgrid>get the intensity of the beat based on the beatgrid (100% if on the beat, 0% if halfway between to beats).</get_beatgrid>
+<get_beatpos>get the current position in beatgrid coordinate (27.5 would mean halfway between the 27th and 28th beats in the song).</get_beatpos>
+<get_level>get the value of the incoming vu-meter. don't specify a deck if you want the master mix vu-meter.</get_level>
+<get_level_left>get the value of the incoming vu-meter for the left balance.</get_level_left>
+<get_level_right>get the value of the incoming vu-meter for the right balance.</get_level_right>
+<get_vu_meter>get the value of the outgoing vu-meter. don't specify a deck if you want the master output vu-meter.</get_vu_meter>
+<get_vu_meter_left>get the value of the outgoing vu-meter for the left balance.</get_vu_meter_left>
+<get_vu_meter_right>get the value of the outgoing vu-meter for the right balance.</get_vu_meter_right>
+<get_rotation>get the angle of the disc</get_rotation>
+<get_arm>get the position of the turntable arm</get_arm>
+<get_position>get the position in the song</get_position>
+<get_cpu>get the CPU usage</get_cpu>
+<get_automix>get the position of the automix crossfader</get_automix>
+<get_volume>get the volume applied by both the volume sliders and the crossfader</get_volume>
+<get_timecode_quality>get the timecode quality</get_timecode_quality>
+<get_deck>get the number of the deck.</get_deck>
+<get_defaultdeck>get the number of the default deck</get_defaultdeck>
+<get_leftdeck>get the number of the left deck</get_leftdeck>
+<get_rightdeck>get the number of the right deck</get_rightdeck>
+<get_activedeck>get the number of the sync master deck</get_activedeck>
+<get_var>get the numeric value of the specified variable</get_var>
+<get_active_loop>get the number of beats in the current loop</get_active_loop>
+<get_loop>get the number of beats in the current loop or the default loop size if no loop is active</get_loop>
+<get_cue>get the number of the last used cue</get_cue>
+<get_key_modifier>get the number of semitone up or down currently applied to the song</get_key_modifier>
+<get_beat_num>get the number of the current beat in the 4:4 bar. 'get beat_num' returns the beat number from 1 to 4. 'get beat_num 2' return true if the song is on a second beat. 'get beat_num 2 16' returns true if the song is on the second beat of a 4:16 bar.</get_beat_num>
+<get_beat_bar>get the position in % in the 4:4 bar (or in 4:16 if called with 'get beat_bar 16')</get_beat_bar>
+<get_filepath>get the filepath of the song on the deck</get_filepath>
+<get_filesize>get the filesize of the song on the deck</get_filesize>
+<get_songlength>get the length in seconds of the song on the deck</get_songlength>
+<get_version>get the version of VirtualDJ (in text)</get_version>
+<get_build>get the version of VirtualDJ (in numeric)</get_build>
+<get_membership>return 1 if the user is a premium member</get_membership>
+<get_hwnd>return the Windows handle to VirtualDJ's window</get_hwnd>
+<get_vdj_folder>return the home folder of VirtualDJ.</get_vdj_folder>
+<get_browsed_folder>get the name of the folder selected in the browser</get_browsed_folder>
+<get_browsed_song>get a property from the currently browsed file: "get browsed_song 'title'", "get browsed_song 'playcount'", etc...</get_browsed_song>
+<get_loaded_song>get a property from the song loaded on the deck: "deck 2 get loaded_song 'album'"</get_loaded_song>
+<get_automix_song>get a property from the next song in automix: "get automix_song 'title'"</get_automix_song>
+<get_sampler_slot>get the number of the sampler slot selected on this deck</get_sampler_slot>
+<get_constant>return the given constant: 'get constant 75%' always returns 75%</get_constant>
+<get_sampler_used>get the number of active sampler slots</get_sampler_used>
+<get_effects_used>get the number of active effect plugins</get_effects_used>
+<get_effect_name>get the name of the currently selected effect</get_effect_name>
+<get_sample_name>get the name of the currently selected sample</get_sample_name>
+<get_sample_slot_name>get the name of the sample in slot X: "get sample_slot_name 7"</get_sample_slot_name>
+<get_videofx_name>get the name of the currently selected video effect</get_videofx_name>
+<get_videotrans_name>get the name of the currently selected video transition</get_videotrans_name>
+<get_record_message>get the message displayed on the record page</get_record_message>
+<get_record_min>get the minutes of the recording time</get_record_min>
+<get_record_sec>get the seconds of the recording time</get_record_sec>
+<get_record_ms>get the milliseconds of the recording time</get_record_ms>
+<get_hastimecode>returns true if the current soundconfig includes some timecode inputs</get_hastimecode>
+<get_haslinein>returns true if the current soundconfig includes some linein inputs</get_haslinein>
+<get_hasmic>returns true if the current soundconfig includes a mic input</get_hasmic>
+<get_hasinput>returns true if the current soundconfig includes any input (mic, linein or timecode)</get_hasinput>
+
+  </Actions>
+
+	<ToolTips>
+		<tooltip action="add_favoritefolder">Add as favorite (monitored) folder</tooltip>
+		<tooltip action="add_virtualfolder">Add a new virtual (unmonitored) folder</tooltip>
+		<tooltip action="add_filterfolder">Add a new filter (automatic) folder</tooltip>
+		<tooltip action="playlist_options">Playlist management</tooltip>
+		<tooltip action="automix">Enable/Disable Automatic mixing</tooltip>
+		<tooltip action="log_search">Log this search in the SearchLog.txt file</tooltip>
+		<tooltip action="beat_tap">Tap to modify the BPM (right-click for advanced edit</tooltip>
+	</ToolTips>
+
+</language>

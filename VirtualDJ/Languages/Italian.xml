@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language lang="Italiano" author="Atomix Productions" credit="moramax" version="7.0">
+
+<Errors>
+    <Explorer>Errore in Windows Explorer</Explorer>
+    <Desktop>Impossibile trovare il desktop</Desktop>
+    <GDI>Inizializzazione del driver video fallita.</GDI>
+    <Sound>Errore nel driver sonoro</Sound>
+    <DirectSound>Errore nel driver sonoro DirectX</DirectSound>
+    <DirectSoundUsed>La scheda audio è già in uso da un'altra applicazione</DirectSoundUsed>
+    <DirectSoundMemory>Errore nel driver audio: memoria esaurita</DirectSoundMemory>
+    <CoreAudio>Errore nel core del driver sonoro</CoreAudio>
+    <FixDB>Il database nel drive %c: è corrotto.\nSeleziona Config/Browser e cliccare su "Fix %c: database".</FixDB>
+    <Skin>Skin non valida (errore linea %i)</Skin>
+    <WDMError>Inizializzazione del drive WDM fallita. Controlla di avere un driver WDM installato, con la funzionalità quad-output\n (Windows 95 e Windows 98 Prima edizione non supportano i driver WDM)</WDMError>
+    <QueryClose>VirtualDJ ha in riproduzione un brano!\nSei sicuro di volerlo chiudere?</QueryClose>
+    <Security>Stai suonando un brano da questo deck.\nSei sicuro di volerlo fermare?</Security>
+    <DemoLimit2>Questa è solo una versione di valutazione di VirtualDJ.\nVisita il nostro sito http://www.virtualdj.com/ per ordinare la versione completa</DemoLimit2>
+    <SerialError>Errore di protezione %i.Contattare http://www.virtualdj.com/contact/</SerialError>
+    <InvalidSerial>Il numero seriale non è valido</InvalidSerial>
+    <BadCDRip>Il CD non è leggibile.\nProva a pulirlo.</BadCDRip>
+    <Controler>Non trovo il controller.\nControlla che sia connesso e lancia nuovamente VirtualDJ.</Controler>
+    <Video>Impossibile inizializzare il driver video!</Video>
+    <VideoError>Errore nel driver  video</VideoError>
+    <AsioError>Errore nel driver ASIO</AsioError>
+    <AsioChanError>Errore nel driver audio: Non sono presenti abbastanza canali audio</AsioChanError>
+    <RewireError>Errore nella connesione ReWire. Assicurarsi che la sorgente rewire sia aperta ed in esecuzione.</RewireError>
+    <TimecodeSignalError>Il segnale timecode non è presente.\nCortesemente riprodurre il vinile timecoded dal piatto e provare ancora.\nSe continua a non funzionare, controllare i cavi di connessione audio, e il volume degli ingressi della tua scheda audio.</TimecodeSignalError>
+    <Direct3DError>Versione invalida dei driver DirectX.\nCortesemente installare i DirectX v9.0c o superiori.\nE'possibile scaricarlo gratuitamente dal sito Microsoft website:\nhttp://www.microsoft.com/directx</Direct3DError>
+    <DJCDemoLimit>Il supporto per i timecode è una funzione disponibile solo per la versione 'Professionale'.\nLa versione 'DJConsole Edition' permette di testare i timecode con la DJConsole per un tempo massimo 5 minuti.\n\nSe sei interessato ad aggiornare il software alla Pro version, cortesemente visitare il notro website:\nhttp://www.virtualdj.com/</DJCDemoLimit>
+    <VideoLimit>Il video a Schermo-intero è solo disponibile nella versione professionale di VirtualDJ.\n\nSe sei interessato ad aggiornare il software alla versione pro, cortesemente visitare il nostro website:\nhttp://www.virtualdj.com/</VideoLimit>
+    <DRMRecord>Uno dei file che stai attualmente riproducendo è protetto con il DRM protection.\nDi conseguenza, è impossibile registrarlo o masterizzarlo.</DRMRecord>
+    <SkinSize>Attenzione!\nLa skin che stai cercando di usare ha una risoluzione più alta del tuo schermo</SkinSize>
+    <ShortcutExists>Questo collegamento è già stato assegnato.\n\nCliccare su Si per aggiungere il  nuovo shortcuts.\nCliccare su No per conservare il precedente shortcuts.</ShortcutExists>
+    <DBFull>Il disco drive %c: è pieno.</DBFull>
+    <ThreadBlocked>Attenzione!\nIl sistema si è bloccato (%s).\nVirtualDJ si è ripristinato, ora è possibile lavorare nuovamente.\nComunque consigliamo di riavviare il software.</ThreadBlocked>
+    <NetSearchCacheUnavailable>Questa funzionalità non è disponibile su questo computer</NetSearchCacheUnavailable>
+    <NetSearchCacheError>Questo file cache è scaduto. Connettersi ad Internet per ri-validarlo.</NetSearchCacheError>
+    <NetSearchBadDate>La data del computer non è corretta. Regolare l' orologio di sistema prima di usare la funzione NetSearch</NetSearchBadDate>
+    <HerculesDrivers>Sono installati driver Hercules obsoleti.\nE' necessario scaricare ed installare gli ultimi driver.\nVuoi scaricarli ora?</HerculesDrivers>
+    <MemoryError>Decomprimere il file nella memoria richiederebbe %iMb di memoria contigua.\n Il tuo sistema ha solo %iMb di memoria libera disponibile (fuori da %iMb), ed è troppo frammentata per contenere i buffer contigui.\n\nPertanto, la canzone verrà caricata on-the-fly dal lettore (e l'anteprima completa forma d'onda non sarà disponibile).</MemoryError>
+    <AdvancedConfig>Configurazione Audio Avamzata non valida</AdvancedConfig>
+    <CloseRewire>E’ necessario chiudere tutte le applicazioni ReWire slave prima di chiudere VirtualDJ.\nChiudere le applicazione Rewire ora e premere OK.</CloseRewire>
+    <BadiTunesLocation>In questa locazione non è presente la libreria iTunes</BadiTunesLocation>
+</Errors>
+
+<Others>
+    <Search>Cerca: </Search>
+    <Empty>(Vuoto)</Empty>
+    <LameHelp>Seleziona un plugin per registrare in mp3.\n\nSe hai bisogno di aiuto per questa funzione visita il nostro sito.</LameHelp>
+    <VScratchHelp>Benvenuto in Virtual-Scratch.\nHai bisogno di una webcam o una videocamera per utilizzare questa funzione.\nDopo aver connesso la webcam, passa la tua mano sulla linea rossa per lo scratch.</VScratchHelp>
+    <VControlHelp>Benvenuto in Vinyl-Control.\nHai bisogno di una webcam o una videocamera per utilizzare questa funzione.\nSistema la webcam in modo che venga visualizzato il centro del vinile, avvia il giradischi a 45RPM e premi CALIBRA.\nUsa poi il vinile come al solito, e VirtualDJ si comporterà di conseguenza.</VControlHelp>  
+    <DragToStart>Trascina un brano su questo deck per caricarlo</DragToStart>
+    <FadeEntryPoint>Punto di ingresso "Fade"</FadeEntryPoint>
+    <FadeExitPoint>Punto d'uscita "Fade"</FadeExitPoint>
+    <CutEntryPoint>Punto ingresso "taglio"</CutEntryPoint>
+    <CutExitPoint>Punto d' uscita "taglio"</CutExitPoint>
+    <TempoEntryPoint>Tempo Entry Point</TempoEntryPoint>
+    <TempoExitPoint>Tempo Exit Point</TempoExitPoint>
+    <AutoMixPoint>Punto di autoMix</AutoMixPoint>
+    <FirstAnchor>Primo Anchor</FirstAnchor>
+    <LastAnchor>Ultimo Anchor</LastAnchor>
+    <AutoUpdate>VirtualDJ proverà ora a collegarsi ad internet e controllare se è disponibile una nuova versione.\n\nIn qualsiasi momento puoi disabilitare questa funzione nel pannello di configurazione.</AutoUpdate>
+    <SearchCount>Numero di risultati trovati</SearchCount>
+    <MusicGroupsFeed>Suggerimenti dal tuo Gruppo Musicale</MusicGroupsFeed>
+    <OverwritePrompt>Questo file è già presente.\nVuoi sovrascriverlo?</OverwritePrompt>
+    <NoDelete>Non è possibile cancellare un file che attualmente è in riproduzione</NoDelete>
+    <DJCHeadphonesHelp>Per ottenere il preascolto in cuffia, tenere premuto (e non rilasciare) il pulsante con il logo della cuffia presente nella DJConsole</DJCHeadphonesHelp>
+    <DateAgo>%i ore fa</DateAgo>
+    <MinutesAgo>%i minuti fa</MinutesAgo>
+    <RecordFile>REGISTRARE FILE</RecordFile>
+    <BurnCD>MASTERIZZARE CD</BurnCD>
+    <Broadcast>BROADCAST</Broadcast>
+    <RecordMovie>REGISTRARE VIDEO</RecordMovie>
+    <InitTagEngine>Inizializzazione Motore Tag...</InitTagEngine> 
+    <InitDatabase>Caricamento Database...</InitDatabase> 
+    <InitITunes>Caricamento iTunes Database...</InitITunes> 
+    <InitMappers>Caricamento mappers...</InitMappers>
+    <InitInternet>Inizializzazione motore della rete...</InitInternet>
+    <InitPluginEngine>Inizializzazione Motore Plugin...</InitPluginEngine> 
+    <InitSoundEngine>Inizializzazione Motore Sonoro...</InitSoundEngine> 
+    <InitSkinEngine>Caricamento Skin...</InitSkinEngine> 
+    <InitGrafxEngine>Inizializzazione Motore Grafico...</InitGrafxEngine> 
+    <InitPlugins>Caricamento Plugins...</InitPlugins> 
+    <InitActionEngine>Inizializzazione Motore Action...</InitActionEngine> 
+    <InitControllers>Inizializzazione Dispositivi Esterni...</InitControllers> 
+    <InitEnd>Inizializzazione Completata...</InitEnd>
+    <FactoryMapper>Sei sicuro di resettare questo mapper alle impostazioni predefinite?</FactoryMapper>
+    <NoFactoryMapper>Non sono presenti setteggi predefiniti per questo dispositivo. Vuoi comunque cancellarlo?</NoFactoryMapper>
+    <ConfirmDelete>Sei sicuro che vuoi cancellare questo?</ConfirmDelete>
+    <HomeBroadcast>Il Broadcast è una funzionalità disponibile solo nelle versioni a pagamento di VirtualDJ.\ Si prega di consultare www.virtualdj.com per ulteriori informazioni sulla nostra linea di prodotti e prezzi di aggiornamento.\n\n(Il Broadcast  continuerà, ma per un tempo limitato di 10 minuti)</HomeBroadcast>
+    <HomeAudio> la configurazione audio complessa è una funzione disponibile solo in VirtualDJ BASIC o VirtualDJ PRO.\n Si prega di consultare www.virtualdj.com per ulteriori informazioni sulla nostra linea di prodotti e prezzi di aggiornamento.\n\n(la configurazione audio rimarranno attive, ma solo per 10 minuti)</HomeAudio>
+    <HomeDevice> E’ stato rilevato un controller esterno.\ I controller esterni sono supportati solo da VirtualDJ PRO.\ Si prega di consultare www.virtualdj.com per ulteriori informazioni sulla nostra linea di prodotti e prezzi di aggiornamento.\n\n(il controller funzionerà solo per 10 minuti)</HomeDevice>
+    <HomeVideo> L’ uscita video a schermo intero  è disponibile solo con VirtualDJ PRO.\n Si prega di consultare www.virtualdj.com per ulteriori informazioni sulla nostra linea di prodotti e prezzi di aggiornamento.\n\n(L’ uscita video sarà a schermo intero solo per 10 minuti)</HomeVideo>
+</Others>
+
+<Columns>
+    <Icon>Icona</Icon>
+    <Title>Titolo</Title>
+    <Author>Autore</Author>	
+    <Album>Album</Album>
+    <Genre>Genere</Genre>
+    <Bpm>Bpm</Bpm>
+    <Key>Key</Key>
+    <Length>Durata</Length>
+    <Bitrate>Bitrate</Bitrate>
+    <Year>Anno</Year>
+    <Comment>Commento</Comment>
+    <PlayCount>Conteggio Play</PlayCount>
+    <FirstSeen>Aggiunto DB</FirstSeen>
+    <FirstPlay>Primo play</FirstPlay>
+    <LastPlay>Ultimo play</LastPlay>
+    <Drive>Drive</Drive>
+    <Filepath>Percorso</Filepath>
+    <Filename>Nome del file</Filename>
+    <Filetype>Tipo del file</Filetype>
+    <Filesize>Lunghezza del file</Filesize>
+    <Filedate>Data del file</Filedate>
+    <LinkedVideo>Video Collegato</LinkedVideo>
+    <KeyNumeric>key(Numerico)</KeyNumeric>
+    <Composer>Compositore</Composer>
+    <BpmCompat>Bpm Diff</BpmCompat>
+    <KeyCompat>Key Diff</KeyCompat>
+    <Stars>Classificazione</Stars>
+    <User1>Campo1</User1>
+    <User2>Campo2</User2>
+    <LoadedOn>Caricato su</LoadedOn>
+</Columns>
+
+<Search>
+    <Title>Titolo</Title>
+    <Author>Artista</Author>
+    <FilePath>Percorso</FilePath>
+    <FileName>Nome del file</FileName>
+    <Comment>Commento</Comment>
+    <Album>Album</Album>
+    <Genre>Genere</Genre>
+    <Year>Anno</Year>
+    <Bpm>Bpm</Bpm>
+    <Key>Key</Key>
+    <LinkedVideo>Video Collegato</LinkedVideo>
+    <Composer>Compositore</Composer>
+    <User1>Campo1</User1>
+    <User2>Campo2</User2>
+</Search>
+
+<Filters>
+    <wav>File wav (*.wav)\0*.wav\0</wav>
+    <mp3>File MP3 (*.mp3)\0*.mp3\0</mp3>
+    <Plugin>Plugins (*.dll)\0*.dll\0</Plugin>
+    <wavmp3>File wave (*.wav)\0*.wav\0MP3 File (*.mp3)\0*.mp3\0</wavmp3>
+    <bincue>File masterizzazione CD (*.cue/*.bin)\0*.bin;*.cue\0</bincue>
+    <xml>File XML (*.xml)\0*.xml\0</xml>
+    <Samples>Tutti i Samples\0*.wav;*.mp3;*.wma;*.asf;*.cda;*.ogg;*.vdj\0VDJ Samples\0*.vdj\0</Samples>
+    <vdj>VDJ Loops (*.vdj)\0*.vdj\0</vdj>
+    <avi>File Video (*.avi)\0*.avi\0</avi>
+    <mov>File Video (*.mov)\0*.mov\0</mov>
+    <skin>File Skin (*.zip)\0*.zip\0</skin>
+</Filters>
+
+<BrowserTitles>
+    <RecordFile>Registra su File</RecordFile>
+    <CopyTo>Seleziona dove copiare questo file</CopyTo>
+    <MoveTo>Seleziona dove spostare questo file</MoveTo>
+    <RecordPlugin>Record Plugin</RecordPlugin>
+    <RipFile>File di destinazione</RipFile>
+    <LoadSample>Carica Sample</LoadSample>
+    <SaveSample>Salva Sample</SaveSample>
+    <LoadSkin>Carica lo Skin</LoadSkin>
+</BrowserTitles>
+
+<Windows>
+    <Default><OK>Si</OK><Cancel>No</Cancel></Default>
+    <EditBpmOnly><Title>Modifica BPM</Title><OK>OK</OK><Cancel>Cancella</Cancel></EditBpmOnly>
+    <EditComment><Title>Commento</Title><OK>OK</OK></EditComment>
+    <Serial><Title>Numero seriale</Title><Label1>Benvenuto su VirtualDJ\n\nCortesemente inserire il numero seriale fornito con il prodotto.</Label1><OK>OK</OK></Serial>
+    <ShortcutEdit><Title>Shortcut</Title><OK>OK</OK><Cancel>Cancella</Cancel><Label1>Valore=</Label1><Label2>Reset</Label2><Label3>Auto</Label3><Label4>Tempor.</Label4></ShortcutEdit>
+    <EditFilename><Title>Nome del file</Title><OK>OK</OK></EditFilename>
+    <RenameCue><Title>Nome del Cue</Title><OK>OK</OK></RenameCue>
+    <Error><Title>Errore generale</Title><OK>Ripristina</OK><Cancel>Chiudi</Cancel><Label1>Si è verificato un errore generale!\nVirtualDJ proverà a ripristinare automaticamente la situazione.\n\nClicca su Ripristina e tutto dovrebbe tornare al suo posto.</Label1><Label2>Spedire il rapporto</Label2></Error>
+    <VScratch><Title>Virtual-Scratch</Title><OK>Attiva</OK><Label1>WebCam</Label1><Label2>Dispositivo</Label2><Label3>Sorgente...</Label3><Label4>Formato...</Label4><Label5>Aiuto</Label5></VScratch>
+    <VControl><Title>Vinyl-Control</Title><OK>Attiva</OK><Label1>WebCam</Label1><Label2>Dispositivo</Label2><Label3>Sorgente...</Label3><Label4>Formato...</Label4><Label5>Calibrazione</Label5><Label6>Aiuto</Label6></VControl>
+    <Settings><Title>Impostazioni</Title><OK>OK</OK><Cancel>Cancella</Cancel><Label1>Applica</Label1></Settings>
+    <EditBpm><Title>Correzione BPM</Title><OK>OK</OK><Cancel>Cancella</Cancel></EditBpm>
+    <EditBpmGrid><Title>Mod. Grid</Title><Label1>Anchor 1</Label1><Label2>Imposta battuta</Label2><Label3>Anchor 2</Label3><Label4>Imposta battuta</Label4><Label5>distanza anchors</Label5><Label6>battute</Label6><Label7>Conta battute\nmanuale</Label7></EditBpmGrid>
+    <EditBpmBpm><Title>Mod. Bpm</Title><Label1>Bpm</Label1><Label2>Fase</Label2><Label3>Copia\ndall'altro lettore</Label3></EditBpmBpm>
+    <EditBpmAutoMix><Title>Mod. AutoMix</Title><Label1>Liscio</Label1><Label2>Taglio</Label2><Label3>Tempo</Label3><Label4>punto\nd'ingresso</Label4><Label5>punto\nd'uscita</Label5><Label6>Permetti</Label6></EditBpmAutoMix>
+    <EditFilter><Title>Filtro</Title><OK>OK</OK><Cancel>Cancella</Cancel><Label1>Nome:</Label1><Label2>Filtro:</Label2><Label3>Errore di sintassi: %s</Label3><Label4>Esempi di filtri comuni:\n- top 20 nbplay\n- days since lastplay&lt;31\n- isscanned=0\n- top 20 nbplay and hascover=1 and (type=video or type=karaoke)\n- year&gt;=1980 and year&lt;1990\n- filepath starts with "c:\mp3\80s" or filepath starts with "d:\musics\eighties"\n</Label4></EditFilter>
+    <Address><Title>Cap o Indirizzo</Title><OK>Vai...</OK></Address>
+</Windows>
+
+<ContextMenu>
+    <FileInfos>Info sul File</FileInfos>
+    <Batch>Gruppo di files</Batch>
+    <LoadTitle>Titolo dal Tag</LoadTitle>
+    <ParseTitle>Titolo dal Nome del File</ParseTitle>
+    <ReloadTag>Ricaricare i Tag</ReloadTag>
+    <LoadComment>Commento dal Tag</LoadComment>
+    <EraseComment>Cancella il Commento</EraseComment>
+    <BPM>BPM</BPM>
+    <ReAnalyze>Ri-Analizza</ReAnalyze>
+    <ManualBPM>Modifica Manualmente</ManualBPM>
+    <FilesOp>Operazioni sui Files</FilesOp>
+    <Rename>Rinomina</Rename>
+    <Delete>Cancella</Delete>
+    <MoveTo>Muovi</MoveTo>
+    <CopyTo>Copia</CopyTo>
+    <CreateSub>Crea una sotto-cartella</CreateSub>
+    <OpenExplorer>Apri nell' Explorer</OpenExplorer>
+    <OpenFinder>Opri nel Finder</OpenFinder>
+    <Rip>Converti in WAV/MP3</Rip>
+    <Remove>Rimuovere</Remove>
+    <SearchDB>DB di Ricerca</SearchDB>
+    <AddSearchDB>Aggiungere al DB di Ricerca</AddSearchDB>
+    <RemoveSearchDB>Rimuovere dal DB di Ricerca</RemoveSearchDB>
+    <CleanSearchDB>Pulire il DB di Ricerca</CleanSearchDB>
+    <Unflag>Rimuovere il Flag Traccia Riprodotta</Unflag>
+    <GotoFolder>Aprire la Cartella del File</GotoFolder>
+    <RemoveVideoLink>Rimuovere il link video</RemoveVideoLink>
+    <Recommendations>GeniusDJ</Recommendations>
+    <ShowReco>Mostra i Suggerimenti per questa cartella</ShowReco>
+    <DownloadReco>Scarica tutti i suggerimenti per questa cartella</DownloadReco>
+    <ShowRecoFiles>Mostra i Suggerimenti per questi files</ShowRecoFiles>
+    <DownloadRecoFiles>Scarica tutti i Suggerimenti per questi filess</DownloadRecoFiles>
+    <GetCover>Scarica le Copertine</GetCover>
+    <ScanBPM>Analizza il Bpm</ScanBPM>
+    <ScanTag>Analizza i Tag</ScanTag>
+    <Recurse>Abilita Sottocartelle</Recurse>
+    <SetFavorite>Aggiungere ai Preferiti</SetFavorite>
+    <RemoveFavorite>Rimuovere dai Preferiti</RemoveFavorite>
+    <AddVFolder>Aggiungere la Cartella Virtuale</AddVFolder>
+    <ChangeFilter>Cambia il Filtro</ChangeFilter>
+    <LoadPlaylist>Carica nella Playlist</LoadPlaylist>
+    <MergePlaylist>Unire alla Playlist</MergePlaylist>
+    <Load>Carica...</Load>
+    <Save>Salva...</Save>
+    <StartAutomix>Esegui Automix</StartAutomix>
+    <StopAutomix>Ferma Automix</StopAutomix>
+    <AutomixType>Tipo di Automix</AutomixType>
+    <AutomixNone>Nessuno</AutomixNone>
+    <AutomixSmart>Intelligente</AutomixSmart>
+    <AutomixSmartWillBe>Intelligente (sarà: %s)</AutomixSmartWillBe>
+    <AutomixFade>Dissolvenza (Elimina Intro/Outro)</AutomixFade>
+    <AutomixFadeEx>Dissolvenza (Conserva Intro/Outro)</AutomixFadeEx>
+    <AutomixRadio>Dissolvenza (Non Rimuove Nulla)</AutomixRadio>
+    <AutomixLength>Lungh. Automix</AutomixLength>
+    <Automix0s>0s</Automix0s>
+    <Automix1s>1s</Automix1s>
+    <Automix2s>2s</Automix2s>
+    <Automix4s>4s</Automix4s>
+    <Automix8s>8s</Automix8s>
+    <Automix16s>16s</Automix16s>
+    <Repeat>Ripetere la Playlist</Repeat>
+    <RemovePlayed>Rimozione automatica brani riprodotti</RemovePlayed>
+    <Clear>Cancella</Clear>
+    <Shuffle>Riordinamento casuale</Shuffle>
+    <OnlyNew>Rimuovere i Brani Riprodotti</OnlyNew>
+    <NoDuplicate>Rimuovere i Brani Duplicati</NoDuplicate>
+    <SavePlaylist>Salva</SavePlaylist>
+    <Loop>Loop</Loop>
+    <Pitched>Pitch Uguale</Pitched>
+    <BeatLock>BeatLock</BeatLock>
+    <Sync>Sync on</Sync>
+    <Sync4>4 battute</Sync4>
+    <Sync1>Battuta</Sync1>
+    <SyncHalf>Mezza Battuta</SyncHalf>
+    <SyncQuarter>1/4 Battuta</SyncQuarter>
+    <AutoPlay>AutoPlay</AutoPlay>
+    <ReadOnly>Protetto in Scrittura</ReadOnly>
+    <AbortDownload>Annullare lo scaricamento</AbortDownload>
+    <Download>Scaricare</Download>
+    <Buy>Acquistare</Buy>
+    <SongRepeat>Ripetere il Brano</SongRepeat>
+    <MixNow>Mixa ora</MixNow>
+    <ColumnsOrder>Ordine...</ColumnsOrder>
+    <ShowCovers>Mostra Copertine</ShowCovers>
+    <ShowPrelisten>Mostra il Lettore del Preascolto</ShowPrelisten>
+    <ShowMusic>Mostra Audio</ShowMusic>
+    <ShowVideo>Mostra Video</ShowVideo>
+    <ShowKaraoke>Mostra Karaoke</ShowKaraoke>
+    <SearchFolder>Ricerca nella cartella</SearchFolder>
+    <SearchDrives>Ricerca nei Drives</SearchDrives>
+    <NetSearchAudio>Ricerca Files Audio nella rete</NetSearchAudio>
+    <NetSearchVideo>Ricerca Files Video nella rete</NetSearchVideo>
+    <NetSearchAlways>Solo ricerca su rete quando non ci sono risultati locali</NetSearchAlways>
+    <NetSearchVideoAlways>Ricerca Files Video solo quando il video è attivato</NetSearchVideoAlways>
+    <RefreshCache>Aggiorna l' autorizzazione della cache</RefreshCache>
+    <DownloadCache>Scarica nella cache</DownloadCache>
+    <CancelCache>Cancella lo scaricamento nella cache</CancelCache>
+    <ShowConnected>Mostra solo i dispositivi connessi</ShowConnected>
+    <RescanDevices>Ricerca nuovi dispositivi</RescanDevices>
+    <InvertDevices>Cambia i dispositivi</InvertDevices>
+    <UseKeyboard>Usare i collegamenti da tastiera</UseKeyboard>
+    <UseMIDI>Usare i dispositivi MIDI</UseMIDI>
+    <UseHID>Usare i dispositivi HID</UseHID>
+    <UseFirewire>Usere i dispositivi Firewire </UseFirewire>
+    <UseSerial>Usare i dispositivi Seriali</UseSerial>
+    <Reload>Ricarica</Reload>
+  <BaseFolder>Set alternative base folder</BaseFolder>
+  <DeckAssign>Deck Assignment</DeckAssign>
+  <DeckDefault>Default</DeckDefault>
+  <DeckLeftRight>Left &amp;&amp; Right</DeckLeftRight>
+  <DeckX>Deck %s</DeckX>
+  <LoadOn>Carica nel</LoadOn>
+  <DeckI>Lettore %i</DeckI>
+   <DeckIPlaying>Lettore %i (in riproduzione)</DeckIPlaying>
+  <DeckIEmpty>Lettore %i (vuoto)</DeckIEmpty>
+  <PrelistenKeep>Sempre in riproduzione</PrelistenKeep>
+  <PrelistenOutput>Preascolto acceso :</PrelistenOutput>
+  <PrelistenAutomatic>Automatico</PrelistenAutomatic>
+  <PrelistenOutputI>Uscita %i</PrelistenOutputI>
+</ContextMenu>
+
+<Options>
+    <SoundSetup>Configurazione Audio</SoundSetup>
+    <Skin>Skins</Skin>
+    <Mappers>Mappers</Mappers>
+    <Video>Video</Video>
+    <Options>Opzioni</Options>
+    <Internet>Internet</Internet>
+    <iDevices>iPhone/iPad</iDevices>
+    <Codecs>Codecs</Codecs>
+    <Performances>Prestazioni</Performances>
+    <Browser>Browser</Browser>
+    <Infos>Info</Infos>
+    <FullVersion>Versione completa</FullVersion>
+ 
+    <Security>Caricamento Protetto</Security>
+    <ToolTip>Help Contestuale</ToolTip>
+    <MSNPublish>Titoli su MSN</MSNPublish>
+    <AutoLoadPlaylist>Autoload Playlists</AutoLoadPlaylist>
+    <AutoSaveUnplayed>AutoSave non Riprod.</AutoSaveUnplayed>
+    <Scrolling>Scorrimento Wave</Scrolling>
+    <RPM>Rotazione Disco</RPM>
+    <PitchRange>Estensione del Pitch</PitchRange>
+    <AutoUpdate>Aggiornamento Auto</AutoUpdate>
+    <AutoPitchMatch>Auto Pitch Matching</AutoPitchMatch>
+    <AutoLevel>Guadagno Automatico</AutoLevel>
+    <PitchReset>Pitch Reset al Caric.</PitchReset>
+    <EqReset>Eq. Reset al Caric.</EqReset>
+    <AutoCue>Auto Cue</AutoCue>
+    <AutoHeadphones>Preascolto Automat.</AutoHeadphones>
+    <AutoCrossfadeLength>Lunghezza  Automix</AutoCrossfadeLength>
+    <Crossfader>Crossfader</Crossfader>
+    <DisengageBeatlock>Disattiva BeatLock</DisengageBeatlock>
+    <SmartBeatTap>BeatTap Intelligente</SmartBeatTap>
+    <AllowSmallBpm>Consenti BPM&lt;80</AllowSmallBpm>
+    <JogMode>Modalita del Jogwheel</JogMode>
+    <JogSensitivityScratch>Sensibilità del Jogwheel (Scratch)</JogSensitivityScratch>
+    <JogSensitivityCue>Sensibilità del Jogwheel (Cue)</JogSensitivityCue>
+    <JogSensitivityBend>Sensibilità del Jogwheel (Bend)</JogSensitivityBend>
+    <ScratchMode>Jogwheel Scratch</ScratchMode>
+    <EqInHeadphones>Eq. nelle Cuffie</EqInHeadphones>
+    <FXReset>Fx Reset al caricamento</FXReset>
+
+    <Enabled>Abilitato</Enabled>
+    <Disabled>Disabilitato</Disabled>
+    <None>Disabilitato</None>
+    <Ask>Chiedere</Ask>
+    <Always>Sempre</Always>
+    <Limited>Limitato</Limited>
+    <Other>Altro</Other>
+    <Inverted>Invertito</Inverted>
+    <Normal>Normale</Normal>
+    <rpm33>33rpm</rpm33>
+    <rpm45>45rpm</rpm45>
+    <_6to6>-6% +6%</_6to6>
+    <_8to8>-8% +8%</_8to8>
+    <_10to10>-10% +10%</_10to10>
+    <_12to12>-12% +12%</_12to12>
+    <_15to15>-15% +15%</_15to15>
+    <_20to20>-20% +20%</_20to20>
+    <_25to25>-25% +25%</_25to25>
+    <_33to33>-33% +33%</_33to33>
+    <_50to50>-50% +50%</_50to50>
+    <_100to100>-100% +100%</_100to100>
+    <Smooth>Liscio</Smooth>
+    <Full>Completo</Full>
+    <Cut>Taglio</Cut>
+    <User>Utente</User>
+    <ScratchCross>Scratch</ScratchCross>
+    <Manual>Manuale</Manual>
+    <OnLoad>Al Caricamento</OnLoad>
+    <OnSwitch>Al Cambio</OnSwitch>
+    <AutoRemember>Auto+Memoria</AutoRemember>
+    <Remember>Memoria</Remember>
+    <Auto>Auto</Auto>
+    <Smart>Intelligente</Smart>
+    <CDMode>CD</CDMode>
+    <VinylMode>Vinile</VinylMode>
+    <VinylLeft>Vinile/CD</VinylLeft>
+    <VinylRight>CD/Vinyl</VinylRight>
+
+    <SoundInputs>Ingressi :</SoundInputs>
+    <SoundOutputs>Uscite :</SoundOutputs>
+    <SoundCards>Scheda/e :</SoundCards>
+    <TimecodeConfig>Impostazioni\nTimecode...</TimecodeConfig>
+    <ASIOConfig>Config. ASIO</ASIOConfig>
+    <ASIOUltraLatency>Asio Ultra-latenza</ASIOUltraLatency>
+    <Chan12>Can.1&amp;2</Chan12>
+    <Chan34>Can.3&amp;4</Chan34>
+    <Chan56>Can.5&amp;6</Chan56>
+    <Chan1>Chan 1</Chan1>
+    <Chan2>Chan 2</Chan2>
+    <Input1>Ingresso 1</Input1>
+    <Input2>Ingresso 2</Input2>
+    <Output1>Uscita 1</Output1>
+    <Output2>Uscita 2</Output2>
+    <Output3>Uscita 3</Output3>
+    <LeftChan>Can.sin.</LeftChan>
+    <RightChan>Can.dest.</RightChan>
+    <FirstCard>Prima scheda</FirstCard>
+    <SecondCard>Seconda scheda</SecondCard>
+    <FrontOutput>Uscita frontale</FrontOutput>
+    <RearOutput>Uscita posteriore</RearOutput>
+    <CenterOutput>Uscita centrale</CenterOutput>
+    <Master>Master</Master>
+    <Headphones>Preascolto</Headphones>
+    <LeftDeck>Lett.sx</LeftDeck>
+    <RightDeck>Lett.dx</RightDeck>
+    <ThirdDeck>Terzo lettore</ThirdDeck>
+    <SamplesPreview>Samples/Preas.</SamplesPreview>
+    <SeratoPhono>livello Phono</SeratoPhono>
+    <SeratoLine>livello Linea</SeratoLine>
+    <Apply>Applica</Apply>
+
+    <Browser>Browser</Browser>
+    <ShowVolumes>Mostra Risorse Comp.</ShowVolumes>
+    <ShowDesktop>Mostra Desktop</ShowDesktop>
+    <ShowNetSearch>Mostra NetSearch</ShowNetSearch>
+    <ShowRecommendation>Mostra GeniusDJ</ShowRecommendation>
+    <ShowGenres>Mostra Generi</ShowGenres>
+    <ShowHistory>Mostra History</ShowHistory>
+    <ShowiTunes>Mostra iTunes</ShowiTunes>
+    <ShowCrates>Mostra Crates</ShowCrates>
+    <ShowPlaylists>Mostra Playlists</ShowPlaylists>
+    <ShowFavorites>Mostra Preferiti</ShowFavorites>
+    <ShowVirtualFolders>Mostra Cartelle Virtuali</ShowVirtualFolders>
+    <ShowFilterFolders>Mostra Cartelle Filtrate</ShowFilterFolders>
+    <InfosGathering>Info Gathering</InfosGathering>
+    <ReadTags>Leggere i Tag</ReadTags>
+    <ReadTitleArtist>Tag Artista/Titolo</ReadTitleArtist>
+    <ReadComment>Tag Commento</ReadComment>
+    <Cover>Copertina</Cover>
+    <SearchDB>Db di Ricerca</SearchDB>
+    <CoverNever>Non Cercare</CoverNever>
+    <CoverLocal>Solo Ricerca Locale</CoverLocal>
+    <CoverDownloadMatch>Corrispondenza Esatta</CoverDownloadMatch>
+    <CoverDownloadAlways>Scaricare Qualsiasi</CoverDownloadAlways>
+    <SearchDBManual>Aggiungere Manualm.</SearchDBManual>
+    <SearchDBAuto>Aggiungere Automatic.</SearchDBAuto>
+    <Database>Database</Database>
+    <DBDrive>Drive:</DBDrive>
+    <DBCheck>Controllare</DBCheck>
+    <DBClean>Pulire</DBClean>
+    <DBFix>Riparare</DBFix>
+
+    <CheckUpdates>Controlla gli\nAggiornamenti</CheckUpdates>
+    <DownloadPlugins>Scaricare i\nPlugins</DownloadPlugins>
+    <ResetSettings>Resetta alle\nImpostazioni Predefinite</ResetSettings>
+
+    <NetworkNetSearch>Usare la ricerca su rete</NetworkNetSearch>
+    <NetworkMusicGroups>Usare i Gruppi Musicali</NetworkMusicGroups>
+    <NetworkAnonymousSession>Disabilitare i Gruppi Musicali solo per questa sessione</NetworkAnonymousSession>
+    <NetworkLogin>VirtualDJ.com login :</NetworkLogin>
+    <NetworkPassword>VirtualDJ.com password :</NetworkPassword>
+    <NetworkConnect>Log in</NetworkConnect>
+    <NetworkDisconnect>Log out</NetworkDisconnect>
+
+    <VideoOutput>Uscita video</VideoOutput>
+    <VideoOptions>Opzioni</VideoOptions>
+    <VideoActivate>Attivare</VideoActivate>
+    <TVOutput>Uscita TV</TVOutput>
+    <HardwareAcceleration>Usare l'Accelerazione Hardware</HardwareAcceleration>
+    <AutoCrossfader>Video crossfader automatico</AutoCrossfader>
+    <LinkedCrossfaders>Crossfaders Audio/Video collegati</LinkedCrossfaders>
+    <DecodeHidden>Decodifica Finchè Nascosto</DecodeHidden>
+    <DecodeMultithread>Decodifica in multithread</DecodeMultithread>
+    <ActivateOnLoad>Abilita al Caricamento</ActivateOnLoad>
+    <LinkOnDrop>Collega i video quando trascinati nella finestra di anteprima</LinkOnDrop>
+    <NoLogo>Nascondi Logo VirtualDJ</NoLogo>
+    <FadeToBlack>Sfuma a nero con i cursori di volume</FadeToBlack>
+    <VideoKeepRatioCrop>Mant. le proporzioni(crop)</VideoKeepRatioCrop>
+    <VideoKeepRatioFull>Mant. le proporzioni(full)</VideoKeepRatioFull>
+    <EmptyFx>Usare questo plugins per i soli files audio:</EmptyFx>
+
+    <SoundCardPerf>Scheda Audio</SoundCardPerf>
+    <Latency>Latenza :</Latency>
+    <SafeMode>Modalità Safe</SafeMode>
+    <ScratchPerf>Scratch</ScratchPerf>
+    <OptimizeQuality>Ottimizzato per la qualità</OptimizeQuality>
+    <OptimizeLatency>Ottimizzato per la latenza</OptimizeLatency>
+    <MasterTempoPerf>Master Tempo</MasterTempoPerf>
+    <PureMT>Scratch Puro(no Master Tempo)</PureMT>
+    <FastMT>Veloce</FastMT>
+    <AdvancedMT>Avanzato</AdvancedMT>
+    <MemoryPerf>Memoria</MemoryPerf>
+    <MaxLoad>Non pre-caricare files di dimensioni maggiori di :</MaxLoad>
+    <SkinPerf>Ridimensionamento Skin</SkinPerf>
+    <FastResize>Ridimensionamento veloce</FastResize>
+    <QualityResize>Ridimensionamento preciso</QualityResize>
+
+    <LEHelp>VirtualDJ LE è una Edizione Limitata della versione completa di VirtualDJ professional e presenta un set limitato di funzioni.\nSe sei interessato ti offriamo la possibilità di provare tutte le funzioni di VirtualDJ pro.\n\nE' sufficiente cliccare sul pulsante di attivazione, per espandere le funzioni di VirtualDJ LE in VirtualDJ Pro senza alcun limite per 7 giorni.\nDopo questo periodo di prova, tutte le funzioni "pro" verranno disabilitate riottenendo VirtualDJ LE.</LEHelp>
+    <LEActivate>Attivare\ni 20-giorni\n di prova della versione completa</LEActivate>
+    <LEBuy>Buy\nAcquista la versione completa</LEBuy>
+    <LENotActivated>Non sono ancora stati utilizzati i 20 giorni di prova.</LENotActivated>
+    <LEActivated>%i giorni di prova trascorsi</LEActivated>
+    <LEOver>I 20-giorni di prova sono già stati utilizzati</LEOver>
+    <LEHelp2>Ora puoi usare tutte le funzionalità di VirtualDJ PRO.\nRiavvia VirtualDJ per abilitare tutte le nuove funzioni.\nTerminati i girni di test  il software ritornerà automaticamente alla versione limitata</LEHelp2>
+
+    <TCVinyl>Vinile :</TCVinyl>
+    <TCMode>Modalità :</TCMode>
+    <TCSmart>Intelligente relativo</TCSmart>
+    <TCAbsolute>Assoluto</TCAbsolute>
+    <TCRelative>Relativo</TCRelative>
+    <TCLeftRight>Sinistra/ Destra :</TCLeftRight>
+    <TCPhaseAnti>Fase / Anti :</TCPhaseAnti>
+    <TCGain>Guadagno :</TCGain>
+    <TCSilence>Silenzio :</TCSilence>
+    <TCDebug>Debug...</TCDebug>
+    <TCBothDeck>Entrambi</TCBothDeck>
+    <TCInvertStereo>Invertire il Segnale Stereo</TCInvertStereo>
+    <TCInvertPhase>Inverte la Fase del Segnale</TCInvertPhase>
+    <TCRIAA>Applicare il filtro RIAA phono</TCRIAA>
+    <TCNoiseFilter>Applicare il filtro LP </TCNoiseFilter>
+    <TC45RPM>Regolare per 45 RPM</TC45RPM>
+    <TCNoPitch>Disabilitare il Pitch</TCNoPitch>
+    <TCNoClearSound>Disabilitare il ClearSound</TCNoClearSound>
+    <TCNoAntiSkip>Disabilitare l' AntiSkip</TCNoAntiSkip>
+    <TCPitchSensibility>Sensibilità Pitch</TCPitchSensibility>
+    <TCPitchStable>Ritardato</TCPitchStable>
+    <TCLeadTime>Lead Time</TCLeadTime>
+    <TCSaveCapture>Salva Schermata...</TCSaveCapture>
+
+    <NetsearchLoginWindow>Benvenuti su VirtualDJ.\rSe hai un’ account di VirtualDJ, digitare il tuo login e password:</NetsearchLoginWindow>
+    <NetsearchReloginWindow> Un’ altro computer stà usando le tue credenziali per connetersi al nostro server.\rPer ragioni di sicurezza, si prega di re-inserire login e password:</NetsearchReloginWindow>
+    <NetsearchLogin>Login</NetsearchLogin>
+    <NetsearchPassword>Password</NetsearchPassword>
+    <NetsearchConnect>Log in</NetsearchConnect>
+    <NetsearchSkip>Salta</NetsearchSkip>
+    <NetsearchNoLoginLink> Se non si, &lt;a&gt;cliccare qui&lt;/a&gt; per altre informazioni.</NetsearchNoLoginLink>
+    <NetsearchBadloginLink>login o password errata. &lt;a&gt;Cliccare qui&lt;/a&gt; per creare un login.\r&lt;a&gt;Cliccare qui&lt;/a&gt; se hai dimenticato la tua password.</NetsearchBadloginLink>
+    <NetsearchBadLevel>La  funzionalità completa del NetSearch streaming è disponibile agli abbonati Premium.\ Il tuo stato attuale  permette di eseguire lo streaming per 30 secondi.\r&lt;a&gt;Cliccare quì&lt;/a&gt; per altre informazioni.</NetsearchBadLevel>
+    <NetsearchNotConnected>La  funzionalità completa del NetSearch streaming è disponibile agli abbonati Premium.\Se sei un’ abbonato Premium, &lt;a&gt;click here&lt;/a&gt; per loggarsi.\rAltrimenti &lt;a&gt;cliccare quì&lt;/a&gt; per altre informazioni.\rSenza l’ abbonamento Premium , è possibile eseguire lo streaming per 30 secondi.</NetsearchNotConnected>
+    <NetsearchBadLevelCache>La funzionalità cache del NetSearch è disponibile agli abbonati Premium.\r&lt;a&gt;Cliccare qui&lt;/a&gt; per altre informazioni.</NetsearchBadLevelCache>
+    <NetsearchNotConnectedCache> La funzionalità cache del NetSearch è disponibile agli abbonati Premium.\rSe sei un’ abbonato Premium, &lt;a&gt;cliccare qui&lt;/a&gt; per loggarsi.\rAltrimenti &lt;a&gt; cliccare qui &lt;/a&gt; per altre informazioni.</NetsearchNotConnectedCache>
+    <NetsearchLoginError>login/password errata</NetsearchLoginError>
+    <DontShowAgain>Non mostrare di nuovo</DontShowAgain>
+
+    <iRemoteWelcome>Download &lt;a&gt;VirtualDJ iRemote&lt;/a&gt; per il tuo iPhone/iPad.</iRemoteWelcome>
+    <iRemoteRescan>Rescan</iRemoteRescan>
+    <iRemoteForceManualIP>Usare IP manuale...</iRemoteForceManualIP>
+    <iRemoteConnect>Connessione</iRemoteConnect>
+    <iRemoteForget>Forget</iRemoteForget>
+    <iRemoteUploadSkin>Carica un nuovo skin...</iRemoteUploadSkin>
+    <iRemoteDevices>Dispositivi:</iRemoteDevices>
+    <iRemoteDevice>Dispositivo</iRemoteDevice>
+    <iRemoteStatus>Stato</iRemoteStatus>
+    <iRemoteStatusConnected>Connesso</iRemoteStatusConnected>
+    <iRemoteStatusError>Errore</iRemoteStatusError>
+    <iRemoteStatusWaiting>In attesa</iRemoteStatusWaiting>
+    <iRemoteStatusNotHere>Non qui</iRemoteStatusNotHere>
+    <iRemoteDeviceNeedApprove>Questo è un nuovo dispositivo. Selezionare Connetti per approvarlo.</iRemoteDeviceNeedApprove>
+    <iRemoteDeviceConnected>Questo dispositivo si è connesso correttamente.</iRemoteDeviceConnected>
+    <iRemoteDeviceNotConnected>Questo dispositivo è nella tua lista approvata, ma al momento non è in esecuzione su VirtualDJ iRemote , o non è collegato alla rete locale.</iRemoteDeviceNotConnected>
+    <iRemoteDeviceError>La connessione è fallita.</iRemoteDeviceError>
+    <iRemoteManualIPWindow>Inserire l' indirizzo IP del tuo iRemote</iRemoteManualIPWindow>
+
+    <Tooltips>
+    <SoundInput>Selezionare gli ingressi timecode </SoundInput>
+    <SoundOutput>Selezionare le modalità audio d' uscita</SoundOutput>
+    <SoundCards>Selezionare quale scheda/e sonore VirtualDJ deve usare (nella lista sono visualizzare le schede audio disponibili)</SoundCards>
+    <SoundTimecode>Cliccare quì per calibrare i timecode vinyls</SoundTimecode>
+    <SoundInputChannels>Selezionare gli ingressi</SoundInputChannels>
+    <SoundOutputChannels>Selezionare le uscite</SoundOutputChannels>
+    <SoundOutputDriver>Selezionare la scheda audio principale</SoundOutputDriver>
+    <SoundOutputDriver2>Selezionare la scheda audio secondaria</SoundOutputDriver2>
+    <SoundOutputDriverASIO>Selezionare il driver ASIO da usare</SoundOutputDriverASIO>
+    <SoundDJC>Se è selezionata, la scheda audio Hercules sarà usata la modalità ASIO, e quando il bypass è attivo, l'ingresso sarà processato da VirtualDJ per applicare l' equalizzazione</SoundDJC>
+    <SoundDJCMac>se selezionata la scheda audio audio della DJConsole verrà attivato il bypass e gli ingressi saranno processati da VirtualDJ applicando l' equalizzazione</SoundDJCMac>
+    <SoundSSLPhono>Selezionare questa opzione per usare la scheda SL1 con un piatto</SoundSSLPhono>
+    <SoundSSLLine>Selezionare questa opzione per usare la scheda SL1 con un lettore CD</SoundSSLLine>
+    <SoundASIOUltra>In modalità ASIO Ultra-Latenza, la latenza sarà molto bassa, ma non tutti i driver ASIO supportano questa modalità</SoundASIOUltra>
+    <SoundApply>Cliccare quì per applicare le modifiche</SoundApply>
+
+    <SkinSkin>Per selezionare una nuova interfaccia grafica (è possibile scaricare skins addizionali da http://www.virtualdj.com/)</SkinSkin>
+    <SkinLanguage>Per cambiare il linguaggio predefinito (è possibile scaricare nuovi linguaggi addizionali da http://www.virtualdj.com/)</SkinLanguage>
+
+    <MapperOptions>Opzioni del mapper...</MapperOptions>
+    <MapperDevice>Selezionare un controller</MapperDevice>
+    <MapperRevert>Resetta il mapper ai valori predefiniti</MapperRevert>
+    <MapperDel>Per cancellare il pulsante selezionato</MapperDel>
+    <MapperAdd>Per aggiungere un nuovo pulsante</MapperAdd>
+    <MapperKeyLearn>Selezionare Key-Learn, premere o muovere il pulsante/slider/jogs/potenziometro del controller/tastiera per ottenere l' auto-apprendimento</MapperKeyLearn>
+    <MapperKey>Selezionare un tasto</MapperKey>
+    <MapperActionLearn>Selezionare Action-Learn, cliccare su un' elemento presente nello skin per ottenere l' azione corrispondente</MapperActionLearn>
+    <MapperAction>Inserire l' azione per questo pulsante usando il linguaggio VDJscript</MapperAction>
+    <MapperInfos>Ottieni maggiori informazioni sul linguaggio VDJscript (è richiesta la connessione)</MapperInfos>
+
+    <CodecAdd>Aggiungere una nuova estensione</CodecAdd>
+    <CodecRemove>Cancellare l' estensione selezionata</CodecRemove>
+    <CodecList>Elenco delle estensioni conosciute (doppio-click per modificare)</CodecList>
+    
+    <BrowserVolumes>mostra nel browser le risorse del computer</BrowserVolumes>
+    <BrowserDesktop>mostra nel browser le cartelle presenti sul Desktop</BrowserDesktop>
+    <BrowserNetSearch>mostra nel browser le cartelle della ricerca su rete</BrowserNetSearch>
+    <BrowserRecommendation> La cartella  GeniusDJ mostra automaticamente i suggerimenti basandosi sul brano in riproduzione</BrowserRecommendation>
+    <BrowserGenres>mostra nel browser i brani divisi per genere basandosi sui tag</BrowserGenres>
+    <BrowserHistory>Mostra nel browser la cronologia divisa per data</BrowserHistory>
+    <BrowseriTunes>Mostra nel browser le cartelle di iTunes</BrowseriTunes>
+    <BrowserCrates>Mostra nel browser i Crates folder di Serato Scratch Live</BrowserCrates>
+    <BrowserPlaylists>Mostra nel browser le Playlist</BrowserPlaylists>
+    <BrowserFavorites>le cartelle preferite sono cartelle monitorate</BrowserFavorites>
+    <BrowserVFolders> Mostra nel browser le cartelle virtuali</BrowserVFolders>
+    <BrowserFFolders>Mostra nel browser le cartelle filtrate</BrowserFFolders>
+    <BrowserCheck>Controlla quali brani presenti nel database non sono più presenti nel computer, quindi vengono rimossi del motore della ricerca</BrowserCheck>
+    <BrowserClean>Pulisce il database da tutti i brani non presenti nel computer</BrowserClean>
+    <BrowserFix>Ripara il database se è corrotto</BrowserFix>
+    <BrowserTag>VirtualDJ carica automaticamente dai brani i tag</BrowserTag>
+    <BrowserTagTitle>Per ottenere le informazioni dei campi artista/titolo o daitag oppure dal nome del file</BrowserTagTitle>
+    <BrowserTagComment>Per ottenere le informazioni del campo commento dai tag</BrowserTagComment>
+    <BrowserCover>Per attivare la ricerca automatica delle copertine in Internet se non diponibili localmente</BrowserCover>
+    <BrowserSearch>Per aggiungere automaticamente i brani nel motore di ricerca mentre si compie il browsing</BrowserSearch>
+
+    <NetworkNetSearch>La ricerca sul network è una funzione che permette a VirtualDJ di ricercare automaticamente musica e video in Internet, e quindi riprodurla direttamente nei lettori.\nE' richiesta la registrazione come utente VirtualDJ per potere usare questa funzione.</NetworkNetSearch>
+    <NetworkMusicGroups>I Gruppi Musicali è una funzione che permette di condividere le playlist con gli altri utenti di VirtualDJ.com, e quindi ricevere suggerimenti per la propria sequenza musicale.\nE' richiesta la registrazione come utente VirtualDJ per potere usare questa funzione.</NetworkMusicGroups>
+    <NetworkAnonymousSession>Non invia alcuna playlist solo durante questa sessione. Questa impostazione si resetterà automaticamente al riavvio successivo di VirtualDJ.</NetworkAnonymousSession>
+    <NetworkLogin>Digitare il login di VirtualDJ.com. Se non si è ancora registrati, aprire la pagina www.virtualdj.com per creare un nuovo login.</NetworkLogin>
+    <NetworkPassword>Digitare la password di VirtualDJ.com. Lasciare in bianco questo campo e cliccare su "log in" se si vuole interrompere la connessione automatica.</NetworkPassword>
+    <NetworkConnect>Invia la tua login/password a VirtualDJ.com. Una volta effettuata la connessione, VirtualDJ si riconnetterà automaticamente per le successive sessioni.</NetworkConnect>
+	
+    <VideoDisable>Per abilitare o disabilitare il motore video</VideoDisable>
+    <VideoActivate>Per aprire o chiudere la finestra video.</VideoActivate>
+    <VideoTVOutput>Per usare l' uscita TV, la scheda video deve essere impostata in modalità "dual Display".</VideoTVOutput>
+    <VideoHardware>Se si verificano problemi con la scheda video, provare a disabilitare questa opzione (molti effetti e transizioni potrebbero non funzionare)</VideoHardware>
+    <VideoAutoCross>VirtualDJ muove il crossfader video automaticamente durante il mixing</VideoAutoCross>
+    <VideoLinked>Blocca il crossfader video con il crossfader audio</VideoLinked>
+    <VideoDecode>Decodifica il video quando il video è nascosto (transizioni veloci, ma usa molta CPU)</VideoDecode>
+    <VideoMultithread>Decodifica i flussi utilizzando tutte le CPU / GPU disponibili (il processo è più veloce, ma su alcuni computer potrebbero esserci problemi di caricamento del video)</VideoMultithread>
+    <VideoOnLoad>Attiva automaticamente la finestra video se viene caricato nel lettore un file video</VideoOnLoad>
+    <VideoNoLogo>Rimuove il Logo di VirtualDJ nell' uscita video</VideoNoLogo>
+    <VideoLinkOnDrop>Quando è attivata questa funzione, se si trascina un file video nella finestra di anteprima, la traccia video verrà sostituita alla traccia video del file interessato. Se la traccia è solo audio, verra aggiunta a tale traccia il video trascinato.</VideoLinkOnDrop>
+    <VideoFadeToBlack>Questa funzione sfuma a nero il video quando viene abbassato il volume del canale</VideoFadeToBlack>
+    <VideoKeepRatioCrop>Mantiene la proporzione del video a 16/9 o 4/3 ritagliando il video su entrambi i lati</VideoKeepRatioCrop>
+    <VideoKeepRatioFull>Mantiene la proporzione del video a 16/9 o 4/3 aggiungendo una barra nera su entrambi i lati</VideoKeepRatioFull>
+    <VideoEmptyFx>VirtualDJ usa automaticamente questo plugin video quando è riprodotta una traccia audio</VideoEmptyFx>
+
+    <PerfLatency>Per cambiare la latenza della scheda audio in uso. Se non si usa la funzione timecodes, consigliamo di lasciare questa opzione su "auto".</PerfLatency>
+    <PerfSafeMode>La modalità "Safe" permette a VirtualDJ di elaborare qualche secondo prima il brano prima di inviarlo al buffer della scheda sonora. Questa funzione serve per prevenire interruzioni della traccia. Con questa funzione abilitata il consumo della cpu è maggiore ogni volta che si varia il pitch, volume, scratch e altre azioni. Non usare la modalità "safe" con impostazioni avanzate del master tempo. (la modalità "safe" non ha effetto con le schede ASIO)</PerfSafeMode>
+    <PerfOptimQuality>Ottimizza l' algoritmo dello scratch per una migliore qualità sonora</PerfOptimQuality>
+    <PerfOptimLatency>Ottimizza l' algoritmo dello scratch per una latenza migliore</PerfOptimLatency>
+    <PerfPureMT>Il timestretch è disabilitato per ottenere una qualità migliore del suono durante lo scratching </PerfPureMT>
+    <PerfFastMT>Imposta l' algoritmo del Master Tempo per un uso minore della cpu</PerfFastMT>
+    <PerfAdvancedMT>Imposta l' algoritmo avanzato del Master Tempo. Il suono sarà migliore con cambi di pitch estremi, ma si impegna un maggiore consumo di CPU</PerfAdvancedMT>
+    <PerfMaxLoad> I file più grandi del valore impostato saranno riprodotti in streaming direttamente dal disco, invece di essere pre-caricati in memoria</PerfMaxLoad>
+    <PerfFastResize> Se viene ridimensionata la finestra di VirtualDJ, il motore grafico ottimizzerà l’ uso della CPU per effettuare il ridimensionamento dello skin</PerfFastResize>
+    <PerfQualityResize> Se viene ridimensionata la finestra di VirtualDJ, il motore grafico ridimensionerà lo skin con la massima qualità possibile</PerfQualityResize>
+
+   <TCVinyl>Seleziona il tipo di timecode in uso. Per prestazioni migliori consigliamo Serato vinyl o VirtualDJ v5 vinyl.</TCVinyl>
+   <TCLeftRight>Usare questo controllo se il grafico risulta ovale al posto di una figura circolare</TCLeftRight>
+   <TCPhaseAnti>Usare questo controllo se il grafico risulta come un ovale inclinato al posto di una figura circolare regolare</TCPhaseAnti>
+   <TCGain>Usare questo controllo se il grafico è troppo piccolo o troppo grande rispetto alla finestra</TCGain>
+   <TCSilence>Usare questo controllo per regolare la zona grigia nel grafico (rumore di fondo)</TCSilence>
+   <TCMode>Selezionare il tipo di timecode da usare. Nel dubbio usare "Smart Relative", che è l' opzione predefinita a meno che si hanno esigenze particolari</TCMode>
+   <TCDebug>Se si hanno problemi per ottenere una qualità del segnale del 100%, usare questi controlli per regolare il segnale timecode</TCDebug>
+   <TCInvertStereo>Inverte il segnale stereo sinistro con il destro (se sono invertiti i cavi rca rossi e neri dei piatti). Usare questa funzione se il brano è riprodotto in reverse.</TCInvertStereo>
+   <TCInvertPhase>Inverte la fase del segnale (se la testina ha qualche cavo invertito). Usare questa funzione se il brano è riprodotto in reverse.</TCInvertPhase>
+   <TCRIAA>Applica la correzione software RIAA. Usare questa funzione se si connettono i piatti ad una scheda audio che non ha gli ingressi "phono" ma solo "linea".</TCRIAA>
+   <TCNoiseFilter>Usare questa funzione se il grafico è sfocato, o se i punti sono dispersi, invece di formare una linea continua circolare</TCNoiseFilter>
+   <TC45RPM>Usare questa opzione se il piatto è settato a 45RPM al posto di 33RPM.</TC45RPM>
+   <TCNoPitch>Se si disattiva la funzione SmartPitch, lo slider del pitch di VirtualDJ non si muoverà rispettando il pitch del piatto.</TCNoPitch>
+   <TCNoClearSound>ClearSound usa una tecnologia che permette di migliorare il suono a discapito di un leggero ritardo, quindi non indicata per lo scratch</TCNoClearSound>
+   <TCNoAntiSkip>AntiSkip usa una tecnologia che permette di evitare salti della traccia quando la puntina salta nel vinile.</TCNoAntiSkip>
+   <TCPitchSensibility>La sensibilità del pitch è usata per regolare quanto velocemente lo slider del pitch di VirtualDJ deve seguire lo slider del piatto. Se il valore è basso, il pitch richiederà più tempo per aggiornarsi al valore del piatto. I valori alti sono indicati quando si vuole fare lo scratch quindi lo slider del pitch si muoverà velocemente.\n(bisogna ricordare, che con la tecnologia Timecode, il software non ha una via chiara per stabilire la differenza tra un vinile che è gira più velocemente perché il pitch è stato mosso oppure perché si sta’ facendo lo scratch.)</TCPitchSensibility> 
+   <TCPitchStable>Prima di spostare il cursore del pitch viene controllata la stabilità del picth (per evitare cambi di pitch durante le operazioni di pitch-bend del lettore cd)</TCPitchStable>
+   <TCLeadTime>Regola lo spazio vuoto a inizio traccia prima di riprodurre il brano.</TCLeadTime>
+   <TCSaveCapture>Usare questo pulsante per salvare un' immagine .bmp della tua configurazione. Puoi inviare questa immagine nel forum di www.virtualdj.com per chiedere suggerimenti per configurare/ottimizzare il segnale timecode.</TCSaveCapture>
+
+   <FileInfoGetFromID3>Ricava il valore dal tag ID3</FileInfoGetFromID3>
+   <FileInfoSaveID3>Scrive il valore nel tag ID3</FileInfoSaveID3>
+   <FileInfoRename>Rinomina il file come '{artista} - {titolo}.mp3'</FileInfoRename>
+   <FileInfoParseFilename>Ottenere l’ Artista e il Titolo dal nome del file</FileInfoParseFilename>
+   <FileInfoChangeCover> Cambiare la grafica della copertina </FileInfoChangeCover>
+   <FileInfoSetCover>Ricerca e scarico della copertina</FileInfoSetCover>
+   <FileInfoEraseComment>Cancellare il commento</FileInfoEraseComment>
+   <FileInfoPrev> Salva le modifiche su questo file, e passare al file precedente nella lista</FileInfoPrev>
+   <FileInfoNext> Salva le modifiche su questo file, e passare al file successivo nella lista </FileInfoNext>
+
+</Tooltips>
+
+</Options>
+
+<ToolTips>
+    <tooltip action="add_favoritefolder">Aggiunge la cartella ai Preferiti (monitorata)</tooltip>
+    <tooltip action="add_virtualfolder">Aggiunge una nuova cartella virtuale (non monitorata)</tooltip>
+    <tooltip action="add_filterfolder">Aggiunge una nuova cartella filtrata (automatica)</tooltip>
+    <tooltip action="playlist_options">Gestione della playlist</tooltip>
+    <tooltip action="automix">Abilita/Disabilita il mix Automatico</tooltip>
+    <tooltip action="log_search">Aggiungi questa ricerca nel file SearchLog.txt</tooltip>
+    <tooltip action="beat_tap">corregge il bpm manualmente</tooltip>
+</ToolTips>
+
+</language>

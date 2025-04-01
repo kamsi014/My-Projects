@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language lang="Dutch" author="Atomix Productions - Ikke (www.eikke.tk)" version="6.0">
+	<Columns>
+		<CD>Disc</CD>
+		<Number>Bestanden</Number>
+		<Title>Titel</Title>
+		<Author>Artiest</Author>
+		<Disc>Disc</Disc>
+		<Path>Locatie</Path>
+		<Bpm>Bpm</Bpm>
+		<Length>Lengte</Length>
+		<Comment>Commentaar</Comment>
+	</Columns>
+	<Filters>
+		<m3u>Playlist (*.m3u)\0*.m3u\0</m3u>
+		<wav>WavBestand (*.wav)\0*.wav\0</wav>
+		<mp3>MP3 Bestand (*.mp3)\0*.mp3\0</mp3>
+		<txt>Tekst (*.txt)\0*.txt\0</txt>
+		<Plugin>Plugins (*.dll)\0*.dll\0</Plugin>
+		<Playlist>Playlist\0*.m3u;*.pls\0</Playlist>
+		<Sample>wav sample (*.wav)\0*.wav\0mp3 sample (*.mp3)\0*.mp3\0alle samples\0*.wav;*.mp3;*.wma;*.asf;*.cda\0</Sample>
+		<wavmp3>Wave Bestand (*.wav)\0*.wav\0MP3 File (*.mp3)\0*.mp3\0</wavmp3>
+		<bincue>Brand-CD Bestand (*.cue/*.bin)\0*.bin;*.cue\0</bincue>
+	</Filters>
+	<BrowserTitles>
+		<LoadPlaylist>Laad Playlist</LoadPlaylist>
+		<SavePlaylist>Sla Playlist Op</SavePlaylist>
+		<RecordFile>Neem Bestand Op</RecordFile>
+		<LoadWav>Laad Sample</LoadWav>
+		<LoadPlugin>Laad Plugin</LoadPlugin>
+		<SaveHistory>Sla Geschiedenis Op</SaveHistory>
+		<RecordPlugin>Opnameplugin</RecordPlugin>
+		<CopyTo>Selecteer waarnaar dit bestand gekopieerd moet worden</CopyTo>
+		<MoveTo>Selecteer waarnaar dit bestand verplaatst moet worden</MoveTo>
+		<RipFile>Doelbestand</RipFile>
+	</BrowserTitles>
+	<Windows>
+		<Default>
+			<OK>Ja</OK>
+			<Cancel>Nee</Cancel>
+		</Default>
+		<EditBpm>
+			<Title>BPM</Title>
+			<OK>OK</OK>
+			<Cancel>Annuleren</Cancel>
+			<Label1>Beat Tap</Label1>
+			<Label2>Bpm:</Label2>
+			<Label3>Fase:</Label3>
+		</EditBpm>
+		<EditComment>
+			<Title>Commentaar</Title>
+			<OK>OK</OK>
+		</EditComment>
+		<EditFilename>
+			<Title>Bestandsnaam</Title>
+			<OK>OK</OK>
+		</EditFilename>
+		<ScanHD>
+			<Title>Automatisch MP3 Bestanden zoeken op de harde schijf</Title>
+			<OK>OK</OK>
+			<Label1>Zoek naar:</Label1>
+			<Label2>MP3 Bestanden</Label2>
+			<Label3>WAV Bestanden</Label3>
+			<Label4>WMA Bestanden</Label4>
+			<Label5>Voer een uitgebreide analyse uit op alle bestanden</Label5>
+		</ScanHD>
+		<ScanCD>
+			<Title>Automatisch scannen van MP3 bestanden</Title>
+			<OK>Scan</OK>
+			<Label1>Schijf :</Label1>
+			<Label2>Naam</Label2>
+		</ScanCD>
+		<DeleteCD>
+			<Title>Verwijder een CD</Title>
+			<OK>Verwijderen</OK>
+		</DeleteCD>
+		<SoundConfig>
+			<Title>Kies uw configuratie</Title>
+			<OK>OK</OK>
+			<Cancel>Annuleren</Cancel>
+			<Label1>Geluidskaart</Label1>
+			<Label2>2e geluidskaart</Label2>
+			<Label3>Software 3D</Label3>
+		</SoundConfig>
+		<SkinConfig>
+			<Title>Kies een skin</Title>
+			<OK>OK</OK>
+		</SkinConfig>
+		<Serial>
+			<Title>Serienummer</Title>
+			<Label1>Welkom bij VirtualDJ\n\nGelieve het serienummer in te voeren dat bij dit product geleverd werd.</Label1>
+			<OK>OK</OK>
+		</Serial>
+		<ShortcutConfig>
+			<Title>Sneltoetsen</Title>
+			<OK>OK</OK>
+			<Label1>Toevoegen...</Label1>
+			<Label2>Veranderen...</Label2>
+			<Label3>Verwijderen</Label3>
+			<Label4>Omhoog</Label4>
+			<Label5>Omlaag</Label5>
+		</ShortcutConfig>
+		<ShortcutEdit>
+			<Title>Sneltoets</Title>
+			<OK>OK</OK>
+			<Cancel>Annuleren</Cancel>
+			<Label1>Waarde=</Label1>
+			<Label2>Herstel</Label2>
+			<Label3>Automatisch</Label3>
+			<Label4>Tijdelijk</Label4>
+		</ShortcutEdit>
+		<RenameCue>
+			<Title>Cuenaam</Title>
+			<OK>OK</OK>
+		</RenameCue>
+		<Error>
+			<Title>Onherstelbare Fout</Title>
+			<OK>Herstel</OK>
+			<Cancel>Afsluiten</Cancel>
+			<Label1>Zenden</Label1>
+			<Label2>er deed zich een fatale fout voor!\nVirtualDJ kan proberen deze fout automatisch te herstellen, maar de muziek zal even stilgelegd moeten worden.</Label2>
+			<Label3>U kan ons helpen door hier de situatie waarbij deze fout zich voordeed te beschrijven.\nEen anoniem rapport zal doorgezonden worden via het internet.</Label3>
+		</Error>
+		<VScratch>
+			<Title>Virtual-Scratch</Title>
+			<OK>Actief</OK>
+			<Label1>WebCam</Label1>
+			<Label2>Apparaat</Label2>
+			<Label3>Bron...</Label3>
+			<Label4>Formaat...</Label4>
+			<Label5>Help</Label5>
+		</VScratch>
+		<VControl>
+			<Title>Vinyl-Control</Title>
+			<OK>Actief</OK>
+			<Label1>WebCam</Label1>
+			<Label2>Apparaat</Label2>
+			<Label3>Bron...</Label3>
+			<Label4>Formaat...</Label4>
+			<Label5>Regelen</Label5>
+			<Label6>Help</Label6>
+		</VControl>
+	</Windows>
+	<Errors>
+		<Config>Foute configuratie. Gelieve een juiste combinatie te kiezen.</Config>
+		<Explorer>Error in  Windows Explorer</Explorer>
+		<Desktop>Kan de desktop niet vinden</Desktop>
+		<MultiThread>Multi-thread-uitvoering onmogelijk. U moet VirtualDJ uitvoeren in een multithreaded OS</MultiThread>
+		<GDI>Fout in de videodriver</GDI>
+		<DirectSound>Error in de geluidsdriver van DirectX</DirectSound>
+		<DirectSoundUsed>De geluidskaart is reeds in gebruik door een andere applicatie</DirectSoundUsed>
+		<DirectSoundMemory>Fout in de geluidskaartdriver: niet genoeg geheugen</DirectSoundMemory>
+		<WDMError>Onmogelijk de WDM geluidsdrivers te starten. Gelieve na te gaan dat u een correcte WDM (en niet VxD) driver heeft geinstalleerd, met quad-uitgang functies\n(Win95 en Win98Osr1 kunnen geen WDM Stuurbestanden gebruiken)</WDMError>
+		<Memory>Niet genoeg geheugen</Memory>
+		<File>Fout in de bestandssysteemdriver</File>
+		<CreateFile>Fout bij het creeren van het bestand</CreateFile>
+		<DataBase>De interne database is corrupt</DataBase>
+		<Skin>Onjuist skinbestand (fout op lijn %i in het XML bestand)</Skin>
+		<NoHDSelected>Kijk de harde schijf na die u wil scannen</NoHDSelected>
+		<DupCD>De CD zit reeds in de database. Wil u de inhoud vervangen?</DupCD>
+		<ScanHD>Wil u dat VirtualDJ uw harde schijf doorzoekt op MP3 bestanden?</ScanHD>
+		<QueryClose>De muziek speelt nog!\nWeet u zeker dat u VirtualDJ wil verlaten?</QueryClose>
+		<Security>Er speelt nog een track in deze player.\nWeet u zeker dat u hem wil stoppen?</Security>
+		<MultiInstance>U moet de 'Meerdere instanties' optie inschakelen om VirtualDJ meerdere keren te kunnen draaien</MultiInstance>
+		<DemoLimit1>Deze feature is enkel beschikbaar in de volledige versie\nGelieve http://www.virtualdj.com te bezoeken om de volledige versie aan te schaffen</DemoLimit1>
+		<DemoLimit2>Dit is een testversie van VirtualDJ.\nGelieve http://www.virtualdj.com te bezoeken om de volledige versie aan te schaffen</DemoLimit2>
+		<MissingCD>De CD die dit bestand bevat zit niet in de drive</MissingCD>
+		<SerialError>Uw serienummer is niet correct. Gelieve service@virtualdj.com te contacteren</SerialError>
+		<RipRecord>U kan niet tegelijk een mix opnemen en een CD rippen</RipRecord>
+		<BadCDRip>De CD is onleesbaar.\nMisschien moet u hem kuisen.</BadCDRip>
+		<Controler>De controller kan niet gevonden worden.\nGelieve de controller aan te sluiten en VirtualDJ te herstarten</Controler>
+		<Video>Camera kan niet gestart worden!</Video>
+	</Errors>
+	<Others>
+		<Search>Zoek: </Search>
+		<Empty>(Leeg)</Empty>
+		<SaveMsg>Aan het opnemen\nBestandsnaam: %s\nOpgenomen tijd: %i:%.2i:%.2i\nBestandsgrootte: %.1f Mb\n\nTotale opnametijd: %i:%.2i:%.2i\nTotale bestandsgrootte: %.1f Mb</SaveMsg>
+		<SaveMsgErr>** Bestandserror **</SaveMsgErr>
+		<SaveMsgWait>Aan het opnemen\nBestandsnaam: %s\n\n** Autostart vanaf het spelen **</SaveMsgWait>
+		<BroadcastMsg>Uitzenden\nTotale tijd: %i:%.2i:%.2i</BroadcastMsg>
+		<BroadcastMsgErr>** Pluginfout **</BroadcastMsgErr>
+		<BroadcastMsgWait>Aan het uizenden\n** Autostart vanaf het spelen **</BroadcastMsgWait>
+		<BroadcaseHelp>Gelieve een Shoutcast-plugin te kiezen om te beginnen spelen.\n\nAls u hiermee hulp nodig heeft, gelieve onze site te bezoeken.</BroadcaseHelp>
+		<LameHelp>Gelieve een encoder te selecteren om in mp3 op te nemen.\n\nAls u hiermee hulp nodig heeft, gelieve onze site te bezoeken.</LameHelp>
+		<VScratchHelp>Welkom bij Virtual-Scratch.\nU heeft een webcam of videocamera nodig om hiervan gebruik te maken.\nEenmaal de camera aangesloten is, beweeg uw hand over de rode lijn om te scratchen.</VScratchHelp>
+		<VControlHelp>Welkom bij Vinyl-Control.\nU heeft een webcam of videocamera nodig om hiervan gebruik te maken.\nPlaats de camera zo dat hij het midden van uw vinyl kan zien, laat dan uw draaitafel draaien aan 45RPM en druk CALIBRATE.\nEenmaal gecalibreerd, gebruik uw vinyl als gewoonlijk, en VirtualDJ zal volgen.</VControlHelp>
+		<SoundCard>Geluidskaarten</SoundCard>
+		<DragToStart>Sleep een track naar een deck om hem af te spelen</DragToStart>
+	</Others>
+	<Options>
+		<MasterTempo>Time Stretch</MasterTempo>
+		<PitchRange>Pitch Bereik</PitchRange>
+		<Crossfader>Crossfader</Crossfader>
+		<Security>Beveiliging</Security>
+		<Charts>Hitlijsten</Charts>
+		<ToolTip>Tooltip</ToolTip>
+		<MultiInstance>Meerdere instanties</MultiInstance>
+		<AutoPitch>Auto BPM</AutoPitch>
+		<AutoReset>Auto Pitch-Herstel</AutoReset>
+		<AutoLevel>Auto Gain</AutoLevel>
+		<AutoMix>AutoMix</AutoMix>
+		<DJCPitchVol>DJC Pitch/Vol</DJCPitchVol>
+		<Scrolling>Scrolling</Scrolling>
+		<RPM>Disc</RPM>
+		<BeatLock>BeatLock</BeatLock>
+		<SoundConfig>Geluidsconfiguratie...</SoundConfig>
+		<Skins>Verander Skin...</Skins>
+		<VScratch>V-Scratch...</VScratch>
+		<VControl>V-Control...</VControl>
+		<Shortcuts>Sneltoetsen...</Shortcuts>
+		<History>Geschiedenis...</History>
+		<WebSite>WebSite...</WebSite>
+		<AutoStart>Auto Start</AutoStart>
+		<AutoCut>Auto Snijden</AutoCut>
+		<RecordIn>Opnemen naar</RecordIn>
+		<Plugin>Plugin</Plugin>
+		<RecordFile>Bestandsnaam</RecordFile>
+		<Enabled>Aan</Enabled>
+		<Disabled>Uit</Disabled>
+		<None>Geen</None>
+		<Ask>Vraag</Ask>
+		<Always>Altijd</Always>
+		<_8to8>-8% tot +8%</_8to8>
+		<_12to12>-12% tot +12%</_12to12>
+		<_34to34>-34% tot +34%</_34to34>
+		<Smooth>Zacht</Smooth>
+		<Full>Volledig</Full>
+		<Cut>Snijden</Cut>
+		<Elastic>Elastisch</Elastic>
+		<Rigid>Strak</Rigid>
+		<Smart>Intelligent</Smart>
+		<Fade>Fade</Fade>
+		<Tempo>Tempo</Tempo>
+		<Inverted>Omgekeerd</Inverted>
+		<Normal>Normaal</Normal>
+		<Limited>Beperkt</Limited>
+		<rpm45>45rpm</rpm45>
+		<rpm33>33rpm</rpm33>
+		<Wav>Wav</Wav>
+		<Mp3>Mp3</Mp3>
+		<broadcast>Uitzenden</broadcast>
+		<Burn>Brand CD</Burn>
+	</Options>
+	<ContextMenu>
+		<Rename>Hernoem</Rename>
+		<EditComment>Bewerk commentaar</EditComment>
+		<EditBpm>Bewerk Bpm</EditBpm>
+		<Delete>Verwijder</Delete>
+		<MoveTo>Verplaats naar</MoveTo>
+		<CopyTo>Copieer to</CopyTo>
+		<Analyse>Analiseer</Analyse>
+		<Unmark>Herstel status</Unmark>
+		<Preview>Beluister</Preview>
+	</ContextMenu>
+	<ToolTips>
+		<Close>Sluiten</Close>
+		<Minimize>Verklein</Minimize>
+		<Maximize>Volledig scherm</Maximize>
+		<Play>Speel</Play>
+		<Pause>Pauze</Pause>
+		<Play_Pause>Play/Pauze</Play_Pause>
+		<Stop>Stop</Stop>
+		<Sync>Synchroniseer</Sync>
+		<Cue_Stop>Cue/Stop</Cue_Stop>
+		<BeatLock>Magische BeatLock</BeatLock>
+		<Mix>AutoMix Nu</Mix>
+		<Select>Selecteer hoofdtelefoon en actieve sneltoetsen</Select>
+		<master_volume>Hoofdvolume</master_volume>
+		<headphone_volume>Hoofdtelefoonvolume</headphone_volume>
+		<headphone_mix>Hoofdtelefoon Mix</headphone_mix>
+		<Pitch>Pitch (Snelheid van de track)</Pitch>
+		<Pitch value="auto">Automatische pitch gelijkstelling</Pitch>
+		<Pitch_Reset>Herstel Pitch</Pitch_Reset>
+		<Crossfader>Crossfader</Crossfader>
+		<Level>Niveau</Level>
+		<Gain>Gain</Gain>
+		<Gain value="auto">Automatische gain gelijkstelling</Gain>
+		<Bass>Bas</Bass>
+		<Kill_Bass>Verwijder Bas</Kill_Bass>
+		<BassFader>Bas Crossfader</BassFader>
+		<Medium>Midden</Medium>
+		<Kill_Medium>Verwijder Midden</Kill_Medium>
+		<MediumFader>Midden Crossfader</MediumFader>
+		<High>Hoog</High>
+		<Kill_High>Verwijder Hoog</Kill_High>
+		<HighFader>Hoog Crossfader</HighFader>
+		<Eq_Reset>Herstel Eqs</Eq_Reset>
+		<Menu value="0">Audio bestanden</Menu>
+		<Menu value="1">Zoeken</Menu>
+		<Menu value="2">Effecten</Menu>
+		<Menu value="3">Samples</Menu>
+		<Menu value="4">Opnemen</Menu>
+		<Menu value="5">Opties</Menu>
+		<Loop value="0">Verlaat Loop</Loop>
+		<Loop value="-4">Loop 1/4 beat</Loop>
+		<Loop value="-2">Loop 1/2 beat</Loop>
+		<Loop value="1">Loop 1 beat</Loop>
+		<Loop value="2">Loop 2 beats</Loop>
+		<Loop value="4">Loop 4 beats</Loop>
+		<Loop value="8">Loop 8 beats</Loop>
+		<Loop value="16">Loop 16 beats</Loop>
+		<Loop value="32">Loop 32 beats</Loop>
+		<Loop value="64">Loop 64 beats</Loop>
+		<Effect value="1">Effect (slot 1)</Effect>
+		<Effect value="2">Effect (slot 2)</Effect>
+		<Effect value="3">Effect (slot 3)</Effect>
+		<Sample value="1">Sample (slot 1)</Sample>
+		<Sample value="2">Sample (slot 2)</Sample>
+		<Sample value="3">Sample (slot 3)</Sample>
+		<Sample value="4">Sample (slot 4)</Sample>
+		<Sample value="5">Sample (slot 5)</Sample>
+		<Sample value="6">Sample (slot 6)</Sample>
+		<Sample value="7">Sample (slot 7)</Sample>
+		<Sample value="8">Sample (slot 8)</Sample>
+		<Sample value="9">Sample (slot 9)</Sample>
+		<Sample value="10">Sample (slot 10)</Sample>
+		<Sample value="11">Sample (slot 11)</Sample>
+		<Sample value="12">Sample (slot 12)</Sample>
+		<Set_Cue value="1">Sla de huidige positie op als cuepoint 1</Set_Cue>
+		<Set_Cue value="2">Sla de huidige positie op als cuepoint 2</Set_Cue>
+		<Set_Cue value="3">Sla de huidige positie op als cuepoint 3</Set_Cue>
+		<Set_Cue value="4">Sla de huidige positie op als cuepoint 4</Set_Cue>
+		<Set_Cue value="5">Sla de huidige positie op als cuepoint 5</Set_Cue>
+		<Goto_Cue value="1">Spoel terug tot cuepoint 1</Goto_Cue>
+		<Goto_Cue value="2">Spoel terug tot cuepoint 2</Goto_Cue>
+		<Goto_Cue value="3">Spoel terug tot cuepoint 3</Goto_Cue>
+		<Goto_Cue value="4">Spoel terug tot cuepoint 4</Goto_Cue>
+		<Goto_Cue value="5">Spoel terug tot cuepoint 5</Goto_Cue>
+		<Song_Pos>Positie in de song</Song_Pos>
+		<Scratch>Scratch</Scratch>
+		<Hold>Houd de disc</Hold>
+		<lock_pannel value="0">Zet het paneel vast</lock_pannel>
+		<lock_pannel value="1">Zet het paneel vast</lock_pannel>
+		<favorite_folder>Sla op als 'Favorieten'-folder</favorite_folder>
+		<scan_hd>Scan Harde Schijf</scan_hd>
+		<scan_cd>Scan CD</scan_cd>
+		<delete_cd>Verwijder CD</delete_cd>
+		<automix>Automatisch mixen</automix>
+		<randomize>Shuffle</randomize>
+		<onlynew>Enkel nieuwe songs</onlynew>
+		<load_playlist>Laad Playlist</load_playlist>
+		<save_playlist>Sla Playlist Op</save_playlist>
+		<record>Start Opname</record>
+		<record_cut>Snijd naar een andere track</record_cut>
+		<load_effect value="1">Laad een effectbestand</load_effect>
+		<load_effect value="2">Laad een effectbestand</load_effect>
+		<load_effect value="3">Laad een effectbestand</load_effect>
+		<load_sample value="1">Laad een samplebestand</load_sample>
+		<load_sample value="2">Laad een samplebestand</load_sample>
+		<load_sample value="3">Laad een samplebestand</load_sample>
+		<load_sample value="4">Laad een samplebestand</load_sample>
+		<load_sample value="5">Laad een samplebestand</load_sample>
+		<load_sample value="6">Laad een samplebestand</load_sample>
+		<load_sample value="7">Laad een samplebestand</load_sample>
+		<load_sample value="8">Laad een samplebestand</load_sample>
+		<load_sample value="9">Laad een samplebestand</load_sample>
+		<load_sample value="10">Laad een samplebestand</load_sample>
+		<load_sample value="11">Laad een samplebestand</load_sample>
+		<load_sample value="12">Laad een samplebestand</load_sample>
+		<sample_slider>Sample Volume</sample_slider>
+		<option name="MasterTempo">Verander de snelheid zonder de toonhoogte te veranderen</option>
+		<option name="PitchRange">Zet het bereik van de pitchslideder</option>
+		<option name="Crossfader">Crossfader gedrag</option>
+		<option name="Security">Desk Beveiliging</option>
+		<option name="Charts">Laat hitlijsten opstellen</option>
+		<option name="ToolTip">ToolTip</option>
+		<option name="MultiInstance">Start meerdere instanties van VirtualDJ op hetzelfde moment</option>
+		<option name="AutoPitch">Automatische bpm gelijkschakeling</option>
+		<option name="AutoLevel">Automatische gain gelijkschakeling</option>
+		<option name="AutoReset">Automatisch pitch herstel</option>
+		<option name="AutoMix">Automix gedrag</option>
+		<option name="DJCPitchVol">Draai de pitch- en volumefaders om op de DJConsole</option>
+		<option name="Scrolling">Draai de richting van het Rythme-window om</option>
+		<option name="RPM">Verander de draaisnelheid van de discs</option>
+		<option name="BeatLock">Beatlock gedrag</option>
+		<option name="SoundConfig">Geluidskaartenconfiguratie</option>
+		<option name="Skins">Laad een nieuwe skin</option>
+		<option name="VScratch">Virtual-Scratch Setup en Uitregeling</option>
+		<option name="VControl">Vinyl-Control Setup en Uitregeling</option>
+		<option name="Shortcuts">Configureer de sneltoetsen</option>
+		<option name="History">Sla de geschiedenislijst op</option>
+		<option name="WebSite">Bezoek de VirtualDJ website</option>
+		<option name="AutoStart">Start met opname als PLAY gedrukt wordt</option>
+		<option name="AutoCut">Knip als de crossfader van deck verandert</option>
+		<option name="RecordIn">In welk formaat wil u opnemen</option>
+		<option name="Plugin">Selecteer een te gebruiken plugin</option>
+		<option name="RecordFile">Doelbestand van deze mix</option>
+	</ToolTips>
+</language>
+ 
