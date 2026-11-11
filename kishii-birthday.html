@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Kishii!</title>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#2a0f3d;--bg2:#5b1a6e;--pink:#ff4fa3;--sun:#ffd23f;--aqua:#3fe0d0;--ink:#fff7ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html,body{margin:0;min-height:100%;}
+body{background:radial-gradient(circle at 50% 20%,var(--bg2),var(--bg) 70%) fixed;color:var(--ink);font-family:'Quicksand',system-ui,sans-serif;overflow-x:hidden;text-align:center}
+main>*{pointer-events:none}main button,h1 span{pointer-events:auto}
+main{pointer-events:none;position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 16px 48px}
+.hb{font-family:'Bagel Fat One','Arial Rounded MT Bold',system-ui,sans-serif;font-size:clamp(1.4rem,5vw,2.4rem);color:var(--sun);margin:0;letter-spacing:.04em}
+h1{font-family:'Bagel Fat One','Arial Rounded MT Bold',system-ui,sans-serif;font-weight:400;margin:.1em 0;font-size:clamp(4.5rem,24vw,13rem);line-height:1;display:flex;justify-content:center;flex-wrap:wrap}
+h1 span{display:inline-block;animation:bounce 1.6s ease-in-out infinite;text-shadow:0 6px 0 rgba(0,0,0,.25);cursor:pointer}
+h1 span:nth-child(1){color:var(--pink)}h1 span:nth-child(2){color:var(--sun)}h1 span:nth-child(3){color:var(--aqua)}
+h1 span:nth-child(4){color:var(--pink)}h1 span:nth-child(5){color:var(--sun)}h1 span:nth-child(6){color:var(--aqua)}
+@keyframes bounce{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-.14em) rotate(3deg)}}
+h1 span:nth-child(2){animation-delay:.15s}h1 span:nth-child(3){animation-delay:.3s}h1 span:nth-child(4){animation-delay:.45s}h1 span:nth-child(5){animation-delay:.6s}h1 span:nth-child(6){animation-delay:.75s}
+.name{font-size:clamp(1.1rem,4vw,1.6rem);font-weight:700;margin:.2em 0 1.2em;opacity:.9}
+button{font:700 1.15rem 'Quicksand',system-ui,sans-serif;border:0;border-radius:999px;padding:.9em 1.8em;background:var(--sun);color:var(--bg);cursor:pointer;box-shadow:0 6px 0 #c9a000;transition:transform .15s,box-shadow .15s}
+button:hover{transform:translateY(-2px)}button:active{transform:translateY(4px);box-shadow:0 2px 0 #c9a000}
+button:focus-visible{outline:3px solid var(--aqua);outline-offset:4px}
+.hint{font-size:.95rem;opacity:.75;margin-top:1.2em}
+#cake{display:none;margin-top:1.4em}
+#cake.show{display:block;animation:pop .5s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{from{transform:scale(.2);opacity:0}to{transform:scale(1);opacity:1}}
+.flame{transform-origin:50% 100%;animation:flick .25s ease-in-out infinite alternate}
+@keyframes flick{from{transform:scale(1,1) rotate(-4deg)}to{transform:scale(.88,1.12) rotate(4deg)}}
+.out .flame{display:none}
+#msg{min-height:3.2em;font-size:clamp(1.1rem,3.6vw,1.5rem);font-weight:700;margin-top:.8em;max-width:30ch}
+.balloon{position:fixed;bottom:-140px;z-index:1;width:70px;height:88px;border-radius:50% 50% 48% 48%;cursor:pointer;animation:rise linear forwards;border:0;padding:0;box-shadow:inset -8px -8px 0 rgba(0,0,0,.12),inset 8px 8px 0 rgba(255,255,255,.25)}
+.balloon::after{content:"";position:absolute;left:50%;top:100%;width:2px;height:60px;background:rgba(255,255,255,.5)}
+@keyframes rise{to{transform:translateY(-130vh) translateX(var(--dx))}}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+@media (prefers-reduced-motion:reduce){h1 span,.flame{animation:none}.balloon{animation-duration:30s!important}}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<main>
+  <p class="hb">Happy Birthday</p>
+  <h1 aria-label="Kishii"><span>K</span><span>i</span><span>s</span><span>h</span><span>i</span><span>i</span></h1>
+  <p class="name">Victoria Coker, today is all about you</p>
+  <button id="wish">Make a wish</button>
+  <div id="cake" aria-live="polite">
+    <svg id="cakesvg" width="220" height="190" viewBox="0 0 220 190" role="img" aria-label="Birthday cake with candles">
+      <rect x="30" y="110" width="160" height="62" rx="12" fill="#ff4fa3"/>
+      <rect x="30" y="110" width="160" height="16" rx="8" fill="#fff7ee"/>
+      <path d="M30 126q14 22 28 0t28 0 28 0 28 0 28 0" fill="#fff7ee"/>
+      <g fill="#3fe0d0"><rect x="62" y="70" width="12" height="42" rx="3"/><rect x="104" y="64" width="12" height="48" rx="3"/><rect x="146" y="70" width="12" height="42" rx="3"/></g>
+      <g fill="#ffd23f"><path class="flame" d="M68 66c-9-10-3-20 0-26 3 6 9 16 0 26z"/><path class="flame" d="M110 60c-9-10-3-20 0-26 3 6 9 16 0 26z" style="animation-delay:.08s"/><path class="flame" d="M152 66c-9-10-3-20 0-26 3 6 9 16 0 26z" style="animation-delay:.16s"/></g>
+    </svg>
+    <div><button id="blow">Blow out the candles</button></div>
+  </div>
+  <div id="msg"></div>
+  <p class="hint">Pop the balloons. Tap the letters. Go wild.</p>
+</main>
+<script>
+(function(){
+var cv=document.getElementById('c'),cx=cv.getContext('2d'),P=[],cols=['#ff4fa3','#ffd23f','#3fe0d0','#fff7ee','#b388ff'];
+function size(){cv.width=innerWidth*devicePixelRatio;cv.height=innerHeight*devicePixelRatio}
+size();addEventListener('resize',size);
+function burst(x,y,n){var d=devicePixelRatio;for(var i=0;i<n;i++){var a=Math.random()*6.283,s=(3+Math.random()*7)*d;
+P.push({x:x*d,y:y*d,vx:Math.cos(a)*s,vy:Math.sin(a)*s-4*d,r:(4+Math.random()*5)*d,c:cols[i%cols.length],rot:Math.random()*6,vr:(Math.random()-.5)*.4,life:90+Math.random()*50})}}
+function tick(){cx.clearRect(0,0,cv.width,cv.height);
+for(var i=P.length-1;i>=0;i--){var p=P[i];p.x+=p.vx;p.y+=p.vy;p.vy+=.18*devicePixelRatio;p.vx*=.99;p.rot+=p.vr;p.life--;
+if(p.life<=0){P.splice(i,1);continue}
+cx.save();cx.translate(p.x,p.y);cx.rotate(p.rot);cx.globalAlpha=Math.min(1,p.life/30);cx.fillStyle=p.c;cx.fillRect(-p.r,-p.r/2,p.r*2,p.r);cx.restore()}
+requestAnimationFrame(tick)}
+tick();
+function rain(){for(var i=0;i<8;i++)setTimeout(function(){burst(Math.random()*innerWidth,innerHeight*.2*Math.random(),30)},i*180)}
+
+var bc=['#ff4fa3','#ffd23f','#3fe0d0','#b388ff','#ff8a4f'];
+function balloon(){var b=document.createElement('button');b.className='balloon';b.setAttribute('aria-label','Pop balloon');
+b.style.left=(Math.random()*92)+'vw';b.style.background=bc[Math.floor(Math.random()*bc.length)];
+b.style.setProperty('--dx',(Math.random()*120-60)+'px');b.style.animationDuration=(9+Math.random()*7)+'s';
+b.style.transform='scale('+(.8+Math.random()*.6)+')';
+b.onclick=function(e){var r=b.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,36);b.remove()};
+b.addEventListener('animationend',function(){b.remove()});document.body.appendChild(b)}
+for(var i=0;i<6;i++)setTimeout(balloon,i*500);
+setInterval(function(){if(document.querySelectorAll('.balloon').length<14)balloon()},1400);
+
+document.querySelectorAll('h1 span').forEach(function(s){s.onclick=function(e){burst(e.clientX,e.clientY,40)}});
+
+var cake=document.getElementById('cake'),msg=document.getElementById('msg'),wish=document.getElementById('wish');
+wish.onclick=function(){cake.classList.add('show');cake.classList.remove('out');wish.style.display='none';
+msg.textContent='Close your eyes, think of something big, then blow!'};
+document.getElementById('blow').addEventListener('click',function(e){var r=e.currentTarget.getBoundingClientRect();burst(r.left+r.width/2,r.top,60);cake.classList.add('out');rain();
+msg.textContent='Wish locked in. Happy birthday, Kishii! May this year be your best one yet.';
+msg.scrollIntoView({block:'nearest',behavior:'smooth'});setTimeout(function(){cake.classList.remove('out')},4000)});
+})();
+</script>
+</body>
+</html>
